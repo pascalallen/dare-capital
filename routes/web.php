@@ -11,10 +11,16 @@
 |
 */
 
+/**
+ * If your application doesn’t need registration,
+ * you may disable it by removing the newly created
+ * RegisterController and modifying your route declaration:
+ * Auth::routes(['register' => false]);.
+ */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::get('/', function () {
     return view('welcome');
 });
-
-//Route::get('quote-get-funded', function () {
-//    return view('quote-get-funded');
-//});
