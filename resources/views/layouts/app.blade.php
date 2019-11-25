@@ -44,7 +44,7 @@
                             <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('About Dare Capital') }}</a>
+                            <a class="nav-link" href="{{ route('about') }}">{{ __('About Dare Capital') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}">{{ __('Dare To Grow') }}</a>
