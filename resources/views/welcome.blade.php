@@ -1,91 +1,46 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Dare Capital</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1 class="display-4">Dare Capital</h1>
+                <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="display-5">How We Help</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p class="lead">Understand Your Goals</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Dare Capital
+                <div class="col-6">
+                    <img src="//via.placeholder.com/350">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="//via.placeholder.com/350">
+                </div>
+                <div class="col-6">
+                    <p class="lead">Document Your Path</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p class="lead">Plan Your Future</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                </div>
+                <div class="col-6">
+                    <img src="//via.placeholder.com/350">
                 </div>
             </div>
         </div>
-    </body>
-</html>
-
+        <div class="row">
+            <h1 class="display-5">Get Financing</h1>
+        </div>
+    </div>
+@endsection
 
