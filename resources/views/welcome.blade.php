@@ -2,22 +2,44 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Landing Page</div>
-
-                    <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut fuga fugit hic recusandae sequi voluptate? Culpa, esse, eum hic ipsa, nam natus non obcaecati quas sunt suscipit totam vel.
-                    </div>
+        <div class="row">
+            <div class="jumbotron">
+                <h1 class="display-4">Dare Capital</h1>
+                <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="display-5">How We Help</h1>
+            <div class="row">
+                <div class="col-6">
+                    <p class="lead">Understand Your Goals</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                </div>
+                <div class="col-6">
+                    <img src="//via.placeholder.com/350">
                 </div>
             </div>
+            <div class="row">
+                <div class="col-6">
+                    <img src="//via.placeholder.com/350">
+                </div>
+                <div class="col-6">
+                    <p class="lead">Document Your Path</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p class="lead">Plan Your Future</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                </div>
+                <div class="col-6">
+                    <img src="//via.placeholder.com/350">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 class="display-5">Get Financing</h1>
         </div>
     </div>
 @endsection
