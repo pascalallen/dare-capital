@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="jumbotron">
+            <div class="jumbotron w-100">
                 <h1 class="display-4">Dare Capital</h1>
                 <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
             </div>
