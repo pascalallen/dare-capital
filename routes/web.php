@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('quote-get-funded', function () {
-    return view('quote-get-funded');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
