@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mw-100 m-0">
         <div class="row">
-            <div class="jumbotron w-100">
+            <div class="jumbotron w-100" id="landing-page-banner">
                 <h1 class="display-4">Dare Capital</h1>
                 <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row m-5">
             <h1 class="display-5">How We Help</h1>
             <div class="row">
                 <div class="col-6">
@@ -38,7 +38,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row m-5">
             <h1 class="display-5">Get Financing</h1>
         </div>
     </div>
