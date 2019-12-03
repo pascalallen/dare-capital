@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -98,6 +98,31 @@
         <main>
             @yield('content')
         </main>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-bottom">
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Center Of Navbar -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">1234 Example Street Austin, TX 78758 (123) 456-7890</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </div>
 </body>
 </html>
