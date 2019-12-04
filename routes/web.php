@@ -22,3 +22,4 @@ Route::post('/contact', 'HomeController@contact')->name('contact');
 Route::get('/about', static function() {
     return view('about');
 })->name('about');
+Route::resource('posts', 'PostController')->middleware('auth');
