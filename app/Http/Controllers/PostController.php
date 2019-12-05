@@ -51,11 +51,11 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $post = Post::create($request->all());
+        $post = auth()->user()->posts()->create($request->all());
 
-        return redirect()->back()->with(
+        return redirect(route('posts.index'))->with(
             'status',
-            "Post #{$post->id}"
+            "Post \"{$post->title}\" created."
         );
     }
 
@@ -83,10 +83,12 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        $post = Post::find($id);
+        $post = Post::with('category')->find($id);
+        $categories = Category::all();
 
         return view('posts.edit', [
             'post' => $post,
+            'categories' => $categories,
         ]);
     }
 
@@ -100,11 +102,11 @@ class PostController extends Controller
     public function update(PostRequest $request, $id)
     {
         /** @var Post $post */
-        $post = Post::find($id)->update($request->all());
+        Post::find($id)->update($request->all());
 
-        return redirect()->back()->with([
+        return redirect(route('posts.index'))->with([
             'status',
-            "Post #{$post->id} updated!"
+            "Post \"{$request->input('title')}\" updated."
         ]);
     }
 
