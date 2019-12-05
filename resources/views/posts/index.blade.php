@@ -1,8 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
+            @if (session('status'))
+                <div class="alert alert-success position-fixed m-2">
+                    {{ session('status') }}
+                </div>
+            @endif
+
             <div class="col-md-8">
                 <td class="card">
                     <div class="card-header">Posts</div>
@@ -24,7 +30,7 @@
                             <tbody>
                             @foreach($posts as $post)
                                 <tr>
-                                    <td>{{ $post->title }}</td>
+                                    <td><a href="{{ route('posts.edit', $post) }}">{{ $post->title }}</a></td>
                                     <td>{{ $post->category->name }}</td>
                                     <td>{{ $post->user->name }}</td>
                                     <td>
