@@ -3,12 +3,20 @@
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
+            @if ($errors->any())
+                <div class="alert alert-danger position-fixed m-2">
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}
+                    @endforeach
+                </div>
+            @endif
+
             <div class="col-md-8">
                 <td class="card">
                     <div class="card-header">Create Post</div>
 
                     <div class="card-body">
-                        <form action="{{ route('posts.store') }}" method="post">
+                        <form action="{{ route('posts.store') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label for="title">Title</label>

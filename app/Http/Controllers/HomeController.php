@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
-use App\Mail\NewLead;
 use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -14,14 +12,14 @@ class HomeController extends Controller
      *
      * @return Renderable
      */
-    public function index()
+    public function index(): Renderable
     {
         return view('home');
     }
 
     public function contact(ContactRequest $request)
     {
-        Mail::to($request->input('email'))->send(new NewLead($request->all()));
+//        Mail::to($request->input('email'))->send(new NewLead($request->all()));
 
         return redirect()->back()->with(
             'status',

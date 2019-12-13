@@ -29,6 +29,15 @@
     position: absolute;
 }
 
+#about-page-banner {
+    background-image: url("../images/people-concrete.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 0;
+    min-height: 500px;
+}
+
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
