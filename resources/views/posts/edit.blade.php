@@ -8,7 +8,7 @@
                     <div class="card-header">Edit Post</div>
 
                     <div class="card-body">
-                        <form action="{{ route('posts.update', $post) }}" method="post">
+                        <form action="{{ route('posts.update', $post) }}" method="post" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="form-group">
@@ -33,12 +33,14 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
+                                    <img src="{{ asset('storage/images/'.$post->image) }}" alt="{{ $post->image }}"
+                                         class="img-thumbnail">
                                     <label for="image">Image</label>
                                     <input type="file" class="form-control-file" id="image" name="image"
                                            value="{{ $post->image }}">
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Create</button>
+                            <button type="submit" class="btn btn-primary">Update</button>
                         </form>
                     </div>
             </div>

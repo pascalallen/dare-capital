@@ -2,21 +2,28 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\UserAvatarRequest;
+use App\User;
 
 class UserAvatarController extends Controller
 {
     /**
      * Update the avatar for the user.
      *
-     * @param Request $request
+     * @param UserAvatarRequest $request
+     * @param int $userId
      */
-    public function update(Request $request): void
+    public function update(UserAvatarRequest $request, int $userId): void
     {
-        $path = $request->file('avatar')->storeAs(
-            'avatars', $request->user()->id
+        /** @var User $user */
+        $user = User::find($userId);
+
+        $request->file('avatar')->storeAs(
+            'public/avatars', str_slug($user->name) . '.' . $request->file('avatar')->getClientOriginalExtension()
         );
 
-        auth()->user()->avatar = $path;
+        $user->update([
+            'avatar' => str_slug($user->name) . '.' . $request->file('avatar')->getClientOriginalExtension(),
+        ]);
     }
 }

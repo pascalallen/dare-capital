@@ -9,6 +9,7 @@ use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class PostController extends Controller
@@ -51,7 +52,17 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $post = auth()->user()->posts()->create($request->all());
+        $post = auth()->user()
+            ->posts()
+            ->create($request->all());
+
+        if ($request->hasFile('image')) {
+            $request->file('image')->storeAs(
+                'public/images', $post->slug . '.' . $request->file('image')->getClientOriginalExtension()
+            );
+            $post->image = $post->slug . '.' . $request->file('image')->getClientOriginalExtension();
+            $post->save();
+        }
 
         return redirect(route('posts.index'))->with(
             'status',
@@ -99,10 +110,19 @@ class PostController extends Controller
      * @param int $id
      * @return Redirector|RedirectResponse
      */
-    public function update(PostRequest $request, $id)
+    public function update(PostRequest $request, int $id)
     {
         /** @var Post $post */
-        Post::find($id)->update($request->all());
+        $post = Post::find($id);
+        $post->update($request->all());
+
+        if ($request->hasFile('image')) {
+            $request->file('image')->storeAs(
+                'public/images', $post->slug . '.' . $request->file('image')->getClientOriginalExtension()
+            );
+            $post->image = $post->slug . '.' . $request->file('image')->getClientOriginalExtension();
+            $post->save();
+        }
 
         return redirect(route('posts.index'))->with([
             'status',
@@ -121,6 +141,11 @@ class PostController extends Controller
     {
         /** @var Post $post */
         $post = Post::find($id);
+
+        if (Storage::exists($post->image)) {
+            Storage::delete($post->image);
+        }
+
         $post->delete();
 
         return redirect()->back()->with([

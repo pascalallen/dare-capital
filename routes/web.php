@@ -11,15 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', static function () {
     return view('welcome');
 });
 
 Auth::routes(['register' => false]);
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::group(['middleware' => 'auth'], static function () {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('posts', 'PostController');
+    Route::put('avatars/{userId}', 'UserAvatarController@update');
+    Route::put('profile', 'ProfileController@update')->name('profile.update');
+    Route::get('profile', 'ProfileController@index')->name('profile.index');
+});
+
 Route::post('/contact', 'HomeController@contact')->name('contact');
-Route::get('/about', static function() {
+
+Route::get('/about', static function () {
     return view('about');
 })->name('about');
-Route::resource('posts', 'PostController')->middleware('auth');
