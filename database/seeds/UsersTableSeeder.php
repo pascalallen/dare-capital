@@ -13,12 +13,17 @@ class UsersTableSeeder extends Seeder
     {
         factory(App\User::class)->create([
             'name' => 'Pascal Allen',
-            'email' => 'pascal.allen88@gmail.com',
+            'email' => 'pascal@darebizcapital.com',
         ]);
 
         factory(App\User::class)->create([
             'name' => 'Cole Harmonson',
             'email' => 'cole@darebizcapital.com',
+        ]);
+
+        factory(App\User::class)->create([
+            'name' => 'Matt Smulski',
+            'email' => 'matt@darebizcapital.com',
         ]);
     }
 }
