@@ -3,12 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
-use App\Mail\Application;
-use App\Mail\NewContact;
 use App\Post;
 use App\User;
 use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -24,11 +21,11 @@ class HomeController extends Controller
 
     public function contact(ContactRequest $request)
     {
-        Mail::to($request->input('email'))->send(new Application());
-        Mail::to([
-            // TODO: Swap out email to Cole's email
-            'pascal.allen88@gmail.com',
-        ])->send(new NewContact($request->all()));
+//        Mail::to($request->input('email'))->send(new Application());
+//        Mail::to([
+        // TODO: Swap out email to Cole's email
+//            'pascal.allen88@gmail.com',
+//        ])->send(new NewContact($request->all()));
 
         return redirect()->back()->with(
             'status',
