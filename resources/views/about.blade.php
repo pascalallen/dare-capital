@@ -33,39 +33,18 @@
         </div>
         <div class="row">
             <h1 class="display-5 mx-auto d-block">Meet the Team</h1>
-            <div class="row m-lg-5 p-sm-3 justify-content-center">
-                <div class="col-lg-4">
-                    <img src="//via.placeholder.com/350" class="img-fluid">
+            @foreach($users as $user)
+                <div class="row m-sm-5 p-sm-3 justify-content-center">
+                    <div class="col-lg-4">
+                        <img src="{{ asset('storage/avatars/'.$user->avatar) }}" alt="{{ $user->avatar }}"
+                             class="img-thumbnail">
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="lead">{{ $user->name }}</p>
+                        <p>{{ $user->bio }}</p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <p class="lead">Name</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid aspernatur
-                        cupiditate dicta distinctio dolor eius eligendi fuga fugit id incidunt, nulla odio omnis
-                        possimus quas quia voluptate! Minima.</p>
-                </div>
-            </div>
-            <div class="row m-lg-5 p-sm-3 justify-content-center">
-                <div class="col-lg-4">
-                    <img src="//via.placeholder.com/350" class="img-fluid">
-                </div>
-                <div class="col-lg-4">
-                    <p class="lead">Name</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid aspernatur
-                        cupiditate dicta distinctio dolor eius eligendi fuga fugit id incidunt, nulla odio omnis
-                        possimus quas quia voluptate! Minima.</p>
-                </div>
-            </div>
-            <div class="row m-lg-5 p-sm-3 justify-content-center">
-                <div class="col-lg-4">
-                    <img src="//via.placeholder.com/350" class="img-fluid">
-                </div>
-                <div class="col-lg-4">
-                    <p class="lead">Name</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aliquid aspernatur
-                        cupiditate dicta distinctio dolor eius eligendi fuga fugit id incidunt, nulla odio omnis
-                        possimus quas quia voluptate! Minima.</p>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 @endsection
