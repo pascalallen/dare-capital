@@ -11,6 +11,10 @@
 |
 */
 
+Route::any('/{anything?}', function () {
+    return view('layouts.coming-soon');
+});
+
 Route::get('/', static function () {
     return view('welcome');
 });
