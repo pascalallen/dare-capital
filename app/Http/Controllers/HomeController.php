@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
 use App\Mail\Application;
 use App\Mail\NewContact;
+use App\Post;
 use App\User;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Facades\Mail;
@@ -42,6 +43,16 @@ class HomeController extends Controller
 
         return view('about', [
             'users' => $users,
+        ]);
+    }
+
+    public function blog()
+    {
+        /** @var Post $posts */
+        $posts = Post::with(['user', 'category'])->get();
+
+        return view('blog', [
+            'posts' => $posts,
         ]);
     }
 }

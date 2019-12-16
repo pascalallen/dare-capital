@@ -50,7 +50,7 @@
                             <a class="nav-link" href="{{ url('/') }}">{{ __('Dare To Grow') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('Dare To Succeed') }}</a>
+                            <a class="nav-link" href="{{ route('blog') }}">{{ __('Dare To Succeed') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
