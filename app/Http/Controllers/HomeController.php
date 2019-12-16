@@ -49,7 +49,9 @@ class HomeController extends Controller
     public function blog()
     {
         /** @var Post $posts */
-        $posts = Post::with(['user', 'category'])->get();
+        $posts = Post::with(['user', 'category'])
+            ->get()
+            ->groupBy('category.slug');
 
         return view('blog', [
             'posts' => $posts,
