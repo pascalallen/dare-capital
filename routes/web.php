@@ -26,7 +26,8 @@ Route::group(['middleware' => 'auth'], static function () {
 });
 
 Route::post('/contact', 'HomeController@contact')->name('contact');
+Route::get('/about', 'HomeController@about')->name('about');
 
-Route::get('/about', static function () {
-    return view('about');
-})->name('about');
+Route::get('/apply', static function () {
+    return view('apply');
+})->name('apply');

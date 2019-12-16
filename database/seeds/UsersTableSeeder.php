@@ -25,5 +25,10 @@ class UsersTableSeeder extends Seeder
             'name' => 'Matt Smulski',
             'email' => 'matt@darebizcapital.com',
         ]);
+
+        factory(App\User::class)->create([
+            'name' => 'Beth Carpenter',
+            'email' => 'beth@darebizcapital.com',
+        ]);
     }
 }

@@ -6,25 +6,18 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class NewLead extends Mailable
+class Application extends Mailable
 {
     use Queueable, SerializesModels;
-
-    /**
-     * New contact.
-     *
-     * @var array
-     */
-    public $contact;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(array $contact)
+    public function __construct()
     {
-        $this->contact = $contact;
+        //
     }
 
     /**
@@ -32,12 +25,9 @@ class NewLead extends Mailable
      *
      * @return $this
      */
-    public function build()
+    public function build(): self
     {
         return $this->from('noreply@darebizcapital.com')
-            ->view('emails.leads.new')
-            ->with([
-                'contact' => $this->contact,
-            ]);
+            ->view('emails.application');
     }
 }
