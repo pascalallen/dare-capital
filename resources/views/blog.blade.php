@@ -20,7 +20,7 @@
                                  alt="{{ $caseStudy->image }}">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">{{ $caseStudy->title }}</h5>
-                                <p class="card-text">{{ $caseStudy->body }}</p>
+                                <p class="card-text">{!! $caseStudy->body !!}</p>
                                 <p class="card-text">{{ $caseStudy->user->name }} on {{ $caseStudy->created_at }}</p>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                                  alt="{{ $education->image }}">
                             <div class="card-img-overlay">
                                 <h5 class="card-title">{{ $education->title }}</h5>
-                                <p class="card-text">{{ $education->body }}</p>
+                                <p class="card-text">{!! $education->body !!}</p>
                                 <p class="card-text">{{ $education->user->name }} on {{ $education->created_at }}</p>
                             </div>
                         </div>
