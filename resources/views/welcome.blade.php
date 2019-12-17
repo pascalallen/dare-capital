@@ -9,10 +9,10 @@
             </div>
         @endif
 
-        <div class="row">
-            <div class="jumbotron w-100" id="landing-page-banner">
-                <h1 class="display-4">Dare Capital</h1>
-                <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
+        <div class="row flex-column justify-content-center" id="landing-page-banner">
+            <div class="text-center col-4 offset-4">
+                <h1>Dare Capital</h1>
+                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
         </div>
 
@@ -21,7 +21,9 @@
             <div class="row justify-content-center m-lg-5 p-sm-3">
                 <div class="col-lg-4">
                     <p class="lead">Understand Your Goals</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
+                        fugit, id ipsa nihil sequi vel.</p>
                 </div>
                 <div class="col-lg-4">
                     <img src="//via.placeholder.com/350" class="img-fluid float-right">
@@ -33,13 +35,17 @@
                 </div>
                 <div class="col-lg-4">
                     <p class="lead">Document Your Path</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
+                        fugit, id ipsa nihil sequi vel.</p>
                 </div>
             </div>
             <div class="row justify-content-center m-lg-5 p-sm-3">
                 <div class="col-lg-4">
                     <p class="lead">Plan Your Future</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere fugit, id ipsa nihil sequi vel.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
+                        fugit, id ipsa nihil sequi vel.</p>
                 </div>
                 <div class="col-lg-4">
                     <img src="//via.placeholder.com/350" class="img-fluid float-right">
@@ -47,10 +53,10 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="jumbotron w-100" id="get-financing-banner">
-                <h1 class="display-4">Dare to Grow Your Business</h1>
-                <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
+        <div class="row flex-column justify-content-center" id="get-financing-banner">
+            <div class="text-center col-4 offset-4">
+                <h1>Dare to Grow Your Business</h1>
+                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
         </div>
 

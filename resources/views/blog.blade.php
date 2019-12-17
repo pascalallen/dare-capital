@@ -3,10 +3,10 @@
 @section('content')
     <div class="container mw-100 m-0 mt-5">
 
-        <div class="row">
-            <div class="jumbotron w-100" id="landing-page-banner">
-                <h1 class="display-4">Dare Capital</h1>
-                <p class="lead">Dare to dream. Dare to build. Dare to grow. Dare to breathe.</p>
+        <div class="row flex-column justify-content-center" id="landing-page-banner">
+            <div class="text-center col-4 offset-4">
+                <h1>Dare Capital</h1>
+                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
         </div>
 

@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@push('scripts')
+    <!-- include summernote css/js -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+@endpush
+
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
@@ -24,7 +30,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="body">Body</label>
-                                <textarea class="form-control" id="body" rows="8" name="body"></textarea>
+                                <textarea class="form-control" id="body" name="body"></textarea>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -47,4 +53,10 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#body').summernote();
+        });
+    </script>
 @endsection
