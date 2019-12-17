@@ -30,6 +30,7 @@ class ContactRequest extends FormRequest
             'industry' => 'max:255',
             'phoneNumber' => 'required|max:255',
             'email' => 'required|max:255',
+            'recaptchaToken' => 'required',
         ];
     }
 }

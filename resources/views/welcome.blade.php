@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mw-100 m-0 mt-5">
+    <div class="container mw-100 m-0 mt-5 pb-5">
 
         @if (session('status'))
             <div class="alert alert-success position-fixed m-2">
@@ -103,6 +103,7 @@
                     <label for="email">Contact email</label>
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
+                <input type="hidden" name="recaptchaToken" id="recaptchaToken" required>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
@@ -125,8 +126,14 @@
 
     </div>
 
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcjEsgUAAAAAHnO0KBQyeLpcKE42lta1nj67FU6"></script>
     <script type="text/javascript">
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LcjEsgUAAAAAHnO0KBQyeLpcKE42lta1nj67FU6').then(function (token) {
+                document.getElementById('recaptchaToken').value = token;
+            });
+        });
+
         (function () {
             'use strict';
             window.addEventListener('load', function () {

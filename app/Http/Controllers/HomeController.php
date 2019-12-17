@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\ContactRequest;
 use App\Post;
 use App\User;
+use GuzzleHttp\Client;
 use Illuminate\Contracts\Support\Renderable;
 
 class HomeController extends Controller
@@ -21,6 +22,26 @@ class HomeController extends Controller
 
     public function contact(ContactRequest $request)
     {
+        $client = new Client([
+            'base_uri' => 'https://google.com/recaptcha/api/',
+            'timeout' => 2.0
+        ]);
+
+        $response = $client->request('POST', 'siteverify', [
+            'query' => [
+                'secret' => env('RECAPTCHA_SECRET'),
+                'response' => $request->input('recaptchaToken'),
+            ]
+        ]);
+
+        $responseBody = json_decode($response->getBody(), true);
+
+        if (!$responseBody['success']) {
+            return redirect()->back()->with(
+                'status',
+                'Whoops! Unable to verify your Recaptcha token, please try again.'
+            );
+        }
 //        Mail::to($request->input('email'))->send(new Application());
 //        Mail::to([
         // TODO: Swap out email to Cole's email
