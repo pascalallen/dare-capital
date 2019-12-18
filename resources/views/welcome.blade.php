@@ -4,14 +4,14 @@
     <div class="container mw-100 m-0 mt-5 pb-5">
 
         @if (session('status'))
-            <div class="alert alert-success position-fixed m-2">
+            <div class="alert alert-success position-fixed mt-5 col-4 offset-4" style="z-index: 1">
                 {{ session('status') }}
             </div>
         @endif
 
-        <div class="row flex-column justify-content-center" id="landing-page-banner">
+        <div class="row flex-column justify-content-center mb-5" id="landing-page-banner">
             <div class="text-center col-4 offset-4">
-                <h1>Dare Capital</h1>
+                <h1 class="display-3">Dare Capital</h1>
                 <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
         </div>
@@ -19,21 +19,21 @@
         <div class="row">
             <h1 class="display-5 mx-auto d-block">How We Help</h1>
             <div class="row justify-content-center m-lg-5 p-sm-3">
-                <div class="col-lg-4">
+                <div class="col-4">
                     <p class="lead">Understand Your Goals</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
                         consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
                         fugit, id ipsa nihil sequi vel.</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <img src="//via.placeholder.com/350" class="img-fluid float-right">
                 </div>
             </div>
             <div class="row justify-content-center m-lg-5 p-sm-3">
-                <div class="col-lg-4">
+                <div class="col-4">
                     <img src="//via.placeholder.com/350" class="img-fluid float-left">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <p class="lead">Document Your Path</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
                         consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
@@ -41,21 +41,21 @@
                 </div>
             </div>
             <div class="row justify-content-center m-lg-5 p-sm-3">
-                <div class="col-lg-4">
+                <div class="col-4">
                     <p class="lead">Plan Your Future</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
                         consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
                         fugit, id ipsa nihil sequi vel.</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-4">
                     <img src="//via.placeholder.com/350" class="img-fluid float-right">
                 </div>
             </div>
         </div>
 
-        <div class="row flex-column justify-content-center" id="get-financing-banner">
+        <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
             <div class="text-center col-4 offset-4">
-                <h1>Dare to Grow Your Business</h1>
+                <h1 class="display-3">Dare to Grow Your Business</h1>
                 <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
         </div>
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row mb-5">
             <form action="{{ route('contact') }}" method="post" class="col-lg-4 offset-lg-4 needs-validation"
                   novalidate>
                 @csrf
