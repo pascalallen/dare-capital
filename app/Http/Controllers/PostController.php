@@ -73,13 +73,15 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param int $id
+     * @param string $slug
      * @return View|Factory
      */
-    public function show($id)
+    public function show(string $slug)
     {
         /** @var Post $post */
-        $post = Post::find($id);
+        $post = Post::with(['user', 'category'])
+            ->where('slug', $slug)
+            ->first();
 
         return view('posts.show', [
             'post' => $post,
