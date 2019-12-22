@@ -152,7 +152,7 @@ class PostController extends Controller
 
         return redirect()->back()->with([
             'status',
-            "Post #{$post->id} deleted!"
+            "Post \"{$post->title}\" deleted!"
         ]);
     }
 }

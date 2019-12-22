@@ -12,7 +12,8 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-4">
+            <div class="col-md-4">
+                <h1 class="display-5">{{ $posts['case-studies']->first()->category->name }}</h1>
                 @foreach($posts['case-studies'] as $caseStudy)
                     <div class="row m-5 blog-index-card"
                          onclick="window.location.href = '/blog/{{ $caseStudy->slug }}';">
@@ -34,7 +35,8 @@
                 @endforeach
             </div>
 
-            <div class="col-4">
+            <div class="col-md-4">
+                <h1 class="display-5">{{ $posts['education']->first()->category->name }}</h1>
                 @foreach($posts['education'] as $education)
                     <div class="row m-5 blog-index-card"
                          onclick="window.location.href = '/blog/{{ $education->slug }}';">
