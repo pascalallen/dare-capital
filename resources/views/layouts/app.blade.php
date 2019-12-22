@@ -108,7 +108,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-bottom">
             <div class="container">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
 
                     <!-- Center Of Navbar -->
                     <ul class="navbar-nav mx-auto">
