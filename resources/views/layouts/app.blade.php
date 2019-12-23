@@ -115,7 +115,7 @@
                     <!-- Center Of Navbar -->
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link">1234 Example Street Austin, TX 78758 (123) 456-7890</a>
+                            <a class="nav-link">3021 Ridge Drive PMB 110 Rockwall, TX 75032 (512) 886-DARE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
