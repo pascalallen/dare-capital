@@ -30,8 +30,8 @@ Route::group(['middleware' => 'under-construction'], function () {
     Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/blog', 'HomeController@blog')->name('blog');
     Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');
-
-    Route::get('/apply', static function () {
-        return view('apply');
-    })->name('apply');
 });
+
+Route::get('/apply', static function () {
+    return view('apply');
+})->name('apply');
