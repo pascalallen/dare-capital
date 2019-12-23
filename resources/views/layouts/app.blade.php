@@ -6,8 +6,10 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description"
+          content="Dare Business Capital | Dare to dream. Dare to build. Dare to grow. Dare to breathe.">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Dare Business Capital') }} | @yield('title', 'Dare to dream.')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>

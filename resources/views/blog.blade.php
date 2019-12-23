@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Blog
+@endsection
+
 @section('content')
     <div class="container mw-100 m-0 mt-5">
 

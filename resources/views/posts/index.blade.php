@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Your Posts
+@endsection
+
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">

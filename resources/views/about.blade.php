@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    About
+@endsection
+
 @section('content')
     <div class="container mw-100 m-0 mt-5">
         <div class="row flex-column justify-content-center mb-5" id="about-page-banner">

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Edit Post
+@endsection
+
 @push('scripts')
     <!-- include summernote css/js -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
