@@ -15,7 +15,7 @@
         </div>
 
         <h1 class="display-5 text-center">{{ $post->title }}</h1>
-        <div class="row">
+        <div class="row p-5">
             <div class="col-4 offset-4">
                 <img class="img-fluid" src="{{ asset('storage/images/'.$post->image) }}"
                      alt="{{ $post->image }}">
@@ -25,7 +25,7 @@
             <blockquote class="blockquote col-4 offset-4">
                 {!! $post->body !!}
                 <footer class="blockquote-footer text-right">{{ $post->user->name }}
-                    <br>{{ date_format($post->created_at, 'M d, Y') }}</footer>
+                    on {{ date_format($post->created_at, 'M d, Y') }}</footer>
             </blockquote>
         </div>
 

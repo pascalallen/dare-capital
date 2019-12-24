@@ -31,7 +31,7 @@
                                     {!! $caseStudy->body !!}
                                     <footer
                                         class="blockquote-footer text-white text-right card-text">{{ $caseStudy->user->name }}
-                                        <br>{{ date_format($caseStudy->created_at, 'M d, Y') }}</footer>
+                                        on {{ date_format($caseStudy->created_at, 'M d, Y') }}</footer>
                                 </blockquote>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                                     {!! $education->body !!}
                                     <footer
                                         class="blockquote-footer text-white text-right card-text">{{ $education->user->name }}
-                                        <br>{{ date_format($education->created_at, 'M d, Y') }}</footer>
+                                        on {{ date_format($education->created_at, 'M d, Y') }}</footer>
                                 </blockquote>
                             </div>
                         </div>
