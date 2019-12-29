@@ -22,6 +22,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     {{-- Font Awesome --}}
     <script src="https://kit.fontawesome.com/b05f5595ec.js" crossorigin="anonymous"></script>
+    @stack('styles')
     @stack('scripts')
 </head>
 <body>

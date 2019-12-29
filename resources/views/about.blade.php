@@ -15,19 +15,19 @@
         <div class="row">
             <h1 class="display-5 mx-auto d-block">Our Process</h1>
             <div class="row m-5">
-                <div class="col-md-4">
+                <div class="col-md-4 about-column">
                     <p class="lead">Who we are</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat harum magni maiores
                         nobis quo reiciendis rem, similique temporibus veniam! Ab laudantium nobis odio perferendis
                         reprehenderit sequi similique vero voluptates.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 about-column">
                     <p class="lead">Why we do it</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat harum magni maiores
                         nobis quo reiciendis rem, similique temporibus veniam! Ab laudantium nobis odio perferendis
                         reprehenderit sequi similique vero voluptates.</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 about-column">
                     <p class="lead">What inspires us</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat harum magni maiores
                         nobis quo reiciendis rem, similique temporibus veniam! Ab laudantium nobis odio perferendis
@@ -52,3 +52,25 @@
         </div>
     </div>
 @endsection
+
+@push('styles')
+    <style>
+        .about-column {
+            opacity: 0;
+        }
+    </style>
+@endpush
+
+@push('scripts')
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let delay = 800;
+            $('.about-column').each(function (i) {
+                $(this).delay(delay).animate({
+                    opacity: 1,
+                }, 500);
+                delay += 800;
+            });
+        });
+    </script>
+@endpush

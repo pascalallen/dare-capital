@@ -16,41 +16,44 @@
             </div>
         </div>
 
-        <div class="row">
-            <h1 class="display-5 mx-auto d-block">How We Help</h1>
-            <div class="row justify-content-center m-lg-5 p-sm-3">
-                <div class="col-4">
-                    <p class="lead">Understand Your Goals</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
-                        fugit, id ipsa nihil sequi vel.</p>
+            <div class="row">
+                <h1 class="display-5 mx-auto d-block">How We Help</h1>
+                <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+                    <div class="col-4">
+                        <p class="lead">Understand Your Goals</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+                            consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
+                            facere
+                            fugit, id ipsa nihil sequi vel.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="//via.placeholder.com/350" class="img-fluid float-right">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="//via.placeholder.com/350" class="img-fluid float-right">
+                <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+                    <div class="col-4">
+                        <img src="//via.placeholder.com/350" class="img-fluid float-left">
+                    </div>
+                    <div class="col-4">
+                        <p class="lead">Document Your Path</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+                            consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
+                            facere
+                            fugit, id ipsa nihil sequi vel.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center m-lg-5 p-sm-3">
-                <div class="col-4">
-                    <img src="//via.placeholder.com/350" class="img-fluid float-left">
+                <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+                    <div class="col-4">
+                        <p class="lead">Plan Your Future</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+                            consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
+                            facere
+                            fugit, id ipsa nihil sequi vel.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="//via.placeholder.com/350" class="img-fluid float-right">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <p class="lead">Document Your Path</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
-                        fugit, id ipsa nihil sequi vel.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center m-lg-5 p-sm-3">
-                <div class="col-4">
-                    <p class="lead">Plan Your Future</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem facere
-                        fugit, id ipsa nihil sequi vel.</p>
-                </div>
-                <div class="col-4">
-                    <img src="//via.placeholder.com/350" class="img-fluid float-right">
-                </div>
-            </div>
         </div>
 
         <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
@@ -132,6 +135,17 @@
 
     </div>
 
+@endsection
+
+@push('styles')
+    <style>
+        .welcome-panel {
+            opacity: 0;
+        }
+    </style>
+@endpush
+
+@push('scripts')
     <script src="https://www.google.com/recaptcha/api.js?render=6LcjEsgUAAAAAHnO0KBQyeLpcKE42lta1nj67FU6"></script>
     <script type="text/javascript">
         grecaptcha.ready(function () {
@@ -140,23 +154,38 @@
             });
         });
 
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
+        $(document).ready(function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = $('.needs-validation');
+            // Loop over them and prevent submission
+            const validation = Array.prototype.filter.call(forms, function (form) {
+                $(form).submit(function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
                 });
-            }, false);
-        })();
-    </script>
-@endsection
+            });
 
+            $('.welcome-panel').first().delay(800).animate({
+                opacity: 1,
+            }, 500);
+
+            $(window).scroll(function () {
+                /* Check the location of each desired element */
+                $('.welcome-panel').each(function (i) {
+                    const bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    const bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+                        $(this).animate({
+                            opacity: 1,
+                        }, 500);
+                    }
+                });
+            });
+        });
+    </script>
+@endpush
