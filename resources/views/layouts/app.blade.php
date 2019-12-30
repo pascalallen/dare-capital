@@ -25,11 +25,11 @@
     @stack('styles')
     @stack('scripts')
 </head>
-<body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+<body class="bg-gradient-dark text-light">
+<div id="app">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -69,14 +69,14 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('posts.index') }}">
+                                <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item text-light" href="{{ route('posts.index') }}">
                                         {{ __('Posts') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('profile.index') }}">
+                                    <a class="dropdown-item text-light" href="{{ route('profile.index') }}">
                                         {{ __('Profile') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item text-light" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
@@ -98,17 +98,17 @@
             @yield('content')
         </main>
 
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-bottom">
-            <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-bottom">
+        <div class="container">
 
-                <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
+            <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
 
-                    <!-- Center Of Navbar -->
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link">3021 Ridge Drive PMB 110 Rockwall, TX 75032 (512) 886-DARE</a>
-                        </li>
-                        <li class="nav-item">
+                <!-- Center Of Navbar -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">3021 Ridge Drive PMB 110 Rockwall, TX 75032 (512) 886-DARE</a>
+                    </li>
+                    <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="nav-item">

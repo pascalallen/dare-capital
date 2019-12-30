@@ -18,7 +18,7 @@
                     <div class="card-header">Posts</div>
 
                     <div class="card-body">
-                        <table class="table table-light table-sm">
+                        <table class="table table-sm text-light">
                             <thead>
                             <tr>
                                 <th>Title</th>
