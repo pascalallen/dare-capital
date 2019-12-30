@@ -65,15 +65,28 @@
         </div>
     </div>
 
+@endsection
+
+@push('styles')
+    <style>
+        .blog-index-card:hover {
+            opacity: .9;
+        }
+    </style>
+@endpush
+
+@push('scripts')
     <script type="text/javascript">
-        const goToPost = (slug) => {
-            console.log(slug)
-        };
         (function () {
             'use strict';
+
+            const goToPost = (slug) => {
+                console.log(slug)
+            };
+
             window.addEventListener('load', function () {
                 $('.carousel').carousel();
             }, false);
         })();
     </script>
-@endsection
+@endpush
