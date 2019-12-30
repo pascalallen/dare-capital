@@ -17,7 +17,7 @@
         <h1 class="display-5 text-center">{{ $post->title }}</h1>
         <div class="row p-5">
             <div class="col-4 offset-4">
-                <img class="img-fluid" src="{{ asset('storage/images/'.$post->image) }}"
+                <img class="img-fluid shadow-lg" src="{{ asset('storage/images/'.$post->image) }}"
                      alt="{{ $post->image }}">
             </div>
         </div>

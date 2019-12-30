@@ -27,12 +27,12 @@
                             fugit, id ipsa nihil sequi vel.</p>
                     </div>
                     <div class="col-4">
-                        <img src="//via.placeholder.com/350" class="img-fluid float-right">
+                        <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
                     </div>
                 </div>
                 <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
                     <div class="col-4">
-                        <img src="//via.placeholder.com/350" class="img-fluid float-left">
+                        <img src="//via.placeholder.com/350" class="img-fluid float-left shadow-lg">
                     </div>
                     <div class="col-4">
                         <p class="lead">Document Your Path</p>
@@ -51,17 +51,17 @@
                             fugit, id ipsa nihil sequi vel.</p>
                     </div>
                     <div class="col-4">
-                        <img src="//via.placeholder.com/350" class="img-fluid float-right">
+                        <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
                     </div>
                 </div>
-        </div>
-
-        <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
-            <div class="text-center col-4 offset-4">
-                <h1 class="display-3">Dare to Grow Your Business</h1>
-                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
-        </div>
+
+            <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
+                <div class="text-center col-4 offset-4">
+                    <h1 class="display-3">Dare to Grow Your Business</h1>
+                    <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
+                </div>
+            </div>
 
         <div class="row">
             <div class="col-lg-4 offset-lg-4">

@@ -19,7 +19,7 @@
             <div class="col-md-4">
                 <h1 class="display-5">{{ $posts['case-studies']->first()->category->name }}</h1>
                 @foreach($posts['case-studies'] as $caseStudy)
-                    <div class="row m-5 blog-index-card"
+                    <div class="row m-5 blog-index-card shadow-lg"
                          onclick="window.location.href = '/blog/{{ $caseStudy->slug }}';">
                         <div class="card bg-dark text-white">
                             <img class="card-img blog-index-image"
@@ -42,7 +42,7 @@
             <div class="col-md-4">
                 <h1 class="display-5">{{ $posts['education']->first()->category->name }}</h1>
                 @foreach($posts['education'] as $education)
-                    <div class="row m-5 blog-index-card"
+                    <div class="row m-5 blog-index-card shadow-lg"
                          onclick="window.location.href = '/blog/{{ $education->slug }}';">
                         <div class="card bg-dark text-white">
                             <img class="card-img blog-index-image"

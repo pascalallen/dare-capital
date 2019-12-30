@@ -41,7 +41,7 @@
                 <div class="row m-5 justify-content-center">
                     <div class="col-md-4">
                         <img src="{{ asset('storage/avatars/'.$user->avatar) }}" alt="{{ $user->avatar }}"
-                             class="img-fluid">
+                             class="img-fluid shadow-lg">
                     </div>
                     <div class="col-md-4">
                         <p class="lead">{{ $user->name }}</p>
