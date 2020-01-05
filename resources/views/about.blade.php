@@ -40,8 +40,12 @@
             @foreach($users as $user)
                 <div class="row m-5 justify-content-center">
                     <div class="col-md-4">
-                        <img src="{{ asset('storage/avatars/'.$user->avatar) }}" alt="{{ $user->avatar }}"
-                             class="img-fluid shadow-lg">
+                        @if($user->avatar && asset('storage/avatars/'.$user->avatar))
+                            <img src="{{ asset('storage/avatars/'.$user->avatar) }}" alt="{{ $user->avatar }}"
+                                 class="img-fluid shadow-lg">
+                        @else
+                            <img src="//via.placeholder.com/500" class="img-fluid shadow-lg">
+                        @endif
                     </div>
                     <div class="col-md-4">
                         <p class="lead">{{ $user->name }}</p>

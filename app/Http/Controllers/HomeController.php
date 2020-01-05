@@ -57,7 +57,9 @@ class HomeController extends Controller
     public function about()
     {
         /** @var User $users */
-        $users = User::with('posts')->get();
+        $users = User::with('posts')
+            ->where('email', 'cole@darebizcapital.com')
+            ->get();
 
         return view('about', [
             'users' => $users,
