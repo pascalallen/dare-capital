@@ -8,7 +8,7 @@
     <div class="container mw-100 m-0 mt-5">
         <div class="row flex-column justify-content-center mb-5" id="about-page-banner">
             <div class="text-center col-4 offset-4">
-                <h1 class="display-3">About Dare Capital</h1>
+                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"/>
                 <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
             </div>
         </div>

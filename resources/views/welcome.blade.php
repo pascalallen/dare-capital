@@ -11,17 +11,17 @@
 
         <div class="row flex-column justify-content-center mb-5" id="landing-page-banner">
             <div class="text-center col-4 offset-4">
-                <h1 class="display-3">Dare Capital</h1>
+                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"/>
                 <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
             </div>
         </div>
 
-            <div class="row">
-                <h1 class="display-5 mx-auto d-block">How We Help</h1>
-                <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
-                    <div class="col-4">
-                        <p class="lead">Understand Your Goals</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
+        <div class="row">
+            <h1 class="display-5 mx-auto d-block">How We Help</h1>
+            <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+                <div class="col-4">
+                    <p class="lead">Understand Your Goals</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
                             consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
                             facere
                             fugit, id ipsa nihil sequi vel.</p>
