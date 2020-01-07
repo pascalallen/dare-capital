@@ -49,7 +49,7 @@
                     </div>
                     <div class="col-md-4">
                         <p class="lead">{{ $user->name }}</p>
-                        <p>{{ $user->bio }}</p>
+                        <p>{!!  nl2br($user->bio) !!}</p>
                     </div>
                 </div>
             @endforeach
