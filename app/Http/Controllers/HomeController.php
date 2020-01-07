@@ -58,7 +58,7 @@ class HomeController extends Controller
     {
         /** @var User $users */
         $users = User::with('posts')
-            ->where('email', 'cole@darebizcapital.com')
+            ->whereIn('email', ['cole@darebizcapital.com', 'debra@darebizcapital.com'])
             ->get();
 
         return view('about', [
