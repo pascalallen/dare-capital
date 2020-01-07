@@ -12,7 +12,7 @@
         <div class="row flex-column justify-content-center mb-5" id="landing-page-banner">
             <div class="text-center col-4 offset-4">
                 <h1 class="display-3">Dare Capital</h1>
-                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
+                <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
             </div>
         </div>
 
