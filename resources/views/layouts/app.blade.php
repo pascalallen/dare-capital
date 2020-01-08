@@ -25,9 +25,9 @@
     @stack('styles')
     @stack('scripts')
 </head>
-<body class="bg-gradient-dark text-light">
+<body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -98,7 +98,7 @@
             @yield('content')
         </main>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-bottom">
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm fixed-bottom">
         <div class="container">
 
             <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">

@@ -7,14 +7,17 @@
 @section('content')
     <div class="container mw-100 m-0 mt-5">
 
-        <div class="row flex-column justify-content-center mb-5" id="landing-page-banner">
-            <div class="text-center col-4 offset-4">
-                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"/>
+        <div class="row flex-column mb-5 bg-white" id="landing-page-banner">
+            <div class="col-2">
+                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"
+                     alt="Dare_Logo_AdmiralBlue_RGB.png"/>
+            </div>
+            <div class="text-center text-dark mb-4">
                 <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-light">
 
             <div class="col-md-4">
                 <h1 class="display-5">{{ $posts['case-studies']->first()->category->name }}</h1>

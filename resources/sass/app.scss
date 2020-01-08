@@ -8,12 +8,12 @@
 @import '~bootstrap/scss/bootstrap';
 
 #landing-page-banner {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/construction-grinder.jpg");
+    //background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/construction-grinder.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    min-height: 500px;
+    min-height: 300px;
 }
 
 #get-financing-banner {
@@ -30,12 +30,12 @@
 }
 
 #about-page-banner {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/people-concrete.jpg");
+    //background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../images/people-concrete.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: #fff;
-    min-height: 500px;
+    min-height: 300px;
 }
 
 .grecaptcha-badge {
@@ -56,6 +56,14 @@
 
 .dropdown-item:hover {
     background: none;
+}
+
+.navbar-dark {
+    background-color: #1f3c92;
+}
+
+.card-dark {
+    background-color: #1f3c92;
 }
 
 // Extra small devices (portrait phones, less than 576px)

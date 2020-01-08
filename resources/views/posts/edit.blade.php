@@ -14,7 +14,7 @@
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <td class="card">
+                <div class="card card-dark text-light">
                     <div class="card-header">Edit Post</div>
 
                     <div class="card-body">

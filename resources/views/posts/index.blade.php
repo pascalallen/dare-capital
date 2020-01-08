@@ -14,7 +14,7 @@
             @endif
 
             <div class="col-md-8">
-                <td class="card">
+                <div class="card card-dark text-light">
                     <div class="card-header">Posts</div>
 
                     <div class="card-body">

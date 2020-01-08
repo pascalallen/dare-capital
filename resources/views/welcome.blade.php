@@ -9,24 +9,27 @@
             </div>
         @endif
 
-        <div class="row flex-column justify-content-center mb-5" id="landing-page-banner">
-            <div class="text-center col-4 offset-4">
-                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"/>
+        <div class="row flex-column mb-5 bg-white" id="landing-page-banner">
+            <div class="col-2">
+                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"
+                     alt="Dare_Logo_AdmiralBlue_RGB.png"/>
+            </div>
+            <div class="text-center text-dark mb-4">
                 <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row text-light">
             <h1 class="display-5 mx-auto d-block">How We Help</h1>
             <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
                 <div class="col-4">
                     <p class="lead">Understand Your Goals</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                            consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
-                            facere
-                            fugit, id ipsa nihil sequi vel.</p>
-                    </div>
-                    <div class="col-4">
+                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
+                        facere
+                        fugit, id ipsa nihil sequi vel.</p>
+                </div>
+                <div class="col-4">
                         <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
                     </div>
                 </div>
@@ -54,16 +57,16 @@
                         <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
                     </div>
                 </div>
-            </div>
+        </div>
 
-            <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
-                <div class="text-center col-4 offset-4">
-                    <h1 class="display-3">Dare to Grow Your Business</h1>
-                    <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
-                </div>
+        <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
+            <div class="text-center col-4 offset-4">
+                <h1 class="display-3">Dare to Grow Your Business</h1>
+                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>
             </div>
+        </div>
 
-        <div class="row">
+        <div class="row text-light">
             <div class="col-lg-4 offset-lg-4">
                 <p class="lead">Talk to us. Let us understand your goals.</p>
                 <p>We don't want to get you easy money. We want to understand your long-term plan - and how we can help
@@ -71,7 +74,7 @@
             </div>
         </div>
 
-        <div class="row mb-5">
+        <div class="row mb-5 text-light">
             <form action="{{ route('contact') }}" method="post" class="col-lg-4 offset-lg-4 needs-validation"
                   novalidate>
                 @csrf
@@ -117,7 +120,7 @@
             </form>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-light">
             <div class="col-lg-2">
                 <p class="lead">Document Your Path</p>
                 <p>What we'll ask about</p>
