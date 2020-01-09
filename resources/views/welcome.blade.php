@@ -10,7 +10,7 @@
         @endif
 
         <div class="row flex-column mb-5 bg-white" id="landing-page-banner">
-            <div class="col-2">
+            <div class="col-md-2">
                 <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"
                      alt="Dare_Logo_AdmiralBlue_RGB.png"/>
             </div>
