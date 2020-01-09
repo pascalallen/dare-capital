@@ -66,68 +66,30 @@
             </div>
         </div>
 
-        <div class="row text-light">
-            <div class="col-lg-4 offset-lg-4">
-                <p class="lead">Talk to us. Let us understand your goals.</p>
-                <p>We don't want to get you easy money. We want to understand your long-term plan - and how we can help
-                    you grow your business. Set up a time to talk to us about your goals today.</p>
+            <div class="row text-light">
+                <div class="col-lg-4 offset-lg-4">
+                    <p class="lead">Talk to us. Let us understand your goals.</p>
+                    <p>We don't want to get you easy money. We want to understand your long-term plan - and how we can
+                        help
+                        you grow your business. Set up a time to talk to us about your goals today.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="row mb-5 text-light">
-            <form action="{{ route('contact') }}" method="post" class="col-lg-4 offset-lg-4 needs-validation"
-                  novalidate>
-                @csrf
-                <div class="form-row">
-                    <div class="form-group col-lg-6">
-                        <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" name="firstName" required>
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" name="lastName" required>
-                    </div>
+            <div class="row mb-5 text-light">
+                <div class="cognito col-lg-4 offset-lg-4">
+                    <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
+                    <script>Cognito.load("forms", {id: "2"});</script>
                 </div>
-                <div class="form-group">
-                    <label for="companyName">Company name</label>
-                    <input type="text" class="form-control" id="companyName" name="companyName" required>
-                </div>
-                <div class="form-group">
-                    <label for="industry">Industry</label>
-                    <input type="text" class="form-control" id="industry" name="industry">
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-lg-6">
-                        <label for="companySize">Company size</label>
-                        <select class="form-control" id="companySize" name="companySize">
-                            <option>0-50</option>
-                            <option>50-150</option>
-                            <option>150-500</option>
-                            <option>500+</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-lg-6">
-                        <label for="phoneNumber">Phone number</label>
-                        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Contact email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <input type="hidden" name="recaptchaToken" id="recaptchaToken" required>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-
-        <div class="row justify-content-center text-light">
-            <div class="col-lg-2">
-                <p class="lead">Document Your Path</p>
-                <p>What we'll ask about</p>
-                <p>No problem is insurmountable</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-            <div class="col-lg-2">
+
+            <div class="row justify-content-center text-light">
+                <div class="col-lg-2">
+                    <p class="lead">Document Your Path</p>
+                    <p>What we'll ask about</p>
+                    <p>No problem is insurmountable</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="col-lg-2">
                 <p class="lead">Plan Your Future</p>
                 <p>What we'll deliver for you</p>
                 <p>Read our success stories</p>
@@ -158,19 +120,6 @@
         });
 
         $(document).ready(function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = $('.needs-validation');
-            // Loop over them and prevent submission
-            const validation = Array.prototype.filter.call(forms, function (form) {
-                $(form).submit(function (event) {
-                    if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    form.classList.add('was-validated');
-                });
-            });
-
             $('.welcome-panel').first().delay(800).animate({
                 opacity: 1,
             }, 500);
