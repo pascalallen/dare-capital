@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mw-100 m-0 mt-5 pb-5">
+    <div class="container mw-100 m-0 pb-5">
 
         @if (session('status'))
             <div class="alert alert-success position-fixed mt-5 col-4 offset-4" style="z-index: 1">
@@ -9,14 +9,8 @@
             </div>
         @endif
 
-        <div class="row flex-column mb-5 bg-white" id="landing-page-banner">
-            <div class="col-md-2">
-                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"
-                     alt="Dare_Logo_AdmiralBlue_RGB.png"/>
-            </div>
-            <div class="text-center text-dark mb-4">
-                <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
-            </div>
+        <div class="row mb-5" id="landing-page-banner">
+            <span class="align-middle ml-2">Dare to build.<br>Dare to grow.<br>Dare to give.</span>
         </div>
 
         <div class="row text-light">
@@ -24,39 +18,33 @@
             <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
                 <div class="col-4">
                     <p class="lead">Understand Your Goals</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                        consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
-                        facere
-                        fugit, id ipsa nihil sequi vel.</p>
+                    <p>What do you want? What do you envision your company, your life, looking like in five years? We
+                        want to help you build your future and grow toward your goals.</p>
                 </div>
                 <div class="col-4">
-                        <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
-                    </div>
+                    <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
                 </div>
-                <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
-                    <div class="col-4">
-                        <img src="//via.placeholder.com/350" class="img-fluid float-left shadow-lg">
-                    </div>
-                    <div class="col-4">
-                        <p class="lead">Document Your Path</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                            consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
-                            facere
-                            fugit, id ipsa nihil sequi vel.</p>
-                    </div>
+            </div>
+            <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+                <div class="col-4">
+                    <img src="//via.placeholder.com/350" class="img-fluid float-left shadow-lg">
                 </div>
-                <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
-                    <div class="col-4">
-                        <p class="lead">Plan Your Future</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores atque
-                            consequuntur cum est nemo possimus quia, quis tempora ullam? Culpa dolorem exercitationem
-                            facere
-                            fugit, id ipsa nihil sequi vel.</p>
-                    </div>
-                    <div class="col-4">
-                        <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
-                    </div>
+                <div class="col-4">
+                    <p class="lead">Document Your Path</p>
+                    <p>We’ll work with you to understand your past, present, and future. Have a detour you’re not proud
+                        of? We can overcome most challenges and plot an achievable path forward.</p>
                 </div>
+            </div>
+            <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+                <div class="col-4">
+                    <p class="lead">Plan Your Future</p>
+                    <p>We’re not just here to help with your cashflow. We’re a resource you can depend on - whether the
+                        help you need is financial - or just an introduction to the right person.</p>
+                </div>
+                <div class="col-4">
+                    <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
+                </div>
+            </div>
         </div>
 
         <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">
@@ -66,23 +54,22 @@
             </div>
         </div>
 
-            <div class="row text-light">
-                <div class="col-lg-4 offset-lg-4">
-                    <p class="lead">Talk to us. Let us understand your goals.</p>
-                    <p>We don't want to get you easy money. We want to understand your long-term plan - and how we can
-                        help
-                        you grow your business. Set up a time to talk to us about your goals today.</p>
-                </div>
+        <div class="row text-light">
+            <div class="col-lg-4 offset-lg-4">
+                <p class="lead">Talk to us. Let us understand your goals.</p>
+                <p>We want to help you grow and build. Leave us your name and number below, and one of our executives
+                    will give you a call as soon as possible.</p>
             </div>
+        </div>
 
-            <div class="row mb-5 text-light">
-                <div class="cognito col-lg-4 offset-lg-4">
-                    <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
-                    <script>Cognito.load("forms", {id: "2"});</script>
-                </div>
+        <div class="row mb-5 text-light">
+            <div class="cognito col-lg-4 offset-lg-4">
+                <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
+                <script>Cognito.load("forms", {id: "2"});</script>
             </div>
+        </div>
 
-            <div class="row justify-content-center text-light">
+        <div class="row justify-content-center text-light">
                 <div class="col-lg-2">
                     <p class="lead">Document Your Path</p>
                     <p>What we'll ask about</p>

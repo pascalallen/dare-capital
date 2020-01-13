@@ -9,7 +9,7 @@
     <meta name="description"
           content="Dare Business Capital | Dare to dream. Dare to build. Dare to grow. Dare to breathe.">
 
-    <title>{{ config('app.name', 'Dare Business Capital') }} | @yield('title', 'Dare to dream.')</title>
+    <title>{{ config('app.name', 'Dare Capital') }} | @yield('title', 'Dare to dream.')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
@@ -27,29 +27,31 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-dark shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="navbar-brand bg-white" id="navbar-logo-link" href="{{ url('/') }}">
+                        <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="navbar-logo"
+                             alt="Dare_Logo_AdmiralBlue_RGB.png"/>
+                    </a>
+                </li>
+            </ul>
 
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('about') }}">{{ __('About Dare Capital') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('Dare To Grow') }}</a>
-                        </li>
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('about') }}">{{ __('About Dare Capital') }}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/') }}">{{ __('Dare To Grow') }}</a>
+                </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('blog') }}">{{ __('Dare To Succeed') }}</a>
                         </li>
@@ -91,14 +93,13 @@
                         @endauth
                     </ul>
                 </div>
-            </div>
         </nav>
 
         <main class="mb-5">
             @yield('content')
         </main>
 
-    <nav class="navbar navbar-expand-md navbar-dark shadow-sm fixed-bottom">
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
         <div class="container">
 
             <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
