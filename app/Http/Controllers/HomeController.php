@@ -71,7 +71,7 @@ class HomeController extends Controller
         /** @var Post $posts */
         $posts = Post::with(['user', 'category'])
             ->get()
-            ->groupBy('category.slug');
+            ->sortByDesc('created_at');
 
         return view('blog', [
             'posts' => $posts,

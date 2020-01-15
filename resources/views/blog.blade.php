@@ -12,56 +12,35 @@
                  class="landing-page-banner-image"/>
         </div>
 
-
         <div class="row justify-content-center text-light">
-
-            <div class="col-md-4">
-                <h1 class="display-5">{{ $posts['case-studies']->first()->category->name }}</h1>
-                @foreach($posts['case-studies'] as $caseStudy)
-                    <div class="row m-5 blog-index-card shadow-lg"
-                         onclick="window.location.href = '/blog/{{ $caseStudy->slug }}';">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img blog-index-image"
-                                 src="{{ asset('storage/images/'.$caseStudy->image) }}"
-                                 alt="{{ $caseStudy->image }}">
-                            <div class="card-img-overlay">
-                                <h1 class="display-5 card-title">{{ $caseStudy->title }}</h1>
-                                <blockquote class="blockquote card-text">
-                                    {!! $caseStudy->body !!}
-                                    <footer
-                                        class="blockquote-footer text-white text-right card-text">{{ $caseStudy->user->name }}
-                                        on {{ date_format($caseStudy->created_at, 'M d, Y') }}</footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-
-            <div class="col-md-4">
-                <h1 class="display-5">{{ $posts['education']->first()->category->name }}</h1>
-                @foreach($posts['education'] as $education)
-                    <div class="row m-5 blog-index-card shadow-lg"
-                         onclick="window.location.href = '/blog/{{ $education->slug }}';">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img blog-index-image"
-                                 src="{{ asset('storage/images/'.$education->image) }}"
-                                 alt="{{ $education->image }}">
-                            <div class="card-img-overlay">
-                                <h1 class="display-5 card-title">{{ $education->title }}</h1>
-                                <blockquote class="blockquote card-text">
-                                    {!! $education->body !!}
-                                    <footer
-                                        class="blockquote-footer text-white text-right card-text">{{ $education->user->name }}
-                                        on {{ date_format($education->created_at, 'M d, Y') }}</footer>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-
+            <h1 class="display-5">Stories</h1>
         </div>
+
+        @foreach($posts as $post)
+            <div class="row m-5 blog-index-card justify-content-center text-light"
+                 onclick="window.location.href = '/blog/{{ $post->slug }}';">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white shadow-lg">
+                        <img class="card-img blog-index-image"
+                             src="{{ asset('storage/images/'.$post->image) }}"
+                             alt="{{ $post->image }}">
+                        <div class="card-img-overlay">
+                            <h1 class="display-5 card-title">{{ $post->title }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote card-text">
+                        {!! $post->body !!}
+                        <footer
+                            class="blockquote-footer text-white text-right card-text">{{ $post->user->name }}
+                            on {{ date_format($post->created_at, 'M d, Y') }}</footer>
+                    </blockquote>
+                </div>
+            </div>
+        @endforeach
+
+    </div>
     </div>
 
 @endsection
