@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-md-4">
                     <blockquote class="blockquote card-text">
-                        {!! $post->body !!}
+                        {!! str_limit($post->body, 1000, ' ... ') !!}
                         <footer
                             class="blockquote-footer text-white text-right card-text">{{ $post->user->name }}
                             on {{ date_format($post->created_at, 'M d, Y') }}</footer>
@@ -41,30 +41,5 @@
         @endforeach
 
     </div>
-    </div>
 
 @endsection
-
-@push('styles')
-    <style>
-        .blog-index-card:hover {
-            opacity: .9;
-        }
-    </style>
-@endpush
-
-@push('scripts')
-    <script type="text/javascript">
-        (function () {
-            'use strict';
-
-            const goToPost = (slug) => {
-                console.log(slug)
-            };
-
-            window.addEventListener('load', function () {
-                $('.carousel').carousel();
-            }, false);
-        })();
-    </script>
-@endpush
