@@ -10,7 +10,7 @@
         @endif
 
         <div class="row mb-5">
-            <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg" class="img-fluid"/>
+            <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg" class="img-fluid w-100"/>
         </div>
 
         <div class="row text-light">
