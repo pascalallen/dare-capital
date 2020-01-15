@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mw-100 m-0 pb-5">
+    <div class="container mw-100 m-0 px-0 pb-5 welcome-container">
 
         @if (session('status'))
             <div class="alert alert-success position-fixed mt-5 col-4 offset-4" style="z-index: 1">
@@ -16,7 +16,7 @@
 
         <div class="row text-light">
             <h1 class="display-5 mx-auto d-block">How We Help</h1>
-            <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+            <div class="row justify-content-center mt-lg-5 p-sm-3 welcome-panel w-100" style="background-color: #a7a9ac">
                 <div class="col-md-4 welcome-panel-text">
                     <p class="lead">Understand Your Goals</p>
                     <p>What do you want? What do you envision your company, your life, looking like in five years? We
@@ -26,7 +26,7 @@
                     <img src="//via.placeholder.com/350" class="img-fluid float-right shadow-lg">
                 </div>
             </div>
-            <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+            <div class="row justify-content-center p-sm-3 welcome-panel w-100" style="background-color: #6d6e71">
                 <div class="col-md-4 desktop-panel-image welcome-panel-image">
                     <img src="//via.placeholder.com/350" class="img-fluid float-left shadow-lg">
                 </div>
@@ -39,7 +39,7 @@
                     <img src="//via.placeholder.com/350" class="img-fluid float-left shadow-lg">
                 </div>
             </div>
-            <div class="row justify-content-center m-lg-5 p-sm-3 welcome-panel">
+            <div class="row justify-content-center mb-lg-5 p-sm-3 welcome-panel w-100" style="background-color: #a7a9ac">
                 <div class="col-md-4 welcome-panel-text">
                     <p class="lead">Plan Your Future</p>
                     <p>We’re not just here to help with your cashflow. We’re a resource you can depend on - whether the
@@ -58,7 +58,7 @@
         {{--            </div>--}}
         {{--        </div>--}}
 
-        <div class="row mb-5">
+        <div class="row mt-lg-5 mb-5">
             <div class="lower-landing-banner"></div>
         </div>
 
@@ -70,7 +70,7 @@
             </div>
         </div>
 
-        <div class="row mb-5 text-light">
+        <div class="row mb-5 text-light" id="apply-now-form">
             <div class="cognito col-lg-4 offset-lg-4">
                 <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
                 <script>Cognito.load("forms", {id: "2"});</script>

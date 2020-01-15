@@ -69,6 +69,9 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="#apply-now-form">{{ __('Apply Now') }}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('about') }}">{{ __('About Us') }}</a>
                 </li>
                 <li class="nav-item">
@@ -162,7 +165,16 @@
             "lid": "414a8fe985",
             "uniqueMethods": true
         })
-    })
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 </script>
 </body>
 </html>

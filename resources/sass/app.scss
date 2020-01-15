@@ -65,6 +65,12 @@
     }
 }
 
+@media (max-width: 576px) {
+    .nav-bottom {
+        display: none;
+    }
+}
+
 .navbar-logo {
     width: 100px;
 
@@ -97,7 +103,7 @@
 }
 
 .lower-landing-banner {
-    background-color: #2a2d78;
+    background-color: #1f3c92;
     height: 250px;
     width: 100%;
     @media (max-width: 576px) {
@@ -105,31 +111,28 @@
     }
 }
 
-.desktop-panel-image {
+.welcome-container {
     @media (max-width: 576px) {
-        display: none;
-    }
-}
+        .welcome-panel-image, .welcome-panel-text {
+            margin: 15px;
+        }
 
-.mobile-panel-image {
+        .welcome-panel-image:last-of-type {
+            margin-bottom: 50px;
+        }
+
+        .desktop-panel-image {
+            display: none;
+        }
+    }
+
     @media (min-width: 577px) {
-        display: none;
+        .mobile-panel-image {
+            display: none;
+        }
     }
 }
 
-@media (max-width: 576px) {
-    .welcome-panel-image, .welcome-panel-text {
-        margin: 15px;
-    }
-
-    .welcome-panel-image:last-of-type {
-        margin-bottom: 50px;
-    }
-
-    .nav-bottom {
-        display: none;
-    }
-}
 .landing-page-banner-image {
     width: 100%;
     @media (max-width: 576px) {
