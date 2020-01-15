@@ -33,14 +33,23 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- Left Side Of Navbar -->
+        <ul class="navbar-nav nav-left">
+            <li class="nav-item bg-light nav-logo" style="width: 50px">
+                <a class="navbar-brand ml-1 mr-1" href="{{ url('/') }}">
+                    <img
+                        src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}"
+                        class="img-fluid"
+                        alt="Dare_Logo_AdmiralBlue_RGB.png"
+                    />
+                </a>
+            </li>
+        </ul>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="navbar-brand bg-white" id="navbar-logo-link" href="{{ url('/') }}">
-                        <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="navbar-logo"
-                             alt="Dare_Logo_AdmiralBlue_RGB.png"/>
-                    </a>
+                <li class="nav-item nav-tagline">
+                    <a class="nav-link" href="{{ url('/') }}">{{ __('Dare to build. Dare to grow. Dare to give.') }}</a>
                 </li>
             </ul>
 
@@ -99,7 +108,7 @@
             @yield('content')
         </main>
 
-    <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm nav-bottom">
         <div class="container">
 
             <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
