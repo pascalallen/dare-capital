@@ -41,12 +41,28 @@
     cursor: pointer;
 }
 
-.dropdown-item:hover {
-    background: none;
-}
+.nav-top, .nav-bottom {
+    background-color: #a7a9ac;
 
-.navbar-dark {
-    background-color: #1f3c92;
+    .nav-link, .dropdown-item {
+        color: #1f3c92;
+    }
+
+    .navbar-toggler {
+        background-color: #1f3c92;
+
+        .fa-caret-down {
+            color: #a7a9ac;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: #a7a9ac;
+    }
+
+    .dropdown-item:hover {
+        background: none;
+    }
 }
 
 .navbar-logo {

@@ -40,15 +40,15 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
+    <nav class="navbar navbar-expand-md nav-top shadow-sm">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon mt-2"><i class="fas fa-caret-down"></i></span>
         </button>
 
         <!-- Left Side Of Navbar -->
         <ul class="navbar-nav nav-left">
-            <li class="nav-item bg-light nav-logo" style="width: 65px">
+            <li class="nav-item nav-logo" style="width: 85px">
                 <a class="navbar-brand ml-1 mr-1" href="{{ url('/') }}">
                     <img
                         src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}"
@@ -69,89 +69,100 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('about') }}">{{ __('About Dare Capital') }}</a>
+                    <a class="nav-link" href="{{ route('about') }}">{{ __('About Us') }}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('blog') }}">{{ __('Stories') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
+                    <a class="nav-link" href="https://www.twitter.com/coledoescapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-facebook"></i></a>
+                    <a class="nav-link" href="https://www.facebook.com/DareBizCapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-linkedin"></i></a>
+                    <a class="nav-link" href=https://www.linkedin.com/company/darecapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 </li>
-                @auth
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
+                <li class="nav-item dropdown">
+                    <a
+                        id="navbarDropdown"
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        @auth{{ Auth::user()->name }}@else Resources @endauth <span class="caret"></span>
+                    </a>
 
-                        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-light" href="{{ route('posts.index') }}">
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        @auth
+                            <a class="dropdown-item" href="{{ route('posts.index') }}">
                                 {{ __('Posts') }}
-                                    </a>
-                                    <a class="dropdown-item text-light" href="{{ route('profile.index') }}">
-                                        {{ __('Profile') }}
-                                    </a>
-                                    <a class="dropdown-item text-light" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                          style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                            </a>
+                            <a class="dropdown-item" href="{{ route('profile.index') }}">
+                                {{ __('Profile') }}
+                            </a>
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
+                        @else
+                            <a class="dropdown-item" href="{{ route('blog') }}">
+                                {{ __('Stories') }}
+                            </a>
+                            <a class="dropdown-item" href="{{ url('/') }}">
+                                {{ __('Broker Referral (Coming soon)') }}
+                            </a>
                         @endauth
-                    </ul>
-                </div>
-        </nav>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <main class="mb-5">
-            @yield('content')
-        </main>
+    <main class="mb-5">
+        @yield('content')
+    </main>
 
-    <nav class="navbar navbar-expand-md navbar-dark shadow-sm nav-bottom">
+    <nav class="navbar navbar-expand-md nav-bottom shadow-sm nav-bottom">
         <div class="container">
-
             <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
-
                 <!-- Center Of Navbar -->
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link">3021 Ridge Drive PMB 110 Rockwall, TX 75032 (512) 886-DARE</a>
+                        <a class="nav-link" href="{{ url('/') }}">3021 Ridge Drive PMB 110 Rockwall, TX 75032 (512) 886-DARE</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-linkedin"></i></a>
-                        </li>
+                        <a class="nav-link" href="https://www.twitter.com/coledoescapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/DareBizCapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/company/darecapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
 </div>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
-        data-dojo-config="usePlainJson: true, isDebug: false"></script>
-<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+    window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
         L.start({
             "baseUrl": "mc.us4.list-manage.com",
             "uuid": "0968335fd5eea8b521b69b7ca",
             "lid": "414a8fe985",
             "uniqueMethods": true
         })
-    })</script>
+    })
+</script>
 </body>
 </html>
