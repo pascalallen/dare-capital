@@ -118,6 +118,12 @@
         display: none;
     }
 }
+.landing-page-banner-image {
+    width: 100%;
+    @media (max-width: 576px) {
+        height: 100px;
+    }
+}
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
