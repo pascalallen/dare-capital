@@ -5,17 +5,13 @@
 @endsection
 
 @section('content')
-    <div class="container mw-100 m-0 mt-5">
+    <div class="container mw-100 m-0 pb-5">
 
-        <div class="row flex-column mb-5 bg-white" id="landing-page-banner">
-            <div class="col-2">
-                <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"
-                     alt="Dare_Logo_AdmiralBlue_RGB.png"/>
-            </div>
-            <div class="text-center text-dark mb-4">
-                <h4>Dare to build.<br>Dare to grow.<br>Dare to give.</h4>
-            </div>
+        <div class="row mb-5">
+            <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg"
+                 class="landing-page-banner-image"/>
         </div>
+
 
         <div class="row justify-content-center text-light">
 
