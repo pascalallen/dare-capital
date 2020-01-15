@@ -9,7 +9,7 @@
     <meta name="description"
           content="Dare Business Capital | Dare to dream. Dare to build. Dare to grow. Dare to breathe.">
 
-    <title>{{ config('app.name', 'Dare Capital') }} | @yield('title', 'Dare to dream.')</title>
+    <title>{{ config('app.name', 'Dare Capital') }} | @yield('title', 'Dare to give.')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
@@ -59,30 +59,27 @@
                     <a class="nav-link" href="{{ route('about') }}">{{ __('About Dare Capital') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/') }}">{{ __('Dare To Grow') }}</a>
+                    <a class="nav-link" href="{{ route('blog') }}">{{ __('Stories') }}</a>
                 </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('blog') }}">{{ __('Dare To Succeed') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        @auth
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-linkedin"></i></a>
+                </li>
+                @auth
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
 
-                                <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item text-light" href="{{ route('posts.index') }}">
-                                        {{ __('Posts') }}
+                        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-light" href="{{ route('posts.index') }}">
+                                {{ __('Posts') }}
                                     </a>
                                     <a class="dropdown-item text-light" href="{{ route('profile.index') }}">
                                         {{ __('Profile') }}
@@ -127,11 +124,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/') }}"><i class="fab fa-linkedin"></i></a>
                         </li>
-                    </ul>
-                </div>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-    </div>
+</div>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+        data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+        L.start({
+            "baseUrl": "mc.us4.list-manage.com",
+            "uuid": "0968335fd5eea8b521b69b7ca",
+            "lid": "414a8fe985",
+            "uniqueMethods": true
+        })
+    })</script>
 </body>
 </html>
