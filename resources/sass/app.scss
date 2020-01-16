@@ -45,10 +45,12 @@
 .nav-top, .nav-bottom {
     font-family: "Nunito", sans-serif;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 1.25rem;
     background-color: #a7a9ac;
 
     .nav-link, .dropdown-item {
+        font-weight: bolder;
+        font-size: 1.25rem;
         color: #1f3c92;
     }
 
@@ -94,8 +96,9 @@
 }
 
 .nav-tagline {
+    font-family: "Playfair Display", serif;
     font-weight: bolder;
-    font-size: 1rem;
+    font-size: 1.25rem;
     @media (min-width: 768px) {
         margin: auto;
         margin-left: 8px;
