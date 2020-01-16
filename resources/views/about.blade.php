@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="container mw-100 m-0 mt-5">
+    <div class="container mw-100 m-0 px-0 pb-5">
         <div class="row flex-column mb-5 bg-white" id="about-page-banner">
             <div class="col-2">
                 <img src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}" class="banner-image img-fluid"
@@ -45,7 +45,7 @@
                         @endif
                     </div>
                     <div class="col-md-4">
-                        <p class="lead">{{ $user->name }}</p>
+                        <h5 class="lead">{{ $user->name }}</h5>
                         <p>{!!  nl2br($user->bio) !!}</p>
                     </div>
                 </div>
