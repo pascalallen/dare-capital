@@ -86,6 +86,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href=https://www.linkedin.com/company/darecapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                 </li>
+                @auth
                 <li class="nav-item dropdown">
                     <a
                         id="navbarDropdown"
@@ -96,11 +97,10 @@
                         aria-haspopup="true"
                         aria-expanded="false"
                     >
-                        @auth{{ Auth::user()->name }}@else Resources @endauth <span class="caret"></span>
+                        {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        @auth
                             <a class="dropdown-item" href="{{ route('posts.index') }}">
                                 {{ __('Posts') }}
                             </a>
@@ -115,16 +115,16 @@
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
-                        @else
-                            <a class="dropdown-item" href="{{ route('blog') }}">
-                                {{ __('Stories') }}
-                            </a>
-                            <a class="dropdown-item" href="{{ url('/') }}">
-                                {{ __('Broker Referral (Coming soon)') }}
-                            </a>
-                        @endauth
+{{--                        @else--}}
+{{--                            <a class="dropdown-item" href="{{ route('blog') }}">--}}
+{{--                                {{ __('Stories') }}--}}
+{{--                            </a>--}}
+{{--                            <a class="dropdown-item" href="{{ url('/') }}">--}}
+{{--                                {{ __('Broker Referral (Coming soon)') }}--}}
+{{--                            </a>--}}
                     </div>
                 </li>
+                @endauth
             </ul>
         </div>
     </nav>
