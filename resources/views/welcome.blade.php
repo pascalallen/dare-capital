@@ -18,7 +18,7 @@
             <h1 class="display-5 mx-auto d-block">How We Help</h1>
             <div class="row justify-content-center mt-lg-5 p-sm-3 welcome-panel w-100" style="background-color: #a7a9ac">
                 <div class="col-md-4 welcome-panel-text">
-                    <p class="lead">Understand Your Goals</p>
+                    <h5 class="lead">Understand Your Goals</h5>
                     <p>What do you want? What do you envision your company, your life, looking like in five years? We
                         want to help you build your future and grow toward your goals.</p>
                 </div>
@@ -31,7 +31,7 @@
                     <img src="//via.placeholder.com/350" class="img-fluid float-left shadow-lg">
                 </div>
                 <div class="col-md-4 welcome-panel-text">
-                    <p class="lead">Document Your Path</p>
+                    <h5 class="lead">Document Your Path</h5>
                     <p>We’ll work with you to understand your past, present, and future. Have a detour you’re not proud
                         of? We can overcome most challenges and plot an achievable path forward.</p>
                 </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="row justify-content-center mb-lg-5 p-sm-3 welcome-panel w-100" style="background-color: #a7a9ac">
                 <div class="col-md-4 welcome-panel-text">
-                    <p class="lead">Plan Your Future</p>
+                    <h5 class="lead">Plan Your Future</h5>
                     <p>We’re not just here to help with your cashflow. We’re a resource you can depend on - whether the
                         help you need is financial - or just an introduction to the right person.</p>
                 </div>
@@ -64,7 +64,7 @@
 
         <div class="row text-light">
             <div class="col-lg-4 offset-lg-4">
-                <p class="lead">Talk to us. Let us understand your goals.</p>
+                <h5 class="lead">Talk to us. Let us understand your goals.</h5>
                 <p>We want to help you grow and build. Leave us your name and number below, and one of our executives
                     will give you a call as soon as possible.</p>
             </div>
