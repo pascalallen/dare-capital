@@ -48,7 +48,7 @@
 
         <!-- Left Side Of Navbar -->
         <ul class="navbar-nav nav-left">
-            <li class="nav-item nav-logo" style="width: 85px">
+            <li class="nav-item nav-logo" style="width: 100px">
                 <a class="navbar-brand ml-1 mr-1" href="{{ url('/') }}">
                     <img
                         src="{{ asset('images/Dare_Logo_AdmiralBlue_RGB.png') }}"
