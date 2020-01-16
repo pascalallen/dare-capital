@@ -19,22 +19,16 @@
             <h1 class="display-5 mx-auto d-block">Our Process</h1>
             <div class="row m-5">
                 <div class="col-md-4 about-column">
-                    <p class="lead">Who we are</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat harum magni maiores
-                        nobis quo reiciendis rem, similique temporibus veniam! Ab laudantium nobis odio perferendis
-                        reprehenderit sequi similique vero voluptates.</p>
+                    <h5 class="lead">Who we are</h5>
+                    <p>We’re the financial partner you’ve always wanted on your team. Dare Capital is a commercial lending company founded on the principle of giving - giving trust with transparency, giving empathy with solutions, and giving support with the promise of a long-term commitment to your success.</p>
                 </div>
                 <div class="col-md-4 about-column">
-                    <p class="lead">Why we do it</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat harum magni maiores
-                        nobis quo reiciendis rem, similique temporibus veniam! Ab laudantium nobis odio perferendis
-                        reprehenderit sequi similique vero voluptates.</p>
+                    <h5 class="lead">Why we do it</h5>
+                    <p>We’re really good at it! We’ve grown thousands of companies, most of whom have worked with us for years. And we know what it takes. We’ve seen that successful businesses are built from a giving mindset, by courageous entrepreneurs who know their vulnerabilities, own their failures, and turn both into their biggest strengths.<br/>We've seen that the best measure of long-term success is in how a business treats its smallest partner. In giving, entrepreneurs foster trust and build relationships. When they dare to grow, we can provide the financial platform and trusted partnership they need to build the future that achieves their goals.</p>
                 </div>
                 <div class="col-md-4 about-column">
-                    <p class="lead">What inspires us</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis fugiat harum magni maiores
-                        nobis quo reiciendis rem, similique temporibus veniam! Ab laudantium nobis odio perferendis
-                        reprehenderit sequi similique vero voluptates.</p>
+                    <h5 class="lead">What we do</h5>
+                    <p>Does your company have outstanding invoices? What about equipment, inventory, or other assets needed to grow your business? Need to cover payroll? That’s where we come in - but that’s just the beginning. We’ll be there to help you grow and scale; we’ll be there when you need advice or an introduction; and when there are problems, we strive to be your first call. We’ll always tell you the truth - good news and bad news - and share everything that informs our decision making.</p>
                 </div>
             </div>
         </div>
