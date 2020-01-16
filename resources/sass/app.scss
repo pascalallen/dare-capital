@@ -45,7 +45,7 @@
 .nav-top, .nav-bottom {
     font-family: "Nunito", sans-serif;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1rem;
     background-color: #a7a9ac;
 
     .nav-link, .dropdown-item {
@@ -95,7 +95,7 @@
 
 .nav-tagline {
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1rem;
     @media (min-width: 768px) {
         margin: auto;
         margin-left: 8px;

@@ -40,7 +40,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md nav-top shadow-sm">
+    <nav class="navbar navbar-expand-md nav-top shadow-sm fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon mt-2"><i class="fas fa-caret-down"></i></span>
@@ -129,7 +129,7 @@
         </div>
     </nav>
 
-    <main class="mb-5">
+    <main class="mb-5" style="margin-top: 87px">
         @yield('content')
     </main>
 
