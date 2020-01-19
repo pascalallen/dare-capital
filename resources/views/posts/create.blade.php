@@ -57,6 +57,9 @@
     <script>
         $(document).ready(function () {
             $('#body').summernote();
+            $('.summernote').summernote({
+                airMode: true
+            });
         });
     </script>
 @endsection

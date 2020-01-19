@@ -70,8 +70,8 @@ class HomeController extends Controller
     {
         /** @var Post $posts */
         $posts = Post::with(['user', 'category'])
-            ->get()
-            ->sortByDesc('created_at');
+            ->orderByDesc('created_at')
+            ->simplePaginate(15);
 
         return view('blog', [
             'posts' => $posts,

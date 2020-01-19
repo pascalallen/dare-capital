@@ -21,6 +21,7 @@ Route::group(['middleware' => 'under-construction'], function () {
     Route::group(['middleware' => 'auth'], static function () {
         Route::get('/home', 'HomeController@index')->name('home');
         Route::resource('posts', 'PostController');
+        Route::delete('posts/{id}/destroy-image', 'PostController@destroyImage')->name('posts.destroy-image');
         Route::put('avatars/{userId}', 'UserAvatarController@update');
         Route::put('profile', 'ProfileController@update')->name('profile.update');
         Route::get('profile', 'ProfileController@index')->name('profile.index');

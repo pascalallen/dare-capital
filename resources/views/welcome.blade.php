@@ -9,7 +9,7 @@
         @endif
         <div class="row mb-4">
             <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg"
-                 class="landing-page-banner-image"/>
+                 class="banner-image"/>
         </div>
         <div class="row text-light">
             <h1 class="display-5 mx-auto d-block">How We Help</h1>
@@ -47,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-5 text-light">
+        <div class="row mb-5 text-light" id="apply-now-form">
             <div class="cognito col-lg-6 offset-lg-3">
                 <h5 class="lead">Talk to us. Let us understand your goals.</h5>
                 <p>We want to help you grow and build. Leave us your name and number below, and one of our executives

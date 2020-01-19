@@ -4,6 +4,14 @@
     Your Posts
 @endsection
 
+@push('styles')
+    <style>
+        .footer {
+            display: none;
+        }
+    </style>
+@endpush
+
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
@@ -55,7 +63,7 @@
                                 </tr>
                             @endforeach
                             </tbody>
-                            {{ $posts->render() }}
+                            {{ $posts->links() }}
                         </table>
                     </div>
             </div>

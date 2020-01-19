@@ -1,5 +1,18 @@
 @extends('layouts.app')
 
+@section('title')
+    Edit Profile
+@endsection
+
+@push('styles')
+    <style>
+        .footer {
+            display: none;
+        }
+    </style>
+@endpush
+
+
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">

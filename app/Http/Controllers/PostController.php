@@ -22,7 +22,8 @@ class PostController extends Controller
     public function index()
     {
         /** @var Post $posts */
-        $posts = Post::simplePaginate(15);
+        $posts = Post::orderByDesc('created_at')
+        ->simplePaginate(15);
 
         return view('posts.index', [
             'posts' => $posts,
@@ -144,8 +145,8 @@ class PostController extends Controller
         /** @var Post $post */
         $post = Post::find($id);
 
-        if (Storage::exists($post->image)) {
-            Storage::delete($post->image);
+        if (Storage::exists("public/images/$post->image")) {
+            Storage::delete("public/images/$post->image");
         }
 
         $post->delete();
@@ -153,6 +154,25 @@ class PostController extends Controller
         return redirect()->back()->with([
             'status',
             "Post \"{$post->title}\" deleted!"
+        ]);
+    }
+
+    public function destroyImage($id)
+    {
+        /** @var Post $post */
+        $post = Post::find($id);
+
+        if (Storage::exists("public/images/$post->image")) {
+            Storage::delete("public/images/$post->image");
+        }
+
+        $post->update([
+            'image' => null,
+        ]);
+
+        return redirect()->back()->with([
+            'status',
+            'Image removed'
         ]);
     }
 }

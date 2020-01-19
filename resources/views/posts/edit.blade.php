@@ -4,10 +4,12 @@
     Edit Post
 @endsection
 
-@push('scripts')
-    <!-- include summernote css/js -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+@push('styles')
+    <style>
+        .footer {
+            display: none;
+        }
+    </style>
 @endpush
 
 @section('content')
@@ -43,23 +45,40 @@
                                     </select>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <img src="{{ asset('storage/images/'.$post->image) }}" alt="{{ $post->image }}"
-                                         class="img-thumbnail">
                                     <label for="image">Image</label>
                                     <input type="file" class="form-control-file" id="image" name="image"
                                            value="{{ $post->image }}">
+                                    <img src="{{ asset('storage/images/'.$post->image) }}" alt="{{ $post->image }}"
+                                         class="img-thumbnail">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="button" class="btn btn-danger" onclick="event.preventDefault();
+                                         document.getElementById('destroy-image-form').submit();">Remove image</button>
+                        </form>
+                        <form id="destroy-image-form" action="{{ route('posts.destroy-image', $post) }}" method="POST" style="display: none;">
+                            @csrf
+                            @method('DELETE')
                         </form>
                     </div>
             </div>
         </div>
     </div>
 
+@endsection
+
+@push('scripts')
+    <!-- include summernote css/js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
     <script>
         $(document).ready(function () {
             $('#body').summernote();
+            const deleteImage = () => {
+                const id =
+                $.ajax(`/posts/${id}/delete-image`)
+            };
         });
     </script>
-@endsection
+@endpush
+

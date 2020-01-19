@@ -9,7 +9,7 @@
 
         <div class="row mb-5">
             <img src="{{ asset('/images/people-sunrise.jpg') }}" alt="quarters-plants.jpg"
-                 class="landing-page-banner-image"/>
+                 class="banner-image"/>
         </div>
 
         <div class="row justify-content-center text-light">
@@ -40,6 +40,7 @@
             </div>
         @endforeach
 
+        {{ $posts->links() }}
     </div>
 
 @endsection
