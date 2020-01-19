@@ -54,9 +54,9 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Update</button>
                             <button type="button" class="btn btn-danger" onclick="event.preventDefault();
-                                         document.getElementById('destroy-image-form').submit();">Remove image</button>
+                                         document.getElementById('destroy-post-image-form').submit();">Remove image</button>
                         </form>
-                        <form id="destroy-image-form" action="{{ route('posts.destroy-image', $post) }}" method="POST" style="display: none;">
+                        <form id="destroy-post-image-form" action="{{ route('posts.destroy-image', $post) }}" method="POST" style="display: none;">
                             @csrf
                             @method('DELETE')
                         </form>
@@ -74,10 +74,6 @@
     <script>
         $(document).ready(function () {
             $('#body').summernote();
-            const deleteImage = () => {
-                const id =
-                $.ajax(`/posts/${id}/delete-image`)
-            };
         });
     </script>
 @endpush

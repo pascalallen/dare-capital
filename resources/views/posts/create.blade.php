@@ -1,11 +1,5 @@
 @extends('layouts.app')
 
-@push('scripts')
-    <!-- include summernote css/js -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
-@endpush
-
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
@@ -53,13 +47,16 @@
             </div>
         </div>
     </div>
+@endsection
 
+@push('scripts')
+    <!-- include summernote css/js -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
     <script>
         $(document).ready(function () {
             $('#body').summernote();
-            $('.summernote').summernote({
-                airMode: true
-            });
         });
     </script>
-@endsection
+@endpush
+

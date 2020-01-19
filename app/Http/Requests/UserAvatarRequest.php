@@ -24,7 +24,7 @@ class UserAvatarRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'avatar' => 'image|max:900',
+            'avatar' => 'image|max:500',
         ];
     }
 }

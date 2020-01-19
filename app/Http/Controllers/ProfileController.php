@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
 
 class ProfileController extends Controller
@@ -45,5 +46,24 @@ class ProfileController extends Controller
         }
 
         return redirect()->back();
+    }
+
+    public function destroyImage()
+    {
+        /** @var User $user */
+        $user = User::find(auth()->id());
+
+        if (Storage::exists("public/avatars/$user->avatar")) {
+            Storage::delete("public/avatars/$user->avatar");
+        }
+
+        $user->update([
+            'avatar' => null,
+        ]);
+
+        return redirect()->back()->with([
+            'status',
+            'Image removed'
+        ]);
     }
 }
