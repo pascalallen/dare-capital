@@ -1,0 +1,33 @@
+.welcome-container {
+    @media (max-width: 576px) {
+        .welcome-panel-image, .welcome-panel-text {
+            margin: 15px;
+        }
+
+        .welcome-panel-image:last-of-type {
+            margin-bottom: 50px;
+        }
+
+        .desktop-panel-image {
+            display: none;
+        }
+    }
+
+    @media (min-width: 577px) {
+        .mobile-panel-image {
+            display: none;
+        }
+    }
+}
+
+.welcome-panel {
+    opacity: 0;
+}
+
+.landing-page-banner-image {
+    width: 100%;
+    @media (max-width: 576px) {
+        height: 100px;
+    }
+}
+

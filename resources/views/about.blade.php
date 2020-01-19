@@ -58,14 +58,6 @@
     </div>
 @endsection
 
-@push('styles')
-    <style>
-        .about-column {
-            opacity: 0;
-        }
-    </style>
-@endpush
-
 @push('scripts')
     <script type="text/javascript">
         $(document).ready(function () {

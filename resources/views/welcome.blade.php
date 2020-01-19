@@ -2,18 +2,15 @@
 
 @section('content')
     <div class="container mw-100 m-0 px-0 pb-5 welcome-container">
-
         @if (session('status'))
             <div class="alert alert-success position-fixed mt-5 col-4 offset-4" style="z-index: 1">
                 {{ session('status') }}
             </div>
         @endif
-
         <div class="row mb-4">
             <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg"
                  class="landing-page-banner-image"/>
         </div>
-
         <div class="row text-light">
             <h1 class="display-5 mx-auto d-block">How We Help</h1>
             <div class="row justify-content-center mt-lg-1 p-sm-3 welcome-panel w-100">
@@ -50,19 +47,7 @@
                 </div>
             </div>
         </div>
-
-        {{--        <div class="row flex-column justify-content-center mb-5" id="get-financing-banner">--}}
-        {{--            <div class="text-center col-4 offset-4">--}}
-        {{--                <h1 class="display-3">Dare to Grow Your Business</h1>--}}
-        {{--                <h4>Dare to dream.<br>Dare to build.<br>Dare to grow.<br>Dare to breathe.</h4>--}}
-        {{--            </div>--}}
-        {{--        </div>--}}
-
-{{--        <div class="row mt-lg-5 mb-5">--}}
-{{--            <div class="lower-landing-banner"></div>--}}
-{{--        </div>--}}
-
-        <div class="row mb-5 text-light" id="apply-now-form">
+        <div class="row mb-5 text-light">
             <div class="cognito col-lg-6 offset-lg-3">
                 <h5 class="lead">Talk to us. Let us understand your goals.</h5>
                 <p>We want to help you grow and build. Leave us your name and number below, and one of our executives
@@ -71,34 +56,9 @@
                 <script>Cognito.load("forms", {id: "2"});</script>
             </div>
         </div>
-
-        {{--        <div class="row justify-content-center text-light">--}}
-        {{--                <div class="col-lg-2">--}}
-        {{--                    <p class="lead">Document Your Path</p>--}}
-        {{--                    <p>What we'll ask about</p>--}}
-        {{--                    <p>No problem is insurmountable</p>--}}
-        {{--                    <a href="#" class="btn btn-primary">Go somewhere</a>--}}
-        {{--                </div>--}}
-        {{--                <div class="col-lg-2">--}}
-        {{--                <p class="lead">Plan Your Future</p>--}}
-        {{--                <p>What we'll deliver for you</p>--}}
-        {{--                <p>Read our success stories</p>--}}
-        {{--                <a href="#" class="btn btn-primary">Go somewhere</a>--}}
-        {{--            </div>--}}
-        {{--        </div>--}}
-
-
     </div>
 
 @endsection
-
-@push('styles')
-    <style>
-        .welcome-panel {
-            opacity: 0;
-        }
-    </style>
-@endpush
 
 @push('scripts')
     {{--    <script src="https://www.google.com/recaptcha/api.js?render=6LcjEsgUAAAAAHnO0KBQyeLpcKE42lta1nj67FU6"></script>--}}
