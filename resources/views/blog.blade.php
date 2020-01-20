@@ -30,20 +30,20 @@
             <div class="row mb-5 blog-index-card justify-content-center text-light"
                  onclick="window.location.href = '/blog/{{ $post->slug }}';">
                 <div class="col-md-4 my-auto">
-                    <div class="card bg-dark text-white shadow-lg">
+                    <div class="card bg-light shadow-lg mb-2">
                         <img class="card-img blog-index-image"
                              src="{{ asset('storage/images/'.$post->image) }}"
                              alt="{{ $post->image }}">
-                        <div class="card-img-overlay">
+                        <div class="card-img-overlay text-dark">
                             <h1 class="display-5 card-title">{{ $post->title }}</h1>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <blockquote class="blockquote card-text">
-                        {!! str_limit($post->body, 1000, ' ... ') !!}
+                        {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
                         <footer
-                            class="blockquote-footer text-white text-right card-text">{{ $post->user->name }}
+                            class="blockquote-footer text-right card-text mt-3">{{ $post->user->name }}
                             on {{ date_format($post->created_at, 'M d, Y') }}</footer>
                     </blockquote>
                 </div>
