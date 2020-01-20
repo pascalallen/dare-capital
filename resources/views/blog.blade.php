@@ -30,7 +30,7 @@
             <div class="row mb-5 blog-index-card justify-content-center text-light"
                  onclick="window.location.href = '/blog/{{ $post->slug }}';">
                 <div class="col-md-4 my-auto">
-                    <div class="card bg-light shadow-lg mb-2">
+                    <div class="card bg-light shadow-lg mb-2 border-0">
                         <img class="card-img blog-index-image"
                              src="{{ asset('storage/images/'.$post->image) }}"
                              alt="{{ $post->image }}">
