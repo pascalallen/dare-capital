@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md footer shadow-sm footer">
+<nav class="navbar navbar-expand-md footer">
     <div class="container">
         <div class="collapse navbar-collapse" id="bottomNavbarSupportedContent">
             <!-- Center Of Navbar -->

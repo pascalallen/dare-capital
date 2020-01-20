@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md nav-top shadow-sm fixed-top">
+<nav class="navbar navbar-expand-md nav-top fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
         <span class="navbar-toggler-icon mt-2"><i class="fas fa-caret-down"></i></span>
