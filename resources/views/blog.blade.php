@@ -22,14 +22,14 @@
                  class="banner-image"/>
         </div>
 
-        <div class="row justify-content-center text-light">
+        <div class="row mb-5 justify-content-center text-light">
             <h1 class="display-5">Stories</h1>
         </div>
 
         @foreach($posts as $post)
-            <div class="row m-5 blog-index-card justify-content-center text-light"
+            <div class="row mb-5 blog-index-card justify-content-center text-light"
                  onclick="window.location.href = '/blog/{{ $post->slug }}';">
-                <div class="col-md-4">
+                <div class="col-md-4 my-auto">
                     <div class="card bg-dark text-white shadow-lg">
                         <img class="card-img blog-index-image"
                              src="{{ asset('storage/images/'.$post->image) }}"

@@ -18,6 +18,11 @@ class Post extends Model
         });
     }
 
+    public function getImageAttribute($value)
+    {
+        return $value ?? 'Dare_Logo_AdmiralBlue_RGB.png';
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
