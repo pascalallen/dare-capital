@@ -43,7 +43,7 @@
         <div id="app">
             @include('includes.navbar')
 
-            <main class="mb-5" style="margin-top: 87px">
+            <main class="mb-5" style="margin-top: 118px">
                 @yield('content')
             </main>
 

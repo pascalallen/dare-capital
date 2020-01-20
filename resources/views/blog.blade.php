@@ -8,7 +8,7 @@
     <div class="container mw-100 m-0 pb-5">
 
         <div class="row mb-5">
-            <img src="{{ asset('/images/people-sunrise.jpg') }}" alt="quarters-plants.jpg"
+            <img src="{{ asset('/images/people-sunrise.jpg') }}" alt="Stories"
                  class="banner-image"/>
         </div>
 
