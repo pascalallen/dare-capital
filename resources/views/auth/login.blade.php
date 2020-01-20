@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+    Login
+@endsection
+
 @push('styles')
     <style>
         .footer {
