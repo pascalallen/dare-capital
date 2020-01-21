@@ -1,8 +1,18 @@
 @extends('layouts.app')
 
 @section('title')
-    Blog
+    {{ $post->title }}
 @endsection
+
+@push('styles')
+    <style>
+        @media (max-width: 576px) {
+            .banner-image {
+                height: 163px;
+            }
+        }
+    </style>
+@endpush
 
 @section('content')
     <div class="container mw-100 m-0 pb-5">
