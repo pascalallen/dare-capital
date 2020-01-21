@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md nav-top fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-        <span class="navbar-toggler-icon mt-2"><i class="fas fa-caret-down"></i></span>
+        <span class="navbar-toggler-icon mt-2"><i class="fas fa-bars"></i></span>
     </button>
 
     <!-- Left Side Of Navbar -->
@@ -42,7 +42,7 @@
                 <a class="nav-link" href="https://www.facebook.com/DareBizCapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href=https://www.linkedin.com/company/darecapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/company/darecapital" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
             </li>
             @auth
                 <li class="nav-item dropdown">

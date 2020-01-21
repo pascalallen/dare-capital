@@ -1,18 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mw-100 m-0 px-0 pb-5 welcome-container">
+    <div class="container mw-100 welcome-container">
+
         @if (session('status'))
             <div class="alert alert-success position-fixed mt-5 col-4 offset-4" style="z-index: 1">
                 {{ session('status') }}
             </div>
         @endif
+
         <div class="row mb-4">
             <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg"
                  class="banner-image"/>
         </div>
+
         <div class="row text-light">
-            <h1 class="display-5 mx-auto d-block">How We Help</h1>
+            <h1 class="display-5 mx-auto">How We Help</h1>
             <div class="row justify-content-center mt-lg-1 p-sm-3 welcome-panel w-100">
                 <div class="col-md-4 welcome-panel-text px-5 py-5" style="background-color: #242363; color: #a7a9ac">
                     <h3>Understand Your Goals</h3>
@@ -59,35 +62,3 @@
     </div>
 
 @endsection
-
-@push('scripts')
-    {{--    <script src="https://www.google.com/recaptcha/api.js?render=6LcjEsgUAAAAAHnO0KBQyeLpcKE42lta1nj67FU6"></script>--}}
-    <script type="text/javascript">
-        // grecaptcha.ready(function () {
-        //     grecaptcha.execute('6LcjEsgUAAAAAHnO0KBQyeLpcKE42lta1nj67FU6').then(function (token) {
-        //         document.getElementById('recaptchaToken').value = token;
-        //     });
-        // });
-
-        $(document).ready(function () {
-            $('.welcome-panel').first().delay(800).animate({
-                opacity: 1,
-            }, 500);
-
-            $(window).scroll(function () {
-                /* Check the location of each desired element */
-                $('.welcome-panel').each(function (i) {
-                    const bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                    const bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    /* If the object is completely visible in the window, fade it it */
-                    if (bottom_of_window > bottom_of_object) {
-                        $(this).animate({
-                            opacity: 1,
-                        }, 500);
-                    }
-                });
-            });
-        });
-    </script>
-@endpush
