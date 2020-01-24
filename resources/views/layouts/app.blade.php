@@ -134,7 +134,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
 "><a>Read More >></a></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="bottom: 100px;">
                     <img src="{{ asset('images/shutterstock_1564227556.png') }}">
                     <div style="
                     margin-top: 25px;
@@ -172,7 +172,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                         bottom: 50px;"><a>Read More >></a></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" style="bottom: 200px;">
                     <img src="{{ asset('images/Vector_Smart_Object.png') }}">
                     <div style="
                     margin-top: 25px;
