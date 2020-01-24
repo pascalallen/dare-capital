@@ -10,7 +10,7 @@
         @endif
 
         <div class="row mb-4">
-            <img src="{{ asset('/images/plants-sprouting.jpg') }}" alt="quarters-plants.jpg"
+            <img src="{{ asset('/images/shutterstock_451729549.png') }}" alt="Austin skyline"
                  class="banner-image"/>
         </div>
 
