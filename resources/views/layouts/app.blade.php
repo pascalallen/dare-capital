@@ -43,7 +43,6 @@
         <div id="app">
             <div style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
                 <div style="float: right; margin-top: 62px;">
-
                 <a style="width: 75px;
                     height: 15px;
                     color: #ffffff;
@@ -213,7 +212,89 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                 </div>
 
             </div>
-{{--            <img src="{{ asset('images/austin-skyline.png') }}" alt="Austin Skyline" class="img-fluid w-100">--}}
+            <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
+            <div style="margin: auto; text-align: center; max-width: 50%">
+                <h1 style="
+                color: #6e748e;
+                font-family: 'Nunito', sans-serif;
+                font-size: 46px;
+                font-weight: 400;
+                margin: auto;
+                text-transform: uppercase;
+                letter-spacing: 3.45px;">INDUSTRIES WE SERVE</h1>
+                <div class="row" style="margin-top: 85px">
+                <div class="col-md-3">
+                    <img src="{{ asset('images/Vector_Smart_Object (1).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">Manufacturing</div>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('images/Vector_Smart_Object (2).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">Wholesale
+                        Distributors</div>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('images/Vector_Smart_Object (3).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">Oil & Gas
+                        Services</div>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{ asset('images/Vector_Smart_Object (4).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">B2B Services</div>
+                </div>
+                </div>
+                <div class="row" style="margin-top: 85px">
+                <div class="col-md-4">
+                    <img src="{{ asset('images/Vector_Smart_Object (5).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">Construction</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ asset('images/Vector_Smart_Object (6).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">Staffing</div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ asset('images/Vector_Smart_Object (7).png') }}">
+                    <div style="
+color: #31364f;
+font-family: 'Nunito', sans-serif;
+font-size: 28px;
+margin-top: 23px;
+font-weight: 300;">IT Services</div>
+                </div>
+                </div>
+                </div>
+                <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
+            </div>
+            {{--            <img src="{{ asset('images/austin-skyline.png') }}" alt="Austin Skyline" class="img-fluid w-100">--}}
 {{--            <img src="{{ asset('/images/shutterstock_451729549.png') }}" alt="Austin skyline" class="Austin skyline" />--}}
 {{--            @include('includes.navbar')--}}
 
