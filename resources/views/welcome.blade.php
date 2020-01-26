@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <img style="margin-top: 62px; margin-left: 90px;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}" alt="Dare Logo">
+    <img style="margin-top: 62px; margin-left: 90px;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
+         alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
     <div style="margin-top: 80px; margin-left: 102px;
                 width: 427px;
                 height: 102px;
@@ -292,6 +293,50 @@ font-weight: 300;">IT Services</div>
               ">“We love that Dare works with you to understand your past, present, and future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable path forward.”</div>
             </div>
         </div>
-
+    </div>
+    <div class="row" style="margin-top: 42px;">
+        <div class="col-md-4 offset-md-4 text-center">
+        <a style="
+        padding: 10px 14px;
+box-shadow: 0 8px 16px 1px rgba(18, 18, 76, 0.14);
+background-color: #3a888b;color: white;border-radius: 50%;  margin-right: 20px"><i class="fas fa-arrow-left"></i></a>
+        <a style="
+        padding: 10px 14px;
+box-shadow: 0 8px 16px 1px rgba(19, 19, 78, 0.14);
+background-color: #03396c;color: white;border-radius: 50%; "><i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
+    <h1 style="
+                color: #6e748e;
+                font-family: 'Nunito', sans-serif;
+                font-size: 46px;
+                font-weight: 400;
+                margin: auto;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 3.45px;">Ready to<br>
+        get financing?</h1>
+    <div class="row justify-content-center" style="margin-top: 68px;letter-spacing: 0.57px;font-size: 19px;line-height: 30px;color: #292c78;">
+        <div class="col-md-4">
+            <span style="
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;">We want to help you grow and build without worrying about cashflow.</span>
+            <span style="
+            font-family: 'Nunito', sans-serif;">Leave us your name and contact information below, and one of our executives will give you a call as soon as possible.</span>
+            <div style="
+            margin-top: 30px;
+            color: #3a888b;
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;"><span style="
+            font-weight: 900;">Phone:</span> 512-886-<span style="
+            font-weight: 900;">DARE</span></div>
+        </div>
+        <div class="col-md-4">
+            <div style="height: 315px; padding: 30px; text-align: left; margin:auto;width: 85%; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+            </div>
+        </div>
     </div>
 @endsection
