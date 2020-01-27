@@ -44,6 +44,7 @@
             <div style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
                 @include('includes.navbar')
                 @yield('content')
+                @include('includes.footer')
             </div>
         </div>
         <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
