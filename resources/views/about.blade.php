@@ -5,8 +5,12 @@
 @endsection
 
 @section('content')
-    <div style="background-image: url('images/2-layers.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
-        <img style="margin-top: 62px; margin-left: 90px;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
+    <div
+        style="background-image: url('images/2-layers.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
+        <img style="margin-top: 4%; margin-left: 5%; width: 15%;
+  max-width: 400px;
+  min-width: 90px;
+  height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
         <div class="row" style="margin: 50px;">
             <div class="col-md-5 mx-auto" style="padding: 50px 40px;

@@ -1,4 +1,4 @@
-<div style="float: right; margin-top: 62px;">
+<div style="float: right; margin-top: 2%;">
     <a style="width: 75px;
                     height: 15px;
                     color: #ffffff;

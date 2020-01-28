@@ -1,10 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <div style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
-        <img style="margin-top: 62px; margin-left: 90px;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
-         alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
-    <div style="margin-top: 80px; margin-left: 102px;
+    <div
+        style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
+        <img style="margin-top: 4%; margin-left: 5%; width: 15%;
+  max-width: 400px;
+  min-width: 90px;
+  height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
+             alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
+        <div style="margin-top: 80px; margin-left: 102px;
                 width: 427px;
                 height: 102px;
                 color: #ffffff;
@@ -12,7 +16,7 @@
                 font-size: 42px;
                 font-weight: 300;
                 line-height: 59px;">
-        Working capital
+            Working capital
         for growing companies.
     </div>
     <div>
