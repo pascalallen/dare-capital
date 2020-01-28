@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <img style="margin-top: 62px; margin-left: 90px;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
+    <div style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
+        <img style="margin-top: 62px; margin-left: 90px;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
          alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
     <div style="margin-top: 80px; margin-left: 102px;
                 width: 427px;

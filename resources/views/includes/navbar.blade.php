@@ -6,7 +6,7 @@
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 30px;
-                    margin-right: 50px;">About Us</a>
+                    margin-right: 50px;" href="{{ route('about') }}">About Us</a>
     <a style="width: 75px;
                     height: 15px;
                     color: #ffffff;
