@@ -60,8 +60,8 @@ background-color: #ffffff;">
                 font-family: 'Nunito', sans-serif;
                 font-size: 2.5vh;
                 font-weight: 300;">
-                    Does your company have outstanding invoices? What about equipment, inventory, or other assets needed
-                    to grow your business? Need to cover payroll? That’s where we come in−but that’s just the beginning.
+                    Do you need working capital to grow? Have outstanding invoices you'd love to get paid off today, not
+                    in 30 or 60 days? We factor accounts receivables and provide lines of credit for growing companies.
                     <span style="font-weight: 900;">We’ll be there to help you grow and scale; we’ll be there when you need advice or an introduction; and when there are problems, we strive to be your first call.</span>
                     We’ll always tell you the truth−good news and bad news−and share everything that informs our
                     decision making.
@@ -105,7 +105,8 @@ background-color: #ffffff;">
             font-weight: 400;
             line-height: 60px;
             text-transform: uppercase;
-            letter-spacing: 3.45px;margin-top: 125px; text-align: center">MEET OUR TEAM</div>
+            letter-spacing: 3.45px;margin-top: 125px; text-align: center">MEET OUR MANAGEMENT
+        </div>
         <div class="row justify-content-center">
             <div class="col-md-4" style="padding: 50px 40px;
             margin: 50px;
