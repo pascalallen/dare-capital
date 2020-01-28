@@ -1,16 +1,5 @@
 <div class="row w-100" style="border-top: 1px solid #c2d1d9; margin-top: 88px">
     <div class="col-md-4" style="border-right: 1px solid #c2d1d9">
-        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-        <script type="text/javascript">
-            window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
-                L.start({
-                    "baseUrl": "mc.us4.list-manage.com",
-                    "uuid": "0968335fd5eea8b521b69b7ca",
-                    "lid": "414a8fe985",
-                    "uniqueMethods": true
-                })
-            });
-        </script>
     </div>
     <div class="col-md-4" style="border-right: 1px solid #c2d1d9">
         <div style="
