@@ -343,4 +343,5 @@ background-color: #03396c;color: white;border-radius: 50%; "><i class="fas fa-ar
         </div>
     </div>
     @include('includes.get-started')
+    @include('includes.footer')
 @endsection

@@ -43,7 +43,6 @@
         <div id="app">
             @include('includes.navbar')
             @yield('content')
-            @include('includes.footer')
         </div>
         <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
         <script type="text/javascript">

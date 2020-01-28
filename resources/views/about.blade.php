@@ -155,5 +155,6 @@ background-color: #ffffff;">
             </div>
         </div>
         @include('includes.get-started')
+        @include('includes.footer')
     </div>
 @endsection
