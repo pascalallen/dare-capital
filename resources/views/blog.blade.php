@@ -105,7 +105,8 @@
             <div style="font-family: 'Nunito', sans-serif;
             font-size: 30px;
             font-weight: 400;
-            color: #6e748e;;
+            color: #6e748e;
+            text-align: center;
             line-height: 34px;">
                 <span style="color: #31364f;font-weight: 900;">Interested to Know More?</span> Check Out Our Blog.
             </div>
