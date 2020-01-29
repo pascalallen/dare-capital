@@ -1,5 +1,19 @@
 @extends('layouts.app')
 
+@push('styles')
+    <style>
+        @media (min-width: 992px) {
+            .dare-to-grow-card {
+                bottom: 100px;
+            }
+
+            .dare-to-give-card {
+                bottom: 200px;
+            }
+        }
+    </style>
+@endpush
+
 @section('content')
     <div
         style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
@@ -31,7 +45,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
         </div>
     </div>
     <div class="row text-center mx-md-5">
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin: 50px auto">
             <img src="{{ asset('images/shutterstock_1085127647.png') }}">
             <div style="
                     margin-top: 25px;
@@ -41,7 +55,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                     font-size: 29px;">DARE TO BUILD
             </div>
             <div
-                style="height: 400px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                style="padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                             color: #011f4b;
                             font-family: 'Nunito', sans-serif;
@@ -58,21 +72,19 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">Have outstanding AR? Want a steadier cashflow? Need a line of credit, but you don’t fit in a bank’s box?
-                    We’re here to help, and we love a challenge.</div>
+                        letter-spacing: 1.05px;">Have outstanding AR? Want a steadier cashflow? Need a line of credit,
+                    but you don’t fit in a bank’s box?
+                    We’re here to help, and we love a challenge.
+                </div>
                 <div style="
-                        width: 113px;
-                        height: 13px;
                         color: #3c8685;
                         font-family: 'Nunito', sans-serif;
                         font-size: 16px;
-                        font-weight: 400;
-                        position: absolute;
-                        bottom: 50px;
+                        font-weight: 400;padding-top: 15px;
 "><a>Read More >></a></div>
             </div>
         </div>
-        <div class="col-md-4" style="bottom: 100px;">
+        <div class="col-md-4 dare-to-grow-card" style="margin: 50px auto">
             <img src="{{ asset('images/shutterstock_1564227556.png') }}">
             <div style="
                     margin-top: 25px;
@@ -82,7 +94,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                     font-size: 29px;">DARE TO GROW
             </div>
             <div
-                style="height: 400px; padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                style="padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                             color: #011f4b;
                             font-family: 'Nunito', sans-serif;
@@ -100,20 +112,18 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">We can help you grow, the right way, at the right pace. With working capital financing, you don’t have to give up equity or mortgage your future−but you do get a financing partner invested in your success.
+                        letter-spacing: 1.05px;">We can help you grow, the right way, at the right pace. With working
+                    capital financing, you don’t have to give up equity or mortgage your future−but you do get a
+                    financing partner invested in your success.
                 </div>
                 <div style="
-                        width: 113px;
-                        height: 13px;
                         color: #3c8685;
                         font-family: 'Nunito', sans-serif;
                         font-size: 16px;
-                        font-weight: 400;
-                        position: absolute;
-                        bottom: 50px;"><a>Read More >></a></div>
+                        font-weight: 400;padding-top: 15px;"><a>Read More >></a></div>
             </div>
         </div>
-        <div class="col-md-4" style="bottom: 200px;">
+        <div class="col-md-4 dare-to-give-card" style="margin: 50px auto">
             <img src="{{ asset('images/Vector_Smart_Object.png') }}">
             <div style="
                     margin-top: 25px;
@@ -123,7 +133,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                     font-size: 29px;">DARE TO GIVE
             </div>
             <div
-                style="min-height: 400px; padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                style="padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                             color: #011f4b;
                             font-family: 'Nunito', sans-serif;
@@ -141,28 +151,26 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">We’ve worked with 1,000+ companies in every stage of growth. We’ve seen it all;
-                    we know all the red flags, and we can usually help with obstacles large and small. </div>
-                <div style="
-                        width: 113px;
-                        height: 13px;
+                        letter-spacing: 1.05px;">We’ve worked with 1,000+ companies in every stage of growth. We’ve seen
+                    it all;
+                    we know all the red flags, and we can usually help with obstacles large and small.
+                </div>
+                <div class="row" style="
                         color: #3c8685;
                         font-family: 'Nunito', sans-serif;
                         font-size: 16px;
-                        font-weight: 400;
-                        position: absolute;
-                        bottom: 50px;
+                        font-weight: 400;padding-top: 15px;padding-left: 15px;
                         "><a>Read More >></a></div>
             </div>
         </div>
 
     </div>
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
-    <div style="margin: auto; text-align: center; max-width: 50%">
+    <div style="text-align: center;">
         <h1 style="
                 color: #6e748e;
                 font-family: 'Nunito', sans-serif;
-                font-size: 46px;
+                font-size: 4vh;
                 font-weight: 400;
                 margin: auto;
                 text-transform: uppercase;
@@ -241,16 +249,16 @@ font-weight: 300;">IT Services</div>
     <h1 style="
                 color: #6e748e;
                 font-family: 'Nunito', sans-serif;
-                font-size: 46px;
+                font-size: 4vh;
                 font-weight: 400;
                 margin: auto;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 3.45px;">WHAT PEOPLE<br>
         ARE SAYING</h1>
-    <div class="row text-center mx-md-5" style="margin-top: 68px;">
+    <div class="row text-center mx-md-5">
 
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin: 25px auto">
             <div
                 style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
@@ -274,7 +282,7 @@ font-weight: 300;">IT Services</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin: 25px auto">
             <div
                 style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
@@ -298,7 +306,7 @@ font-weight: 300;">IT Services</div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" style="margin: 25px auto">
             <div
                 style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
@@ -337,15 +345,16 @@ background-color: #03396c;color: white;border-radius: 50%; "><i class="fas fa-ar
     <h1 style="
                 color: #6e748e;
                 font-family: 'Nunito', sans-serif;
-                font-size: 46px;
+                font-size: 4vh;
                 font-weight: 400;
                 margin: auto;
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 3.45px;">Ready to<br>
         get financing?</h1>
-    <div class="row justify-content-center" style="margin-top: 68px;letter-spacing: 0.57px;font-size: 19px;line-height: 30px;color: #292c78;">
-        <div class="col-md-4">
+    <div class="row justify-content-center my-5"
+         style="letter-spacing: 0.57px;font-size: 19px;line-height: 30px;color: #292c78;">
+        <div class="col-md-4" style="padding: 50px">
             <span style="
             font-family: 'Nunito', sans-serif;
             font-weight: 900;">We want to help you grow and build without worrying about cashflow.</span>
