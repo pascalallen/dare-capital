@@ -25,7 +25,7 @@ background-color: #ffffff;
         font-weight: 400;color: #ffffff;border: #3a888b;
         width: 170px;
 height: 46px;
-        line-height: 30px;">Get Started Now
+        line-height: 30px;" onclick="window.location.href = '{{ route('apply') }}';">Get Started Now
         </button>
     </div>
 </div>
