@@ -30,7 +30,7 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
             </button>
         </div>
     </div>
-    <div class="row text-center" style="margin-left: 90px; margin-right: 90px">
+    <div class="row text-center mx-md-5">
         <div class="col-md-4">
             <img src="{{ asset('images/shutterstock_1085127647.png') }}">
             <div style="
@@ -38,8 +38,10 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                     margin-bottom: 25px;
                     color: #3a888b;
                     font-family: 'Nunito', sans-serif;
-                    font-size: 29px;">DARE TO BUILD</div>
-            <div style="height: 400px; padding: 30px; text-align: left; margin:auto;width: 85%; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                    font-size: 29px;">DARE TO BUILD
+            </div>
+            <div
+                style="height: 400px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                             color: #011f4b;
                             font-family: 'Nunito', sans-serif;
@@ -47,7 +49,8 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                             font-weight: 300;
                             ">A financing
                     relationship you can
-                    <strong style="font-weight: 900">build the future</strong> on.</div>
+                    <strong style="font-weight: 900">build the future</strong> on.
+                </div>
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
@@ -76,8 +79,10 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                     margin-bottom: 25px;
                     color: #3a888b;
                     font-family: 'Nunito', sans-serif;
-                    font-size: 29px;">DARE TO GROW</div>
-            <div style="height: 400px; padding: 30px; text-align:left; margin:auto;width: 85%;box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                    font-size: 29px;">DARE TO GROW
+            </div>
+            <div
+                style="height: 400px; padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                             color: #011f4b;
                             font-family: 'Nunito', sans-serif;
@@ -86,7 +91,8 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                             ">
                     <strong style="font-weight: 900">A partnership</strong> you
                     won’t have to sign
-                    away equity for.*</div>
+                    away equity for.*
+                </div>
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
@@ -114,8 +120,10 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                     margin-bottom: 25px;
                     color: #3a888b;
                     font-family: 'Nunito', sans-serif;
-                    font-size: 29px;">DARE TO GIVE</div>
-            <div style="min-height: 400px; padding: 30px; text-align:left; margin:auto;width: 85%;box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                    font-size: 29px;">DARE TO GIVE
+            </div>
+            <div
+                style="min-height: 400px; padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                             color: #011f4b;
                             font-family: 'Nunito', sans-serif;
@@ -124,7 +132,8 @@ background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nun
                             ">A resource
                     you can rely on
                     for
-                    <strong style="font-weight: 900">more than financing</strong>.</div>
+                    <strong style="font-weight: 900">more than financing</strong>.
+                </div>
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
@@ -239,17 +248,19 @@ font-weight: 300;">IT Services</div>
                 text-transform: uppercase;
                 letter-spacing: 3.45px;">WHAT PEOPLE<br>
         ARE SAYING</h1>
-    <div class="row text-center" style="margin-left: 90px; margin-right: 90px; margin-top: 68px;">
+    <div class="row text-center mx-md-5" style="margin-top: 68px;">
 
         <div class="col-md-4">
-            <div style="height: 315px; padding: 30px; text-align: left; margin:auto;width: 85%; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+            <div
+                style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
                 font-family: 'Nunito', sans-serif;
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 34px;
-                            ">Steven, CEO of CompanyXYZ</div>
+                            ">Steven, CEO of CompanyXYZ
+                </div>
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
@@ -257,18 +268,23 @@ font-weight: 300;">IT Services</div>
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">“We love that Dare works with you to understand your past, present, and future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable path forward.”</div>
+                        letter-spacing: 1.05px;">“We love that Dare works with you to understand your past, present, and
+                    future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable
+                    path forward.”
+                </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div style="height: 315px; padding: 30px; text-align: left; margin:auto;width: 85%; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+            <div
+                style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
                 font-family: 'Nunito', sans-serif;
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 34px;
-                            ">Steven, CEO of CompanyXYZ</div>
+                            ">Steven, CEO of CompanyXYZ
+                </div>
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
@@ -276,18 +292,23 @@ font-weight: 300;">IT Services</div>
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">“We love that Dare works with you to understand your past, present, and future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable path forward.”</div>
+                        letter-spacing: 1.05px;">“We love that Dare works with you to understand your past, present, and
+                    future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable
+                    path forward.”
+                </div>
             </div>
         </div>
         <div class="col-md-4">
-            <div style="height: 315px; padding: 30px; text-align: left; margin:auto;width: 85%; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+            <div
+                style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
                 font-family: 'Nunito', sans-serif;
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 34px;
-                            ">Steven, CEO of CompanyXYZ</div>
+                            ">Steven, CEO of CompanyXYZ
+                </div>
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
@@ -341,10 +362,11 @@ background-color: #03396c;color: white;border-radius: 50%; "><i class="fas fa-ar
             font-weight: 900;">DARE</span></div>
         </div>
         <div class="col-md-4">
-                <div class="cognito" style="padding: 30px;width: 85%; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
-                    <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
-                    <script>Cognito.load("forms", { id: "2" });</script>
-                </div>
+            <div class="cognito"
+                 style="padding: 30px;box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
+                <script>Cognito.load("forms", {id: "2"});</script>
+            </div>
         </div>
     </div>
     @include('includes.get-started')
