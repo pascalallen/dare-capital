@@ -17,17 +17,18 @@
                 font-weight: 300;
                 line-height: 59px;">
             Working capital
-        for growing companies.
-    </div>
-    <div>
-        <button style="width: 185px;
+            for growing companies.
+        </div>
+        <div>
+            <button style="width: 185px;
 height: 50px;
 box-shadow: 0 10px 25px 1px rgba(255, 159, 0, 0.14);
 background-color: #3a888b;margin-left: 105px; margin-top: 68px;font-family: 'Nunito', sans-serif;color: #ffffff;border: #3a888b;
                     font-size: 18px;
                     font-weight: 400;
-                    line-height: 30px;">Apply for Funding</button>
-    </div>
+                    line-height: 30px;" onclick="window.location.href = '{{ route('apply') }}'">Apply for Funding
+            </button>
+        </div>
     </div>
     <div class="row text-center" style="margin-left: 90px; margin-right: 90px">
         <div class="col-md-4">
