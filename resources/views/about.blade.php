@@ -12,7 +12,7 @@
   min-width: 90px;
   height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
-        <div class="row" style="margin: 50px;">
+        <div class="row" style="margin: 50px auto;">
             <div class="col-md-5 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
@@ -40,7 +40,7 @@ background-color: #ffffff;">
                 </div>
             </div>
         </div>
-        <div class="row" style="margin: 50px;">
+        <div class="row" style="margin: 50px auto;">
             <div class="col-md-5 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
@@ -68,7 +68,7 @@ background-color: #ffffff;">
                 </div>
             </div>
         </div>
-        <div class="row" style="margin: 50px;">
+        <div class="row" style="margin: 50px auto;">
             <div class="col-md-5 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
@@ -109,7 +109,7 @@ background-color: #ffffff;">
         </div>
         <div class="row justify-content-center">
             <div class="col-md-4" style="padding: 50px 40px;
-            margin: 50px;
+            margin: 50px 15px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -141,7 +141,7 @@ background-color: #ffffff;">
                 </div>
             </div>
             <div class="col-md-4" style="padding: 50px 40px;
-            margin: 50px;
+            margin: 50px 15px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
