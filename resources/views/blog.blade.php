@@ -101,18 +101,17 @@
                 </div>
             @endif
         @endforeach
-        <div class="row justify-content-center" style="margin-top: 125px;">
-            <div style="font-family: 'Nunito', sans-serif;
-            font-size: 30px;
+        <div class="row text-center" style="margin-top: 125px;">
+            <div class="col-md-8 offset-md-2">
+                <div style="font-family: 'Nunito', sans-serif;
+            font-size: 3.2vh;
             font-weight: 400;
             color: #6e748e;
-            text-align: center;
             line-height: 34px;">
-                <span style="color: #31364f;font-weight: 900;">Interested to Know More?</span> Check Out Our Blog.
-            </div>
-        </div>
-        <div class="row justify-content-center" style="margin-top: 40px;">
-            <button style="
+                    <span style="color: #31364f;font-weight: 900;">Interested to Know More?</span> Check Out Our Blog.
+                </div>
+                <button style="
+                margin-top: 35px;
             width: 170px;
             height: 46px;
             box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
@@ -120,7 +119,8 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 30px;">Visit the Blog
-            </button>
+                </button>
+            </div>
         </div>
         @include('includes.get-started')
         @include('includes.footer')
