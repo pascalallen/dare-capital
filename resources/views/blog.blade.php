@@ -101,6 +101,28 @@
                 </div>
             @endif
         @endforeach
+        <div class="row justify-content-center" style="margin-top: 125px;">
+            <div style="font-family: 'Nunito', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            color: #6e748e;;
+            line-height: 34px;">
+                <span style="color: #31364f;font-weight: 900;">Interested to Know More?</span> Check Out Our Blog.
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 40px;">
+            <button style="
+            width: 170px;
+            height: 46px;
+            box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
+            background-color: #132149;color: #ffffff;font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;">Visit the Blog
+            </button>
+        </div>
+        @include('includes.get-started')
+        @include('includes.footer')
     </div>
 
 @endsection
