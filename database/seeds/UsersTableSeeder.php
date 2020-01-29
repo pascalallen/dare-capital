@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 
 class UsersTableSeeder extends Seeder
 {
@@ -11,23 +14,36 @@ class UsersTableSeeder extends Seeder
      */
     public function run(): void
     {
-        factory(App\User::class)->create([
-            'name' => 'Cole Harmonson',
-            'email' => 'cole@darebizcapital.com',
-            'bio' => 'Cole Harmonson is the CEO and co-founder of Dare Capital, a privately held commercial lending company that provides critical working capital financing to entrepreneurs determined to improve their companies, their lives, and the world. From the very beginning of his career, as a young banker, Cole recognized the transformative value of factoring and asset-based lending to manage cashflow for growing companies without impacting equity. In 1996, he founded State Bank’s factoring and asset based lending business; when they sold their business in 2007, Cole took the leap into entrepreneurship and founded Far West Capital to provide financing to entrepreneurs. For 11 years, Far West Capital provided over $6 billion in financing to grow over 1,000 companies to new heights of success; in 2018, Far West Capital sold to Central Bank of Houston in a successful bank exit.
+        $this->getUpdatedAttributes()->each(static function ($attributes) {
+            DB::table('users')->updateOrInsert([
+                'email' => $attributes['email'],
+            ], $attributes);
+        });
+    }
 
-Dare means “to give” in Latin, and at Dare Capital, Cole is building on the lessons learned at Far West Capital to support entrepreneurs who truly give to all their stakeholders. Cole believes that factoring and asset-based lending, when utilized for growing companies with committed leaders, can and should be the foundation for long-term growth.
-',
-        ]);
-
-        factory(App\User::class)->create([
-            'name' => 'Beth Carpenter',
-            'email' => 'beth@darebizcapital.com',
-        ]);
-
-        factory(App\User::class)->create([
-            'name' => 'Debra',
-            'email' => 'debra@darebizcapital.com',
+    private function getUpdatedAttributes(): Collection
+    {
+        return collect([
+            [
+                'name' => 'Cole Harmonson',
+                'email' => 'cole@darebizcapital.com',
+                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+                'bio' => 'From the very beginning of his career, Cole has recognized the transformative value of factoring and asset-based lending to manage cashflow for growing companies without impacting equity. In 1996, he founded State Bank’s factoring and asset based lending business; when they sold their business in 2007, Cole took the leap into entrepreneurship and founded Far West Capital, which had a successful bank exit in 2018 after supporting hundreds of companies’ growth.',
+                'avatar' => 'cole-harmonson.png',
+                'title' => 'co-founder and CEO',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Debra Zukonik',
+                'email' => 'debra@darebizcapital.com',
+                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+                'bio' => 'Debra Zukonik is a well-known and respected leader in factoring and asset-based lending, with over 30 years’ experience. Her risk-management expertise is unparalleled in the working capital industry. Prior to joining Dare Capital as Chief Credit Officer, she was the President and Partner of Vertex Financial, a leading Texas-based factor, from 2001 to 2017, and served as Chief Credit Officer of BAMFi from 2017 to 2019.',
+                'avatar' => 'debra-zukonik.png',
+                'title' => 'co-founder and CCO',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
         ]);
     }
 }

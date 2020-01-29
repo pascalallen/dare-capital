@@ -115,17 +115,17 @@ border-radius: 4px;
 background-color: #ffffff;">
                 <div class="row">
                     <div class="col">
-                        <img src="{{ asset('images/cole-harmonson-headshot.png') }}">
+                        <img src="{{ asset('storage/avatars/cole-harmonson.png') }}">
                     </div>
                     <div class="col">
-                <div style="
+                        <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 28px;
                 line-height: 35px;
                 font-weight: 900;
                 letter-spacing: 0.84px;">COLE HARMONSON<br>
-                    <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CEO</span>
+                            <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CEO</span>
                 </div>
                     </div>
                 </div>
@@ -147,17 +147,17 @@ border-radius: 4px;
 background-color: #ffffff;">
                 <div class="row">
                     <div class="col">
-                        <img src="{{ asset('images/debra-headshot_sq_web_small.png') }}">
+                        <img src="{{ asset('storage/avatars/debra-zukonik.png') }}">
                     </div>
                     <div class="col">
-                <div style="
+                        <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 28px;
                 line-height: 35px;
                 font-weight: 900;
                 letter-spacing: 0.84px;">DEBRA ZUKONIK<br>
-                    <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CCO</span>
+                            <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CCO</span>
                 </div>
                     </div>
                 </div>
