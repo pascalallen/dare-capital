@@ -102,7 +102,7 @@
             @endif
         @endforeach
         <div class="row text-center" style="margin-top: 125px;">
-            <div class="col-md-8 offset-md-2">
+            <div class="col-md-8 offset-md-2" style="padding-left: 15px;padding-right: 15px">
                 <div style="font-family: 'Nunito', sans-serif;
             font-size: 3.2vh;
             font-weight: 400;
