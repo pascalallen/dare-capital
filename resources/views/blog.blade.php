@@ -14,7 +14,7 @@
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
         @foreach($posts as $post)
             @if ($loop->odd)
-                <div class="row" style="margin: 50px;">
+                <div class="row" style="margin: 50px auto;">
                     <div class="col-md-7 mx-auto" style="padding: 50px 40px;
                 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
                 border-radius: 4px;
@@ -57,7 +57,7 @@
                     </div>
                 </div>
             @else
-                <div class="row" style="margin: 50px;">
+                <div class="row" style="margin: 50px auto;">
                     <div class="col-md-7 mx-auto" style="padding: 50px 40px;
                 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
                 border-radius: 4px;
@@ -101,7 +101,7 @@
                 </div>
             @endif
         @endforeach
-        <div class="row text-center" style="margin-top: 125px;">
+        <div class="row text-center" style="margin: 125px auto;">
             <div class="col-md-8 offset-md-2">
                 <div style="font-family: 'Nunito', sans-serif;
             font-size: 3.2vh;
