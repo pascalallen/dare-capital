@@ -165,6 +165,27 @@ background-color: #ffffff;">
                 </div>
             </div>
         </div>
+        <div class="row text-center" style="margin: 125px auto;">
+            <div class="col-md-8 offset-md-2">
+                <div style="font-family: 'Nunito', sans-serif;
+            font-size: 3.2vh;
+            font-weight: 400;
+            color: #6e748e;
+            line-height: 34px;">
+                    <span style="color: #31364f;font-weight: 900;">Interested to Know More?</span> Check Out Our Blog.
+                </div>
+                <button style="
+                margin-top: 35px;
+            width: 170px;
+            height: 46px;
+            box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
+            background-color: #132149;color: #ffffff;font-family: 'Nunito', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;" onclick="window.location.href = '/blog'">Visit the Blog
+                </button>
+            </div>
+        </div>
         @include('includes.get-started')
         @include('includes.footer')
     </div>
