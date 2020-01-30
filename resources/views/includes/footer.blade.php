@@ -31,21 +31,22 @@ color: #424b5a;" href="https://www.linkedin.com/company/darecapital" target="_bl
 color: #505d68;
 font-family: 'Nunito', sans-serif;
 font-size: 14px;
-font-weight: 400;">Contact</div>
+font-weight: 400;">Contact
+                </div>
         <div style="
 color: #a1aeb7;
 font-family: 'Nunito', sans-serif;
 font-size: 14px;
 font-weight: 400;
-line-height: 21px;">Dare Capital is located in<br>
-            Austin, Texas<br>
-            512-886-DARE</div>
+line-height: 21px;">Dare Capital is located in Austin and Dallas, Texas<br>
+            <a style="color: #a1aeb7;" href="tel:1-512-886-3273">512-886-DARE</a></div>
         <div style="
         margin-top: 50px;
 color: #c5cdd2;
 font-family: 'Nunito', sans-serif;
 font-size: 14px;
 font-weight: 400;
-line-height: 21px;">©2020 DCP  |   All right reserved</div>
+line-height: 21px;">©2020 DCP | All right reserved
+        </div>
     </div>
 </div>

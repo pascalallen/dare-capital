@@ -10,8 +10,9 @@
         <img style="margin-top: 4%; margin-left: 5%; width: 15%;
   max-width: 400px;
   min-width: 90px;
+  cursor: pointer;
   height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
-             alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
+             alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
         @foreach($posts as $post)
             @if ($loop->odd)
                 <div class="row" style="margin: 50px auto;">
@@ -35,7 +36,7 @@
                 font-family: 'Nunito', sans-serif;
                 font-size: 2.5vh;
                 font-weight: 300;">
-                                    <span style="font-weight: 900;">{{ $post->title }}</span>
+                                    <span style="font-weight: 900;">{{ $post->subtitle }}</span>
                                     <br>
                                     {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
                                 </div>

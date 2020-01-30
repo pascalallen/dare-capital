@@ -5,13 +5,20 @@
                     font-size: 18px;
                     font-weight: 400;
                     line-height: 30px;
-                    margin-right: 50px;" href="{{ route('about') }}">About Us</a>
+                    margin-right: 50px;" href="/">Home</a>
     <a style="
                     color: #ffffff;
                     font-family: 'Nunito', sans-serif;
                     font-size: 18px;
                     font-weight: 400;
-                    line-height: 30px;margin-right: 50px;">Resources</a>
+                    line-height: 30px;
+                    margin-right: 50px;" href="{{ route('about') }}">About Us</a>
+    {{--    <a style="--}}
+    {{--                    color: #ffffff;--}}
+    {{--                    font-family: 'Nunito', sans-serif;--}}
+    {{--                    font-size: 18px;--}}
+    {{--                    font-weight: 400;--}}
+    {{--                    line-height: 30px;margin-right: 50px;">Resources</a>--}}
     <a style="
                     color: #ffffff;
                     font-family: 'Nunito', sans-serif;

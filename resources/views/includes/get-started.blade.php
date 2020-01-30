@@ -17,7 +17,7 @@ background-color: #ffffff;
             <span style="
             font-weight: 900;">Get Started Now.</span> <span style="
             font-family: 'Nunito', sans-serif;
-        font-weight: 400;">Apply for Funding.</span>
+        font-weight: 100;" class="mr-md-5">Apply for Funding.</span>
         <button class="get-started-now-button" style="
         box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
         background-color: #3a888b;font-family: 'Nunito', sans-serif;

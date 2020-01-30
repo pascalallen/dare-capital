@@ -10,10 +10,11 @@
         <img style="margin-top: 4%; margin-left: 5%; width: 15%;
   max-width: 400px;
   min-width: 90px;
+  cursor:pointer;
   height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
-             alt="Dare Logo" xmlns="http://www.w3.org/1999/html">
+             alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
         <div class="row" style="margin: 50px auto;">
-            <div class="col-md-5 mx-auto" style="padding: 50px 40px;
+            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -41,7 +42,7 @@ background-color: #ffffff;">
             </div>
         </div>
         <div class="row" style="margin: 50px auto;">
-            <div class="col-md-5 mx-auto" style="padding: 50px 40px;
+            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -69,7 +70,7 @@ background-color: #ffffff;">
             </div>
         </div>
         <div class="row" style="margin: 50px auto;">
-            <div class="col-md-5 mx-auto" style="padding: 50px 40px;
+            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -113,21 +114,16 @@ background-color: #ffffff;">
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
-                <div class="row">
-                    <div class="col">
                         <img src="{{ asset('storage/avatars/cole-harmonson.png') }}">
-                    </div>
-                    <div class="col">
-                        <div style="
+                <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 28px;
                 line-height: 35px;
                 font-weight: 900;
+                display: inline-block;
                 letter-spacing: 0.84px;">COLE HARMONSON<br>
-                            <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CEO</span>
-                </div>
-                    </div>
+                    <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CEO</span>
                 </div>
                 <div style="margin-top: 35px;
                 color: #011f4b;
@@ -145,21 +141,16 @@ background-color: #ffffff;">
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
-                <div class="row">
-                    <div class="col">
                         <img src="{{ asset('storage/avatars/debra-zukonik.png') }}">
-                    </div>
-                    <div class="col">
-                        <div style="
+                <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 28px;
                 line-height: 35px;
                 font-weight: 900;
+                display: inline-block;
                 letter-spacing: 0.84px;">DEBRA ZUKONIK<br>
-                            <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CCO</span>
-                </div>
-                    </div>
+                    <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CCO</span>
                 </div>
                 <div style="margin-top: 35px;
                 color: #011f4b;
