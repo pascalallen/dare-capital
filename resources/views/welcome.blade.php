@@ -240,7 +240,7 @@
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 34px;
-                            ">Steven, CEO of CompanyXYZ
+                            ">Chris Croom, CEO of Aegis Energy Risk
                 </div>
                 <div style="
                         margin-top: 10px;
@@ -249,9 +249,9 @@
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">“We love that Dare works with you to understand your past, present, and
-                    future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable
-                    path forward.”
+                        letter-spacing: 1.05px;">“I have seen firsthand the positive impact Cole on his clients,
+                    assisting them to capitalize on opportunity and reach their maximum potential. There is no one else
+                    I would recommend as strongly.”
                 </div>
             </div>
         </div>
@@ -264,7 +264,7 @@
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 34px;
-                            ">Steven, CEO of CompanyXYZ
+                            ">Carrie Arsenault, Founder of Accountability Resources, LLC
                 </div>
                 <div style="
                         margin-top: 10px;
@@ -273,9 +273,8 @@
                         font-size: 21px;
                         font-weight: 400;
                         line-height: 27px;
-                        letter-spacing: 1.05px;">“We love that Dare works with you to understand your past, present, and
-                    future. Have a detour you’re not proud of? We can overcome most challenges and plot an achievable
-                    path forward.”
+                        letter-spacing: 1.05px;">“Cole will take the time to understand your business, and provide a
+                    solution that is in the best interest of your needs.”
                 </div>
             </div>
         </div>
@@ -288,7 +287,7 @@
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 34px;
-                            ">Steven, CEO of CompanyXYZ
+                            ">Arlen, CEO of design & engineering firm
                 </div>
                 <div style="
                         margin-top: 10px;
@@ -298,8 +297,8 @@
                         font-weight: 400;
                         line-height: 27px;
                         letter-spacing: 1.05px;
-              ">“We love that Dare works with you to understand your past, present, and future. Have a detour you’re not
-                    proud of? We can overcome most challenges and plot an achievable path forward.”
+              ">“Debra always does what she says she’ll do. She’s helped us through rough spots and assisted on critical
+                    decisions. Our relationship has been critical to our company's success.”
                 </div>
             </div>
         </div>
