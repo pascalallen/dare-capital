@@ -190,7 +190,7 @@
     </div>
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100"
          style="position: relative; bottom: 100px">
-    <div class="row text-center">
+    <div class="row text-center ml-0 mr-0">
         <div class="col">
             <h1 class="section-heading">INDUSTRIES WE SERVE</h1>
             <div class="row justify-content-center mt-5">
@@ -318,7 +318,7 @@
     {{--    </div>--}}
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
     <h1 class="section-heading">Ready to<br>get financing?</h1>
-    <div class="row justify-content-center my-5"
+    <div class="row justify-content-center my-5 ml-0 mr-0"
          style="letter-spacing: 0.57px;font-size: 19px;line-height: 30px;color: #292c78;">
         <div class="col-md-4" style="padding: 50px">
             <span style="
