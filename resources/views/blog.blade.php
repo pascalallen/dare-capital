@@ -25,7 +25,7 @@
                                 <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 3vh;
+                font-size: 4vh;
                 font-weight: 900;
                 line-height: 30px;
                 text-transform: uppercase;
