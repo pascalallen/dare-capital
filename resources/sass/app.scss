@@ -7,18 +7,11 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import 'navbar';
-@import 'footer';
-@import 'welcome';
-@import 'about';
-@import 'blog';
-
-.banner-image {
-    width: 100%;
-    @media (max-width: 576px) {
-        height: 105px;
-    }
-}
+//@import 'navbar';
+//@import 'footer';
+//@import 'welcome';
+//@import 'about';
+//@import 'blog';
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
