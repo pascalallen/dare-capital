@@ -1,39 +1,32 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156288410-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+<head>
+    {{--Meta data--}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description"
+          content="Dare Business Capital | Dare to dream. Dare to build. Dare to grow. Dare to breathe.">
+    <title>{{ config('app.name', 'Dare Capital') }} | @yield('title', 'Dare to give.')</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156288410-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-            gtag('js', new Date());
-
+        gtag('js', new Date());
             gtag('config', 'UA-156288410-1');
         </script>
-
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="description"
-              content="Dare Business Capital | Dare to dream. Dare to build. Dare to grow. Dare to breathe.">
-        <title>{{ config('app.name', 'Dare Capital') }} | @yield('title', 'Dare to give.')</title>
-
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
-
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
         {{-- Font Awesome --}}
         <script src="https://kit.fontawesome.com/b05f5595ec.js" crossorigin="anonymous"></script>
         @stack('styles')

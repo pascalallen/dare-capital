@@ -14,7 +14,7 @@
 Route::group(['middleware' => 'under-construction'], function () {
     Route::get('/', static function () {
         return view('welcome');
-    });
+    })->name('welcome');
 
     Auth::routes(['register' => false]);
 
