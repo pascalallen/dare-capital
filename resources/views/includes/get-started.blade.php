@@ -5,7 +5,7 @@
         }
     }
 </style>
-<div class="row text-center" style="margin-top: 75px;">
+<div class="row text-center ml-0 mr-0" style="margin-top: 75px;">
     <div class="col-md-8 offset-md-2" style="
         padding: 60px;
 box-shadow: 0 8px 40px rgba(18, 18, 76, 0.14);

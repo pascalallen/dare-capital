@@ -108,13 +108,13 @@ background-color: #ffffff;">
             text-transform: uppercase;
             letter-spacing: 3.45px;margin-top: 125px; text-align: center">MEET OUR MANAGEMENT
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mr-0 ml-0">
             <div class="col-md-4" style="padding: 50px 40px;
             margin: 50px 15px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
-                        <img src="{{ asset('storage/avatars/cole-harmonson.png') }}">
+                <img src="{{ asset('storage/avatars/cole-harmonson.png') }}">
                 <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
