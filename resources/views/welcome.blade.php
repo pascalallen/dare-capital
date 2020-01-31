@@ -3,6 +3,10 @@
 @push('styles')
     <style>
         @media (min-width: 992px) {
+            .dare-to-build-card {
+                top: 100px;
+            }
+
             .dare-to-grow-card {
                 bottom: 100px;
             }
@@ -12,11 +16,18 @@
             }
         }
 
+        @media (max-width: 576px) {
+            .apply-for-funding-container {
+                display: none;
+            }
+
+        }
+
         .section-heading {
             color: #6e748e;
             font-family: 'Nunito', sans-serif;
             font-size: 42px;
-            font-weight: 400;
+            font-weight: 700;
             text-transform: uppercase;
             text-align: center;
         }
@@ -25,7 +36,6 @@
             color: #31364f;
             font-family: 'Nunito', sans-serif;
             font-size: 20px;
-            font-weight: 300;
         }
     </style>
 @endpush
@@ -40,11 +50,10 @@
           cursor: pointer;
           height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
                  alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
-            <div style="margin-top: 80px;
+            <div class="apply-for-funding-container" style="margin-top: 80px;
                         color: #ffffff;
                             font-family: 'Nunito', sans-serif;
                         font-size: 42px;
-                        font-weight: 300;
                         line-height: 59px;">
                 Working capital<br>
                 for growing companies.<br>
@@ -62,12 +71,13 @@
         </div>
     </div>
     <div class="row text-center mx-md-5">
-        <div class="col-md-4" style="margin: 50px auto">
+        <div class="col-md-4 dare-to-build-card" style="margin: 50px auto">
             <img src="{{ asset('images/shutterstock_1085127647.png') }}">
             <div style="
                             margin-top: 25px;
                             margin-bottom: 25px;
                             color: #3a888b;
+                            font-weight: 800;
                             font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO BUILD
             </div>
@@ -78,17 +88,15 @@
                                     font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
-                                    font-weight: 100;
                                     ">A financing
                     relationship you can
-                    <strong style="font-weight: 900">build the future</strong> on.
+                    <strong style="font-weight: 800">build the future</strong> on.
                 </div>
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
                                 font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
-                                font-weight: 400;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">Have outstanding AR? Want a steadier cashflow? Need a line of
                     credit,
@@ -109,6 +117,7 @@
                             margin-top: 25px;
                             margin-bottom: 25px;
                             color: #3a888b;
+                            font-weight: 800;
                             font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO GROW
             </div>
@@ -119,9 +128,8 @@
                                     font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
-                                    font-weight: 300;
                                     ">
-                    <strong style="font-weight: 900">A partnership</strong> you
+                    <strong style="font-weight: 800">A partnership</strong> you
                     won’t have to sign
                     away equity for.
                 </div>
@@ -130,7 +138,6 @@
                                 color: #6e748e;
                                 font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
-                                font-weight: 400;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">We can help you grow, the right way, at the right pace. With
                     working
@@ -150,6 +157,7 @@
                             margin-top: 25px;
                             margin-bottom: 25px;
                             color: #3a888b;
+                            font-weight: 800;
                             font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO GIVE
             </div>
@@ -160,18 +168,16 @@
                                     font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
-                                    font-weight: 300;
                                     ">A resource
                     you can rely on
                     for
-                    <strong style="font-weight: 900">more than financing</strong>.
+                    <strong style="font-weight: 800">more than financing</strong>.
                 </div>
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
                                 font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
-                                font-weight: 400;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">We’ve worked with 1,000+ companies in every stage of growth.
                     We’ve seen
@@ -188,9 +194,8 @@
         </div>
 
     </div>
-    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100"
-         style="position: relative; bottom: 100px">
-    <div class="row text-center ml-0 mr-0">
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
+    <div class="row text-center ml-0 mr-0 mt-0">
         <div class="col">
             <h1 class="section-heading">INDUSTRIES WE SERVE</h1>
             <div class="row justify-content-center mt-5">
@@ -203,8 +208,8 @@
                     <figcaption class="figure-caption text-center">Staffing</figcaption>
                 </figure>
                 <figure class="figure mx-5">
-                    <img src="{{ asset('images/Vector_Smart_Object (3).png') }}" class="figure-img img-fluid" alt="">
-                    <figcaption class="figure-caption text-center">Oil & Gas<br>Services</figcaption>
+                    <img src="{{ asset('images/Vector_Smart_Object (5).png') }}" class="figure-img img-fluid" alt="">
+                    <figcaption class="figure-caption text-center">Construction</figcaption>
                 </figure>
                 <figure class="figure mx-5">
                     <img src="{{ asset('images/Vector_Smart_Object (4).png') }}" class="figure-img img-fluid" alt="">
@@ -213,8 +218,8 @@
             </div>
             <div class="row justify-content-center">
                 <figure class="figure mx-5">
-                    <img src="{{ asset('images/Vector_Smart_Object (5).png') }}" class="figure-img img-fluid" alt="">
-                    <figcaption class="figure-caption text-center">Construction</figcaption>
+                    <img src="{{ asset('images/Vector_Smart_Object (3).png') }}" class="figure-img img-fluid" alt="">
+                    <figcaption class="figure-caption text-center">Oil & Gas<br>Services</figcaption>
                 </figure>
                 <figure class="figure mx-5">
                     <img src="{{ asset('images/Vector_Smart_Object (2).png') }}" class="figure-img img-fluid" alt="">
@@ -233,12 +238,12 @@
 
         <div class="col-md-4" style="margin: 25px auto">
             <div
-                style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
                 font-family: 'Nunito', sans-serif;
-                font-size: 20px;
-                font-weight: 400;
+                font-size: 21px;
+                font-weight: 700;
                 line-height: 34px;
                             ">Chris Croom, CEO of Aegis Energy Risk
                 </div>
@@ -247,7 +252,6 @@
                         color: #6e748e;
                         font-family: 'Nunito', sans-serif;
                         font-size: 21px;
-                        font-weight: 400;
                         line-height: 27px;
                         letter-spacing: 1.05px;">“I have seen firsthand the positive impact Cole on his clients,
                     assisting them to capitalize on opportunity and reach their maximum potential. There is no one else
@@ -257,12 +261,12 @@
         </div>
         <div class="col-md-4" style="margin: 25px auto">
             <div
-                style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
                 font-family: 'Nunito', sans-serif;
-                font-size: 20px;
-                font-weight: 400;
+                font-size: 21px;
+                font-weight: 700;
                 line-height: 34px;
                             ">Carrie Arsenault, Founder of Accountability Resources, LLC
                 </div>
@@ -271,7 +275,6 @@
                         color: #6e748e;
                         font-family: 'Nunito', sans-serif;
                         font-size: 21px;
-                        font-weight: 400;
                         line-height: 27px;
                         letter-spacing: 1.05px;">“Cole will take the time to understand your business, and provide a
                     solution that is in the best interest of your needs.”
@@ -280,12 +283,12 @@
         </div>
         <div class="col-md-4" style="margin: 25px auto">
             <div
-                style="height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
+                style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
                 font-family: 'Nunito', sans-serif;
-                font-size: 20px;
-                font-weight: 400;
+                font-size: 21px;
+                font-weight: 700;
                 line-height: 34px;
                             ">Arlen, CEO of design & engineering firm
                 </div>
@@ -294,7 +297,6 @@
                         color: #6e748e;
                         font-family: 'Nunito', sans-serif;
                         font-size: 21px;
-                        font-weight: 400;
                         line-height: 27px;
                         letter-spacing: 1.05px;
               ">“Debra always does what she says she’ll do. She’s helped us through rough spots and assisted on critical
@@ -322,7 +324,7 @@
         <div class="col-md-4" style="padding: 50px">
             <span style="
             font-family: 'Nunito', sans-serif;
-            font-weight: 900;">We want to help you grow and build without worrying about cashflow.</span>
+            font-weight: 800;">We want to help you grow and build without worrying about cashflow.</span>
             <br>
             <span style="
             font-family: 'Nunito', sans-serif;">Leave us your name and contact information below, and one of our executives will give you a call as soon as possible.</span>
@@ -331,10 +333,9 @@
             color: #3a888b;
             font-family: 'Nunito', sans-serif;
             font-size: 20px;
-            font-weight: 400;
             line-height: 30px;"><span style="
-            font-weight: 900;">Phone:</span> <a style="color: #3a888b;" href="tel:1-512-886-3273">512-886-<span style="
-            font-weight: 900;">DARE</span></a></div>
+            font-weight: 800;">Phone:</span> <a style="color: #3a888b;" href="tel:1-512-886-3273">512-886-<span style="
+            font-weight: 800;">DARE</span></a></div>
         </div>
         <div class="col-md-4">
             <div id="contact-us-form" class="cognito"
@@ -344,6 +345,5 @@
             </div>
         </div>
     </div>
-    @include('includes.get-started')
     @include('includes.footer')
 @endsection
