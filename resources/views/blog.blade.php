@@ -11,6 +11,7 @@
   max-width: 400px;
   min-width: 90px;
   cursor: pointer;
+  margin-bottom: 20%;
   height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
         @foreach($posts as $post)
