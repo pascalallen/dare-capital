@@ -4,42 +4,36 @@
     {{ $post->title }}
 @endsection
 
-@push('styles')
-    <style>
-        @media (max-width: 576px) {
-            .banner-image {
-                height: 163px;
-            }
-        }
-    </style>
-@endpush
-
 @section('content')
-    <div class="container mw-100 m-0 pb-5">
-
-        <div class="row mb-5">
-            <img src="{{ asset('/images/people-sunrise.jpg') }}" alt="Stories"
-                 class="banner-image"/>
-        </div>
-
-        <div class="row mb-5 justify-content-center text-light">
-            <div class="col-md-4 my-auto">
-                <div class="card bg-light shadow-lg mb-2 border-0">
-                    <img class="card-img blog-index-image"
-                         src="{{ asset('storage/images/'.$post->image) }}"
-                         alt="{{ $post->image }}">
-                    <div class="card-img-overlay text-dark">
-                        <h1 class="display-5 card-title">{{ $post->title }}</h1>
-                    </div>
+    <div
+        style="background-image: url({{  asset('images/2-layers.png') }}); background-repeat: no-repeat; background-size: cover; height: 55vw;">
+        <img style="margin-top: 4%; margin-left: 5%; width: 15%;
+  max-width: 400px;
+  min-width: 90px;
+  cursor:pointer;
+  height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
+             alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
+        <div class="row" style="margin: 50px auto;">
+            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
+box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
+border-radius: 4px;
+background-color: #ffffff;z-index: 1">
+                <img class="img-fluid"
+                     src="{{ asset('storage/images/'.$post->image) }}"
+                     alt="{{ $post->image }}">
+                <div style="
+                color: #3a888b;
+                font-family: 'Nunito', sans-serif;
+                font-size: 42px;
+                font-weight: 800;
+                text-transform: uppercase;">{{ $post->title }}</div>
+                <div style="font-size: 28px">
+                    <span style="font-weight: 700;">{{ $post->subtitle }}</span>
+                    <div style="margin-top: 15px">{!! $post->body !!}</div>
                 </div>
-                <blockquote class="blockquote card-text">
-                    {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
-                    <footer
-                        class="blockquote-footer text-right card-text mt-3">{{ $post->user->name }}
-                        on {{ date_format($post->created_at, 'M d, Y') }}</footer>
-                </blockquote>
             </div>
         </div>
-
+        @include('includes.get-started')
+        @include('includes.footer')
     </div>
 @endsection

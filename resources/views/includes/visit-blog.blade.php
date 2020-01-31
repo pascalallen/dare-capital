@@ -1,7 +1,7 @@
 <style>
-        .get-started-now-button {
-            margin-top: 25px;
-        }
+    .visit-blog-button {
+        margin-top: 25px;
+    }
 </style>
 <div class="row text-center ml-0 mr-0" style="margin-top: 75px;">
     <div class="col-md-8 offset-md-2" style="
@@ -13,16 +13,16 @@ background-color: #ffffff;
             font-size: 30px;
             line-height: 34px;">
             <span style="
-            font-weight: 800;">Get Started Now.</span> <span style="
-            font-family: 'Nunito', sans-serif;" class="mr-md-5">Apply for Funding.</span>
+            font-weight: 800;">Interested to Know More?</span> <span style="
+            font-family: 'Nunito', sans-serif;" class="mr-md-5">Check Out Our Blog.</span>
         <br>
-        <button class="get-started-now-button" style="
+        <button class="visit-blog-button" style="
         box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
         background-color: #3a888b;font-family: 'Nunito', sans-serif;
         font-size: 16px;color: #ffffff;border: #3a888b;
         width: 170px;
 height: 46px;
-        line-height: 30px;" onclick="window.location.href = '{{ route('apply') }}';">Get Started Now
+        line-height: 30px;" onclick="window.location.href = '{{ route('blog') }}';">Visit the Blog
         </button>
     </div>
 </div>

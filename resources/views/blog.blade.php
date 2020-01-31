@@ -25,8 +25,8 @@
                                 <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 4vh;
-                font-weight: 900;
+                font-size: 42px;
+                font-weight: 700;
                 line-height: 30px;
                 text-transform: uppercase;
                 letter-spacing: 0.87px;">{{ $post->title }}</div>
@@ -34,9 +34,8 @@
                 margin-top: 15px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
-                font-weight: 300;">
-                                    <span style="font-weight: 900;">{{ $post->subtitle }}</span>
+                font-size: 28px;">
+                                    <span style="font-weight: 700;">{{ $post->subtitle }}</span>
                                     <br>
                                     {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
                                 </div>
@@ -71,8 +70,8 @@
                                 <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 3vh;
-                font-weight: 900;
+                font-size: 42px;
+                font-weight: 700;
                 line-height: 30px;
                 text-transform: uppercase;
                 letter-spacing: 0.87px;">{{ $post->title }}</div>
@@ -80,9 +79,8 @@
                 margin-top: 15px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
-                font-weight: 300;">
-                                    <span style="font-weight: 900;">{{ $post->title }}</span>
+                font-size: 28px;">
+                                    <span style="font-weight: 700;">{{ $post->subtitle }}</span>
                                     <br>
                                     {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
                                 </div>
