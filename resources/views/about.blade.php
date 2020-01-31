@@ -13,8 +13,8 @@
   cursor:pointer;
   height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
-        <div class="row" style="margin: 50px auto;">
-            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
+        <div class="row" style="margin: 50px auto; margin-top: 35%;">
+            <div class="col-md-8 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -31,18 +31,20 @@ background-color: #ffffff;">
                 margin-top: 25px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
+                font-size: 21px;
                 font-weight: 300;">
                     <span style="
                 font-weight: 900;">We’re the financial partner you’ve always wanted on your team. </span>
-                    Dare Capital is a commercial lending company founded on the principle of giving−giving trust with
-                    transparency, giving empathy with solutions, and giving support with the promise of a long-term
-                    commitment to your success.
+                    We have a combined 60 years of experience helping entrepreneurs build and grow; we’ve lent over 6
+                    million dollars to fund working capital needs. Obstacles? Complications? You name it, we’ve seen it
+                    - and overcome it. We love forming long-term relationships with growing companies; we especially
+                    love getting to know you, your goals, and your needs. We’ll support your success as long as you need
+                    us.
                 </div>
             </div>
         </div>
         <div class="row" style="margin: 50px auto;">
-            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
+            <div class="col-md-8 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -59,7 +61,7 @@ background-color: #ffffff;">
                 margin-top: 25px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
+                font-size: 21px;
                 font-weight: 300;">
                     Do you need working capital to grow? Have outstanding invoices you'd love to get paid off today, not
                     in 30 or 60 days? We factor accounts receivables and provide lines of credit for growing companies.
@@ -70,7 +72,7 @@ background-color: #ffffff;">
             </div>
         </div>
         <div class="row" style="margin: 50px auto;">
-            <div class="col-md-6 mx-auto" style="padding: 50px 40px;
+            <div class="col-md-8 mx-auto" style="padding: 50px 40px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
@@ -87,7 +89,7 @@ background-color: #ffffff;">
                 margin-top: 25px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
+                font-size: 21px;
                 font-weight: 300;">
                     <span style="font-weight: 900;">We’re really good at it! We’ve grown thousands of companies, most of whom have worked with us for years. And we know what it takes.</span>
                     We’ve seen that successful businesses are built from a giving mindset, by courageous entrepreneurs
@@ -119,16 +121,17 @@ background-color: #ffffff;">
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 28px;
-                line-height: 35px;
+                line-height: 25px;
+                margin-top: 15px;
                 font-weight: 900;
                 display: inline-block;
                 letter-spacing: 0.84px;">COLE HARMONSON<br>
                     <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CEO</span>
                 </div>
-                <div style="margin-top: 15px;
+                <div style="margin-top: 5px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
+                font-size: 18px;
                 font-weight: 400;">From the very beginning of his career, Cole has recognized the transformative value
                     of factoring and asset-based lending to manage cashflow for growing companies without impacting
                     equity. In 1996, he founded State Bank’s factoring and asset based lending business; when they sold
@@ -146,16 +149,17 @@ background-color: #ffffff;">
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 28px;
-                line-height: 35px;
+                line-height: 25px;
+                margin-top: 15px;
                 font-weight: 900;
                 display: inline-block;
                 letter-spacing: 0.84px;">DEBRA ZUKONIK<br>
                     <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CCO</span>
                 </div>
-                <div style="margin-top: 15px;
+                <div style="margin-top: 5px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
-                font-size: 2.5vh;
+                font-size: 18px;
                 font-weight: 400;">Debra Zukonik is a well-known and respected leader in factoring and asset-based
                     lending, with over 30 years’ experience. Her risk-management expertise is unparalleled in the
                     working capital industry. Prior to joining Dare Capital as Chief Credit Officer, she was the
