@@ -20,9 +20,7 @@
                 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
                 border-radius: 4px;
                 background-color: #ffffff;">
-                        <div class="row">
-                            <div class="col">
-                                <div style="
+                        <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 42px;
@@ -30,6 +28,8 @@
                 line-height: 30px;
                 text-transform: uppercase;
                 letter-spacing: 0.87px;">{{ $post->title }}</div>
+                        <div class="row">
+                            <div class="col">
                                 <div style="
                 margin-top: 15px;
                 color: #011f4b;
@@ -62,12 +62,7 @@
                 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
                 border-radius: 4px;
                 background-color: #ffffff;">
-                        <div class="row">
-                            <div class="col"><img class="img-thumbnail" style="min-width: 200px;"
-                                                  src="{{ asset('storage/images/'.$post->image) }}"
-                                                  alt="{{ $post->image }}"></div>
-                            <div class="col">
-                                <div style="
+                        <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 42px;
@@ -75,6 +70,11 @@
                 line-height: 30px;
                 text-transform: uppercase;
                 letter-spacing: 0.87px;">{{ $post->title }}</div>
+                        <div class="row">
+                            <div class="col"><img class="img-thumbnail" style="min-width: 200px;"
+                                                  src="{{ asset('storage/images/'.$post->image) }}"
+                                                  alt="{{ $post->image }}"></div>
+                            <div class="col">
                                 <div style="
                 margin-top: 15px;
                 color: #011f4b;
