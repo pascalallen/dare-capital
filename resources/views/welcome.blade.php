@@ -42,7 +42,7 @@
 
 @section('content')
     <div
-        style="background-image: url('images/austin-skyline.png'); background-repeat: no-repeat; background-size: cover; height: 55vw;">
+        style="background-image: url({{ asset('images/homepage_header_pic_lined_web.png') }}); background-repeat: no-repeat; background-size: cover; height: 55vw;">
         <div style="padding-top: 4%; margin-left: 5%;">
             <img style=" width: 15%;
           max-width: 400px;
