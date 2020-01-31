@@ -36,7 +36,7 @@ background-color: #ffffff;">
                     <span style="
                 font-weight: 900;">We’re the financial partner you’ve always wanted on your team. </span>
                     We have a combined 60 years of experience helping entrepreneurs build and grow; we’ve lent over 6
-                    million dollars to fund working capital needs. Obstacles? Complications? You name it, we’ve seen it
+                    billion dollars to fund working capital needs. Obstacles? Complications? You name it, we’ve seen it
                     - and overcome it. We love forming long-term relationships with growing companies; we especially
                     love getting to know you, your goals, and your needs. We’ll support your success as long as you need
                     us.
