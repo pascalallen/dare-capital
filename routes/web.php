@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['middleware' => 'under-construction'], function () {
+//Route::group(['middleware' => 'under-construction'], function () {
     Route::get('/', static function () {
         return view('welcome');
     })->name('welcome');
@@ -31,7 +31,7 @@ Route::group(['middleware' => 'under-construction'], function () {
     Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/blog', 'HomeController@blog')->name('blog');
     Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');
-});
+//});
 
 Route::get('/apply', static function () {
     return view('apply');
