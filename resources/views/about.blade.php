@@ -125,7 +125,7 @@ background-color: #ffffff;">
                 letter-spacing: 0.84px;">COLE HARMONSON<br>
                     <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CEO</span>
                 </div>
-                <div style="margin-top: 35px;
+                <div style="margin-top: 15px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 2.5vh;
@@ -152,7 +152,7 @@ background-color: #ffffff;">
                 letter-spacing: 0.84px;">DEBRA ZUKONIK<br>
                     <span style="font-weight: 400;letter-spacing: 0.84px;">co-founder and CCO</span>
                 </div>
-                <div style="margin-top: 35px;
+                <div style="margin-top: 15px;
                 color: #011f4b;
                 font-family: 'Nunito', sans-serif;
                 font-size: 2.5vh;
