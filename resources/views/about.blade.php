@@ -138,13 +138,15 @@ background-color: #ffffff;">
                     their business in 2007, Cole took the leap into entrepreneurship and founded Far West Capital, which
                     had a successful bank exit in 2018 after supporting hundreds of companies’ growth.
                 </div>
+                <a href="mailto:cole@darebizcapital.com" style="color: #3a888b;">Email Cole here</a>, or give him a call
+                at <a href="tel:1-512-886-3272" style="color: #3a888b;">512-886-DARE x 102</a>
             </div>
             <div class="col-md-4" style="padding: 50px 40px;
             margin: 50px 15px;
 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
 border-radius: 4px;
 background-color: #ffffff;">
-                        <img src="{{ asset('storage/avatars/debra-zukonik.png') }}">
+                <img src="{{ asset('storage/avatars/debra-zukonik.png') }}">
                 <div style="
                 color: #3a888b;
                 font-family: 'Nunito', sans-serif;
@@ -167,6 +169,8 @@ background-color: #ffffff;">
                     served as Chief Credit Officer of BAMFi
                     from 2017 to 2019.
                 </div>
+                <a href="mailto:debra@darebizcapital.com" style="color: #3a888b;">Email Debra here</a>, or give her a
+                call at <a href="tel:1-214-329-9922" style="color: #3a888b;">512-886-DARE x 102</a>
             </div>
         </div>
         @include('includes.visit-blog')
