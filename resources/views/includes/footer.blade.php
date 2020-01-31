@@ -2,7 +2,8 @@
     <div class="row py-2" style="border-top: 1px solid #c2d1d9;margin-top: 90px">
         <div class="col-md-4 m-auto">
             <div class="row">
-                <div class="col-md-8 m-auto">BROKER REFERRAL FORM</div>
+                <div class="col-md-8 m-auto"><a style="color: #505d68;font-weight:400;"
+                                                href="{{ route('broker-referral') }}">BROKER REFERRAL FORM</a></div>
             </div>
         </div>
         <div class="col-md-4 m-auto text-center"><img src="{{ asset('images/small_grey_logo.png') }}"

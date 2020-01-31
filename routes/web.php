@@ -36,3 +36,7 @@ Route::group(['middleware' => 'under-construction'], function () {
 Route::get('/apply', static function () {
     return view('apply');
 })->name('apply');
+
+Route::get('/broker-referral', static function () {
+    return view('broker-referral');
+})->name('broker-referral');
