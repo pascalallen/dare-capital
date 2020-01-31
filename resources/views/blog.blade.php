@@ -27,7 +27,9 @@
                 font-weight: 700;
                 line-height: 30px;
                 text-transform: uppercase;
-                letter-spacing: 0.87px;">{{ $post->title }}</div>
+                cursor: pointer;
+                letter-spacing: 0.87px;"
+                             onclick="window.location.href = '/blog/'+ '{{ $post->slug }}'">{{ $post->title }}</div>
                         <div class="row">
                             <div class="col">
                                 <div style="
