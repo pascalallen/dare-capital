@@ -21,9 +21,7 @@
     <div class="row py-2" style="border-top: 1px solid #c2d1d9;">
         <div class="col-md-4 m-auto">
             <div class="row">
-                <div class="col-md-8 m-auto">
-                    Dare Capital is headquartered in Austin, Texas<br>with a second location in Dallas, Texas
-                </div>
+                <div class="col-md-8 m-auto">Dare Capital has offices located in Austin + Dallas, Texas</div>
             </div>
         </div>
         <div class="col-md-4 m-auto text-center">
