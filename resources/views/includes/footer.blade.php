@@ -1,52 +1,50 @@
-<div class="row w-100" style="border-top: 1px solid #c2d1d9; margin-top: 88px">
-    <div class="col-md-4" style="border-right: 1px solid #c2d1d9">
+<div class="container-fluid" style="color: #505d68;font-weight:400;">
+    <div class="row py-2" style="border-top: 1px solid #c2d1d9;margin-top: 90px">
+        <div class="col-md-4 m-auto">
+            <div class="row">
+                <div class="col-md-8 m-auto">BROKER REFERRAL FORM</div>
+            </div>
+        </div>
+        <div class="col-md-4 m-auto text-center"><img src="{{ asset('images/small_grey_logo.png') }}"
+                                                      alt="{{ asset('images/small_grey_logo.png') }}"></div>
+        <div class="col-md-4 m-auto">
+            <div class="row">
+                <div class="col-md-4 m-auto"><a style="color: #505d68;font-weight:400;" href="{{ route('about') }}">ABOUT</a>
+                </div>
+                <div class="col-md-4 m-auto"><a style="color: #505d68;font-weight:400;" href="{{ route('blog') }}">STORIES</a>
+                </div>
+                <div class="col-md-4 m-auto"><a style="color: #505d68;font-weight:400;"
+                                                href="mailto: cole@darebizcapital.com">CONTACT</a></div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4" style="border-right: 1px solid #c2d1d9">
-        <div style="
-        margin-top: 25px;
-        margin-bottom: 10px;
-color: #505d68;
-font-family: 'Nunito', sans-serif;
-font-size: 14px;">About Our Team
+    <div class="row py-2" style="border-top: 1px solid #c2d1d9;">
+        <div class="col-md-4 m-auto">
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    Dare Capital is headquartered in Austin, Texas<br>with a second location in Dallas, Texas
+                </div>
+            </div>
         </div>
-        <div style="
-color: #a1aeb7;
-font-family: 'Nunito', sans-serif;
-font-size: 14px;
-line-height: 21px;">Follow us on social media for inspiration and advice you can use.
-        </div>
-        <div style="margin-top: 25px;">
+        <div class="col-md-4 m-auto text-center">
             <a style="font-size: large;
-color: #424b5a;margin-right: 25px;" href="https://www.twitter.com/coledoescapital" target="_blank"
+              color: #424b5a;margin-right: 25px;" href="https://www.twitter.com/coledoescapital" target="_blank"
                rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
             <a style="font-size: large;
-color: #424b5a;margin-right: 25px;" href="https://www.facebook.com/DareBizCapital" target="_blank"
+              color: #424b5a;margin-right: 25px;" href="https://www.facebook.com/DareBizCapital" target="_blank"
                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
             <a style="font-size: large;
-color: #424b5a;" href="https://www.linkedin.com/company/darecapital" target="_blank" rel="noopener noreferrer"><i
+              color: #424b5a;" href="https://www.linkedin.com/company/darecapital" target="_blank"
+               rel="noopener noreferrer"><i
                     class="fab fa-linkedin-in"></i></a>
-
         </div>
-    </div>
-    <div class="col-md-4">
-        <div style="margin-top: 25px;
-                margin-bottom: 10px;
-color: #505d68;
-font-family: 'Nunito', sans-serif;
-font-size: 14px;">Contact
-        </div>
-        <div style="
-color: #a1aeb7;
-font-family: 'Nunito', sans-serif;
-font-size: 14px;
-line-height: 21px;">Dare Capital is located in Austin and Dallas, Texas<br>
-            <a style="color: #a1aeb7;" href="tel:1-512-886-3273">512-886-DARE</a></div>
-        <div style="
-        margin-top: 50px;
-color: #c5cdd2;
-font-family: 'Nunito', sans-serif;
-font-size: 14px;
-line-height: 21px;">©2020 DCP | All right reserved
+        <div class="col-md-4 m-auto">
+            <div class="row">
+                <div class="col-md-8 m-auto text-right">
+                    <a style="color: #505d68;font-weight:400;" href="tel:1-512-886-3273">512-886-DARE</a><br>
+                    ©2020 DCP | All right reserved
+                </div>
+            </div>
         </div>
     </div>
 </div>
