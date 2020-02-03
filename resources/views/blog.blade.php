@@ -11,12 +11,11 @@
   max-width: 400px;
   min-width: 90px;
   cursor: pointer;
-  margin-bottom: 20%;
   height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
         @foreach($posts as $post)
             @if ($loop->odd)
-                <div class="row" style="margin: 50px auto;">
+                <div class="row" style="margin: 50px auto;@if($loop->first)margin-top: 35%;@endif">
                     <div class="col-md-8 mx-auto" style="padding: 50px 40px;
                 box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
                 border-radius: 4px;
