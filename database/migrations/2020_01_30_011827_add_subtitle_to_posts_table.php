@@ -11,9 +11,9 @@ class AddSubtitleToPostsTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('posts', static function (Blueprint $table) {
             $table->string('subtitle')->nullable();
         });
     }
@@ -23,9 +23,9 @@ class AddSubtitleToPostsTable extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('posts', static function (Blueprint $table) {
             $table->dropColumn('subtitle');
         });
     }
