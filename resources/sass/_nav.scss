@@ -1,0 +1,28 @@
+.navbar {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+    .dropdown-toggle::after {
+        vertical-align: 0.15em;
+    }
+
+    .collapse {
+        justify-content: flex-end;
+    }
+
+    .collapse.show {
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0.25rem;
+
+        .nav-link {
+            color: #212529 !important;
+
+        }
+    }
+}
+

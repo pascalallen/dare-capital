@@ -4,19 +4,11 @@
     Login
 @endsection
 
-@push('styles')
-    <style>
-        .footer {
-            display: none;
-        }
-    </style>
-@endpush
-
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card card-dark text-light">
+                <div class="card">
                     <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

@@ -4,14 +4,6 @@
     New Post
 @endsection
 
-@push('styles')
-    <style>
-        .footer {
-            display: none;
-        }
-    </style>
-@endpush
-
 @section('content')
     <div class="container mt-5 pt-5">
         <div class="row justify-content-center">
@@ -24,7 +16,7 @@
             @endif
 
             <div class="col-md-8">
-                <div class="card card-dark text-light">
+                <div class="card">
                     <div class="card-header">Create Post</div>
 
                     <div class="card-body">
