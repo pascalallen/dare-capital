@@ -232,7 +232,7 @@
             </div>
         </div>
     </div>
-    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
     <h1 class="section-heading">WHAT PEOPLE ARE SAYING</h1>
     <div class="row text-center mx-md-5">
 
@@ -305,45 +305,7 @@
             </div>
         </div>
     </div>
-    {{--    <div class="row" style="margin-top: 42px;">--}}
-    {{--        <div class="col-md-4 offset-md-4 text-center">--}}
-    {{--        <a style="--}}
-    {{--        padding: 10px 14px;--}}
-    {{--box-shadow: 0 8px 16px 1px rgba(18, 18, 76, 0.14);--}}
-    {{--background-color: #3a888b;color: white;border-radius: 50%;  margin-right: 20px"><i class="fas fa-arrow-left"></i></a>--}}
-    {{--        <a style="--}}
-    {{--        padding: 10px 14px;--}}
-    {{--box-shadow: 0 8px 16px 1px rgba(19, 19, 78, 0.14);--}}
-    {{--background-color: #03396c;color: white;border-radius: 50%; "><i class="fas fa-arrow-right"></i></a>--}}
-    {{--        </div>--}}
-    {{--    </div>--}}
-    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
-    <h1 class="section-heading">Ready to get financing?</h1>
-    <div class="row justify-content-center my-5 ml-0 mr-0"
-         style="letter-spacing: 0.57px;font-size: 19px;line-height: 30px;color: #292c78;">
-        <div class="col-md-4" style="padding: 50px">
-            <span style="
-            font-family: 'Nunito', sans-serif;
-            font-weight: 800;">We want to help you grow and build without worrying about cashflow.</span>
-            <br>
-            <span style="
-            font-family: 'Nunito', sans-serif;">Leave us your name and contact information below, and one of our executives will give you a call as soon as possible.</span>
-            <div style="
-            margin-top: 30px;
-            color: #3a888b;
-            font-family: 'Nunito', sans-serif;
-            font-size: 20px;
-            line-height: 30px;"><span style="
-            font-weight: 800;">Phone:</span> <a style="color: #3a888b;" href="tel:1-512-886-3273">512-886-<span style="
-            font-weight: 800;">DARE</span></a></div>
-        </div>
-        <div class="col-md-4">
-            <div id="contact-us-form" class="cognito"
-                 style="padding: 30px;box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
-                <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
-                <script>Cognito.load("forms", {id: "2"});</script>
-            </div>
-        </div>
-    </div>
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
+    @include('includes.get-started', ['marginTop' => 0])
     @include('includes.footer')
 @endsection
