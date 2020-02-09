@@ -26,7 +26,6 @@
         Route::delete('profile', 'ProfileController@destroyImage')->name('profile.destroy-image');
     });
 
-    Route::post('/contact', 'HomeController@contact')->name('contact');
     Route::get('/about', 'HomeController@about')->name('about');
     Route::get('/blog', 'HomeController@blog')->name('blog');
     Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');

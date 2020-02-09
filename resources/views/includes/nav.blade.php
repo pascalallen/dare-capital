@@ -42,5 +42,14 @@
            target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
         <a class="text-white nav-item nav-link nav-social" href="https://www.linkedin.com/company/darecapital"
            target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        @auth
+            <a class="text-white nav-item nav-link" href="{{ route('logout') }}"
+               onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                {{ __('Logout') }}
+            </a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        @endauth
     </div>
 </nav>
