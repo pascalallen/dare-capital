@@ -19,7 +19,6 @@
     Auth::routes(['register' => false]);
 
     Route::group(['middleware' => 'auth'], static function () {
-        Route::get('/home', 'HomeController@index')->name('home');
         Route::resource('posts', 'PostController');
         Route::delete('posts/{id}/destroy-image', 'PostController@destroyImage')->name('posts.destroy-image');
         Route::put('profile', 'ProfileController@update')->name('profile.update');
@@ -40,3 +39,7 @@ Route::get('/apply', static function () {
 Route::get('/broker-referral', static function () {
     return view('broker-referral');
 })->name('broker-referral');
+
+Route::get('/get-financing', static function () {
+    return view('get-financing');
+})->name('get-financing');

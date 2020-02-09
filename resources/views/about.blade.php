@@ -20,7 +20,6 @@ border-radius: 4px;
 background-color: #ffffff;">
                 <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 29px;
                 font-weight: 900;
                 line-height: 30px;
@@ -30,7 +29,6 @@ background-color: #ffffff;">
                 <div style="
                 margin-top: 25px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 300;">
                     <span style="
@@ -50,7 +48,6 @@ border-radius: 4px;
 background-color: #ffffff;">
                 <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 29px;
                 font-weight: 900;
                 line-height: 30px;
@@ -60,7 +57,6 @@ background-color: #ffffff;">
                 <div style="
                 margin-top: 25px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 300;">
                     Do you need working capital to grow? Have outstanding invoices you'd love to get paid off today, not
@@ -78,7 +74,6 @@ border-radius: 4px;
 background-color: #ffffff;">
                 <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 29px;
                 font-weight: 900;
                 line-height: 30px;
@@ -88,7 +83,6 @@ background-color: #ffffff;">
                 <div style="
                 margin-top: 25px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 300;">
                     <span style="font-weight: 900;">We’re really good at it! We’ve grown thousands of companies, most of whom have worked with us for years. And we know what it takes.</span>
@@ -103,7 +97,6 @@ background-color: #ffffff;">
         </div>
         <div style="
             color: #6e748e;
-            font-family: 'Nunito', sans-serif;
             font-size: 46px;
             font-weight: 400;
             line-height: 60px;
@@ -119,7 +112,6 @@ background-color: #ffffff;">
                 <img src="{{ asset('storage/avatars/cole-harmonson.png') }}">
                 <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 28px;
                 line-height: 25px;
                 margin-top: 15px;
@@ -130,7 +122,6 @@ background-color: #ffffff;">
                 </div>
                 <div style="margin-top: 5px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 18px;
                 font-weight: 400;">From the very beginning of his career, Cole has recognized the transformative value
                     of factoring and asset-based lending to manage cashflow for growing companies without impacting
@@ -150,7 +141,6 @@ background-color: #ffffff;">
                 <img src="{{ asset('storage/avatars/debra-zukonik.png') }}">
                 <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 28px;
                 line-height: 25px;
                 margin-top: 15px;
@@ -161,7 +151,6 @@ background-color: #ffffff;">
                 </div>
                 <div style="margin-top: 5px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 18px;
                 font-weight: 400;">Debra Zukonik is a well-known and respected leader in factoring and asset-based
                     lending, with over 30 years’ experience. Her risk-management expertise is unparalleled in the

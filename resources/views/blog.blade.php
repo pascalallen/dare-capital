@@ -22,7 +22,6 @@
                 background-color: #ffffff;">
                         <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 29px;
                 font-weight: 900;
                 line-height: 30px;
@@ -35,7 +34,6 @@
                                 <div style="
                 margin-top: 25px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 300;">
                                     <span style="font-weight: 700;">{{ $post->subtitle }}</span>
@@ -51,7 +49,6 @@
                         <div class="row">
                             <a href="/blog/{{ $post->slug }}" style="padding-top: 15px;padding-left: 15px;
                         color: #3c8685;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 22px;
                         font-weight: 400;
                         line-height: 28px;
@@ -67,7 +64,6 @@
                 background-color: #ffffff;">
                         <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 29px;
                 font-weight: 900;
                 line-height: 30px;
@@ -83,7 +79,6 @@
                                 <div style="
                 margin-top: 25px;
                 color: #011f4b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 300;">
                                     <span style="font-weight: 700;">{{ $post->subtitle }}</span>
@@ -96,7 +91,6 @@
                         <div class="row justify-content-end">
                             <a href="/blog/{{ $post->slug }}" style="padding-top: 15px;padding-right: 15px;
                         color: #3c8685;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 22px;
                         font-weight: 400;
                         line-height: 28px;

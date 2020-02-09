@@ -22,7 +22,8 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="resourcesDropdownLink">
                 <a class="dropdown-item" href="{{ route('broker-referral') }}">Broker Referrals</a>
-                <a class="dropdown-item" href="{{ route('apply') }}">Get Financing</a>
+                <a class="dropdown-item" href="{{ route('get-financing') }}">Get Financing</a>
+                <a class="dropdown-item" href="{{ route('apply') }}">Application</a>
             </div>
         </div>
         <div class="nav-item dropdown">

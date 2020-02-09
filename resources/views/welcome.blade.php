@@ -25,7 +25,6 @@
 
         .section-heading {
             color: #6e748e;
-            font-family: 'Nunito', sans-serif;
             font-size: 42px;
             font-weight: 700;
             text-transform: uppercase;
@@ -34,7 +33,6 @@
 
         .figure-caption {
             color: #31364f;
-            font-family: 'Nunito', sans-serif;
             font-size: 20px;
         }
     </style>
@@ -44,7 +42,7 @@
     <div
         style="background-image: url({{ asset('images/homepage_header_pic_lined_web.png') }}); background-repeat: no-repeat; background-size: cover; height: 55vw;">
         <div style="padding-top: 4%; margin-left: 5%;">
-            <img style=" width: 15%;
+            <img style="width: 15%;
           max-width: 400px;
           min-width: 90px;
           cursor: pointer;
@@ -52,7 +50,6 @@
                  alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
             <div class="apply-for-funding-container" style="margin-top: 80px;
                         color: #ffffff;
-                            font-family: 'Nunito', sans-serif;
                         font-size: 42px;
                         line-height: 59px;">
                 Working capital<br>
@@ -60,7 +57,7 @@
                 <button style="width: 185px;
         height: 50px;
         box-shadow: 0 10px 25px 1px rgba(255, 159, 0, 0.14);
-        background-color: #3a888b;margin-top: 68px;font-family: 'Nunito', sans-serif;color: #ffffff;border: #3a888b;
+        background-color: #3a888b;margin-top: 68px;color: #ffffff;border: #3a888b;
                             font-size: 18px;
                             font-weight: 400;
                             line-height: 30px;"
@@ -78,14 +75,12 @@
                             margin-bottom: 25px;
                             color: #3a888b;
                             font-weight: 800;
-                            font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO BUILD
             </div>
             <div
                 style="padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                                     color: #011f4b;
-                                    font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
                                     ">A financing
@@ -95,7 +90,6 @@
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">Have outstanding AR? Want a steadier cashflow? Need a line of
@@ -106,7 +100,6 @@
                 <div style="padding-top: 15px;
         "><a style="
                                 color: #3c8685;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 16px;
                                 font-weight: 900;" href="{{ route('about') }}">Read More >></a></div>
             </div>
@@ -118,14 +111,12 @@
                             margin-bottom: 25px;
                             color: #3a888b;
                             font-weight: 800;
-                            font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO GROW
             </div>
             <div
                 style="padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                                     color: #011f4b;
-                                    font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
                                     ">
@@ -136,7 +127,6 @@
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">We can help you grow, the right way, at the right pace. With
@@ -146,7 +136,6 @@
                 </div>
                 <div style="padding-top: 15px;"><a style="
                                 color: #3c8685;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 16px;
                                 font-weight: 900;" href="{{ route('about') }}">Read More >></a></div>
             </div>
@@ -158,14 +147,12 @@
                             margin-bottom: 25px;
                             color: #3a888b;
                             font-weight: 800;
-                            font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO GIVE
             </div>
             <div
                 style="padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                                     color: #011f4b;
-                                    font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
                                     ">A resource
@@ -176,7 +163,6 @@
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">We’ve worked with 1,000+ companies in every stage of growth.
@@ -187,7 +173,6 @@
                 <div class="row" style="padding-top: 15px;padding-left: 15px;
                                 "><a style="
                                 color: #3c8685;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 16px;
                                 font-weight: 900;" href="{{ route('about') }}">Read More >></a></div>
             </div>
@@ -241,7 +226,6 @@
                 style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 700;
                 line-height: 34px;
@@ -250,7 +234,6 @@
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 21px;
                         line-height: 27px;
                         letter-spacing: 1.05px;">“I have seen firsthand the positive impact Cole on his clients,
@@ -264,7 +247,6 @@
                 style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 700;
                 line-height: 34px;
@@ -273,7 +255,6 @@
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 21px;
                         line-height: 27px;
                         letter-spacing: 1.05px;">“Cole will take the time to understand your business, and provide a
@@ -286,7 +267,6 @@
                 style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 700;
                 line-height: 34px;
@@ -295,7 +275,6 @@
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 21px;
                         line-height: 27px;
                         letter-spacing: 1.05px;

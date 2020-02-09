@@ -27,7 +27,6 @@ background-color: #ffffff;z-index: 1">
                 </div>
                 <div style="
                 color: #3a888b;
-                font-family: 'Nunito', sans-serif;
                 font-size: 42px;
                 font-weight: 800;
                 text-transform: uppercase;">{{ $post->title }}</div>

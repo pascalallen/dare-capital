@@ -4,22 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\User;
-use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Show the application dashboard.
-     *
-     * @return Renderable
-     */
-    public function index(): Renderable
-    {
-        return view('home');
-    }
-
     public function about()
     {
         /** @var User $users */
