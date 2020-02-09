@@ -14,7 +14,7 @@ background-color: #ffffff;
             line-height: 34px;">
             <span style="
             font-weight: 800;">Interested to Know More?</span> <span style="
-            font-family: 'Nunito', sans-serif;" class="mr-md-5">Check Out Our Blog.</span>
+            font-family: 'Nunito', sans-serif;">Check Out Our&nbsp;Blog.</span>
         <br>
         <button class="visit-blog-button" style="
         box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
