@@ -18,33 +18,31 @@
         }
 
         gtag('js', new Date());
-            gtag('config', 'UA-156288410-1');
-        </script>
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
-        <!-- Fonts -->
-        <link rel="dns-prefetch" href="//fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        {{-- Font Awesome --}}
-        <script src="https://kit.fontawesome.com/b05f5595ec.js" crossorigin="anonymous"></script>
-        @stack('styles')
-        @stack('scripts')
-    </head>
-    <body>
-        <div id="app">
-            @include('includes.navbar')
-            @yield('content')
-        </div>
-        <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-        <script type="text/javascript">
-            window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
-                L.start({
-                    "baseUrl": "mc.us4.list-manage.com",
-                    "uuid": "0968335fd5eea8b521b69b7ca",
-                    "lid": "414a8fe985",
-                    "uniqueMethods": true
+        gtag('config', 'UA-156288410-1');
+    </script>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {{-- Font Awesome --}}
+    <script src="https://kit.fontawesome.com/b05f5595ec.js" crossorigin="anonymous"></script>
+    @stack('styles')
+    @stack('scripts')
+</head>
+<body>
+@include('includes.nav')
+<div class="container-fluid px-0">
+    @yield('content')
+</div>
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+        data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+    window.dojoRequire(["mojo/signup-forms/Loader"], function (L) {
+        L.start({
+            "baseUrl": "mc.us4.list-manage.com",
+            "uuid": "0968335fd5eea8b521b69b7ca",
+            "lid": "414a8fe985",
+            "uniqueMethods": true
                 })
             });
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {

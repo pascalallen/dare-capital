@@ -16,16 +16,8 @@
             }
         }
 
-        @media (max-width: 576px) {
-            .apply-for-funding-container {
-                display: none;
-            }
-
-        }
-
         .section-heading {
             color: #6e748e;
-            font-family: 'Nunito', sans-serif;
             font-size: 42px;
             font-weight: 700;
             text-transform: uppercase;
@@ -34,42 +26,15 @@
 
         .figure-caption {
             color: #31364f;
-            font-family: 'Nunito', sans-serif;
             font-size: 20px;
         }
     </style>
 @endpush
 
 @section('content')
-    <div
-        style="background-image: url({{ asset('images/homepage_header_pic_lined_web.png') }}); background-repeat: no-repeat; background-size: cover; height: 55vw;">
-        <div style="padding-top: 4%; margin-left: 5%;">
-            <img style=" width: 15%;
-          max-width: 400px;
-          min-width: 90px;
-          cursor: pointer;
-          height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
-                 alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
-            <div class="apply-for-funding-container" style="margin-top: 80px;
-                        color: #ffffff;
-                            font-family: 'Nunito', sans-serif;
-                        font-size: 42px;
-                        line-height: 59px;">
-                Working capital<br>
-                for growing companies.<br>
-                <button style="width: 185px;
-        height: 50px;
-        box-shadow: 0 10px 25px 1px rgba(255, 159, 0, 0.14);
-        background-color: #3a888b;margin-top: 68px;font-family: 'Nunito', sans-serif;color: #ffffff;border: #3a888b;
-                            font-size: 18px;
-                            font-weight: 400;
-                            line-height: 30px;"
-                        onclick="document.getElementById('contact-us-form').scrollIntoView({ behavior: 'smooth' });">
-                    Apply for Funding
-                </button>
-            </div>
-        </div>
-    </div>
+    @component('components.banner')
+        {{ asset('images/homepage_header_pic_lined_web.png') }}
+    @endcomponent
     <div class="row text-center mx-md-5">
         <div class="col-md-4 dare-to-build-card" style="margin: 50px auto">
             <img src="{{ asset('images/shutterstock_1085127647.png') }}">
@@ -78,14 +43,12 @@
                             margin-bottom: 25px;
                             color: #3a888b;
                             font-weight: 800;
-                            font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO BUILD
             </div>
             <div
                 style="padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                                     color: #011f4b;
-                                    font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
                                     ">A financing
@@ -95,7 +58,6 @@
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">Have outstanding AR? Want a steadier cashflow? Need a line of
@@ -106,7 +68,6 @@
                 <div style="padding-top: 15px;
         "><a style="
                                 color: #3c8685;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 16px;
                                 font-weight: 900;" href="{{ route('about') }}">Read More >></a></div>
             </div>
@@ -118,14 +79,12 @@
                             margin-bottom: 25px;
                             color: #3a888b;
                             font-weight: 800;
-                            font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO GROW
             </div>
             <div
                 style="padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                                     color: #011f4b;
-                                    font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
                                     ">
@@ -136,7 +95,6 @@
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">We can help you grow, the right way, at the right pace. With
@@ -146,7 +104,6 @@
                 </div>
                 <div style="padding-top: 15px;"><a style="
                                 color: #3c8685;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 16px;
                                 font-weight: 900;" href="{{ route('about') }}">Read More >></a></div>
             </div>
@@ -158,14 +115,12 @@
                             margin-bottom: 25px;
                             color: #3a888b;
                             font-weight: 800;
-                            font-family: 'Nunito', sans-serif;
                             font-size: 29px;">DARE TO GIVE
             </div>
             <div
                 style="padding: 30px; text-align:left; box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                                     color: #011f4b;
-                                    font-family: 'Nunito', sans-serif;
                                     font-size: 28px;
                                     line-height: 32px;
                                     ">A resource
@@ -176,7 +131,6 @@
                 <div style="
                                 margin-top: 10px;
                                 color: #6e748e;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 21px;
                                 line-height: 27px;
                                 letter-spacing: 1.05px;">We’ve worked with 1,000+ companies in every stage of growth.
@@ -187,7 +141,6 @@
                 <div class="row" style="padding-top: 15px;padding-left: 15px;
                                 "><a style="
                                 color: #3c8685;
-                                font-family: 'Nunito', sans-serif;
                                 font-size: 16px;
                                 font-weight: 900;" href="{{ route('about') }}">Read More >></a></div>
             </div>
@@ -232,7 +185,7 @@
             </div>
         </div>
     </div>
-    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
     <h1 class="section-heading">WHAT PEOPLE ARE SAYING</h1>
     <div class="row text-center mx-md-5">
 
@@ -241,7 +194,6 @@
                 style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 700;
                 line-height: 34px;
@@ -250,7 +202,6 @@
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 21px;
                         line-height: 27px;
                         letter-spacing: 1.05px;">“I have seen firsthand the positive impact Cole on his clients,
@@ -264,7 +215,6 @@
                 style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 700;
                 line-height: 34px;
@@ -273,7 +223,6 @@
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 21px;
                         line-height: 27px;
                         letter-spacing: 1.05px;">“Cole will take the time to understand your business, and provide a
@@ -286,7 +235,6 @@
                 style="min-height: 315px; padding: 30px; text-align: left;  box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
                 <div style="
                 color: #515b69;
-                font-family: 'Nunito', sans-serif;
                 font-size: 21px;
                 font-weight: 700;
                 line-height: 34px;
@@ -295,7 +243,6 @@
                 <div style="
                         margin-top: 10px;
                         color: #6e748e;
-                        font-family: 'Nunito', sans-serif;
                         font-size: 21px;
                         line-height: 27px;
                         letter-spacing: 1.05px;
@@ -305,45 +252,7 @@
             </div>
         </div>
     </div>
-    {{--    <div class="row" style="margin-top: 42px;">--}}
-    {{--        <div class="col-md-4 offset-md-4 text-center">--}}
-    {{--        <a style="--}}
-    {{--        padding: 10px 14px;--}}
-    {{--box-shadow: 0 8px 16px 1px rgba(18, 18, 76, 0.14);--}}
-    {{--background-color: #3a888b;color: white;border-radius: 50%;  margin-right: 20px"><i class="fas fa-arrow-left"></i></a>--}}
-    {{--        <a style="--}}
-    {{--        padding: 10px 14px;--}}
-    {{--box-shadow: 0 8px 16px 1px rgba(19, 19, 78, 0.14);--}}
-    {{--background-color: #03396c;color: white;border-radius: 50%; "><i class="fas fa-arrow-right"></i></a>--}}
-    {{--        </div>--}}
-    {{--    </div>--}}
-    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100">
-    <h1 class="section-heading">Ready to get financing?</h1>
-    <div class="row justify-content-center my-5 ml-0 mr-0"
-         style="letter-spacing: 0.57px;font-size: 19px;line-height: 30px;color: #292c78;">
-        <div class="col-md-4" style="padding: 50px">
-            <span style="
-            font-family: 'Nunito', sans-serif;
-            font-weight: 800;">We want to help you grow and build without worrying about cashflow.</span>
-            <br>
-            <span style="
-            font-family: 'Nunito', sans-serif;">Leave us your name and contact information below, and one of our executives will give you a call as soon as possible.</span>
-            <div style="
-            margin-top: 30px;
-            color: #3a888b;
-            font-family: 'Nunito', sans-serif;
-            font-size: 20px;
-            line-height: 30px;"><span style="
-            font-weight: 800;">Phone:</span> <a style="color: #3a888b;" href="tel:1-512-886-3273">512-886-<span style="
-            font-weight: 800;">DARE</span></a></div>
-        </div>
-        <div class="col-md-4">
-            <div id="contact-us-form" class="cognito"
-                 style="padding: 30px;box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;">
-                <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
-                <script>Cognito.load("forms", {id: "2"});</script>
-            </div>
-        </div>
-    </div>
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
+    @include('includes.get-started', ['marginTop' => 0])
     @include('includes.footer')
 @endsection

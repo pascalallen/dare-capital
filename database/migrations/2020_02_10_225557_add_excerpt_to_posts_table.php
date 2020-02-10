@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddSubtitleToPostsTable extends Migration
+class AddExcerptToPostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddSubtitleToPostsTable extends Migration
     public function up(): void
     {
         Schema::table('posts', static function (Blueprint $table) {
-            $table->string('subtitle')->nullable();
+            $table->longText('excerpt')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddSubtitleToPostsTable extends Migration
     public function down(): void
     {
         Schema::table('posts', static function (Blueprint $table) {
-            $table->dropColumn('subtitle');
+            $table->dropColumn('excerpt');
         });
     }
 }
