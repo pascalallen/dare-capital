@@ -12,7 +12,7 @@ background-color: #ffffff;
             font-size: 30px;
             line-height: 34px;">
             <span style="
-            font-weight: 800;">Interested to Know More? Check Out Our&nbsp;Blog.</span>
+            font-weight: 800;">Interested to Know More?</span> Check Out Our&nbsp;Blog.
         <br>
         <button class="visit-blog-button" style="
         box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);

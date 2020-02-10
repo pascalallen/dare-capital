@@ -1,4 +1,4 @@
-<div class="row py-2" style="border-top: 1px solid #c2d1d9;margin-top: 90px;color: #505d68;font-weight:400;">
+<div class="row py-2 ml-0 mr-0" style="border-top: 1px solid #c2d1d9;margin-top: 90px;color: #505d68;font-weight:400;">
     <div class="col-md-4 m-auto">
         <div class="row">
             <div class="col-md-8 m-auto"><a style="color: #505d68;font-weight:400;"
@@ -20,7 +20,7 @@
         </div>
     </div>
 </div>
-<div class="row py-2" style="border-top: 1px solid #c2d1d9;">
+<div class="row py-2 mr-0 ml-0" style="border-top: 1px solid #c2d1d9;">
     <div class="col-md-4 m-auto">
         <div class="row">
             <div class="col-md-8 m-auto">Dare Capital has offices located in Austin + Dallas, Texas</div>

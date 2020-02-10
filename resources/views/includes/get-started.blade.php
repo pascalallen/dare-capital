@@ -12,7 +12,7 @@ background-color: #ffffff;
             font-size: 30px;
             line-height: 34px;">
             <span style="
-            font-weight: 800;">Get Started Now.</span> <span>Apply for Funding.</span>
+            font-weight: 800;">Get Started Now.</span> Apply for Funding.
         <br>
         <button class="get-started-now-button" style="
         box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
