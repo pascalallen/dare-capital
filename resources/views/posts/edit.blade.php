@@ -25,6 +25,11 @@
                                    value="{{ $post->subtitle }}">
                         </div>
                         <div class="form-group">
+                            <label for="excerpt">Excerpt</label>
+                            <textarea class="form-control" id="excerpt"
+                                      name="excerpt">{{ $post->excerpt }}</textarea>
+                        </div>
+                        <div class="form-group">
                             <label for="body">Body</label>
                             <textarea class="form-control" id="body"
                                       name="body">{{ $post->body }}</textarea>

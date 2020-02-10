@@ -30,6 +30,10 @@
                             <input type="text" class="form-control" id="subtitle" name="subtitle">
                         </div>
                         <div class="form-group">
+                            <label for="excerpt">Excerpt</label>
+                            <textarea class="form-control" id="excerpt" name="excerpt"></textarea>
+                        </div>
+                        <div class="form-group">
                             <label for="body">Body</label>
                             <textarea class="form-control" id="body" name="body"></textarea>
                         </div>

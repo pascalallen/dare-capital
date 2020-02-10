@@ -33,7 +33,11 @@
             font-weight: 300;">
                                 <span style="font-weight: 700;">{{ $post->subtitle }}</span>
                                 <br>
-                                {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
+                                @if(!isset($post->excerpt))
+                                    {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
+                                @else
+                                    {{ $post->excerpt }}
+                                @endif
                             </div>
 
                         </div>
@@ -78,7 +82,11 @@
             font-weight: 300;">
                                 <span style="font-weight: 700;">{{ $post->subtitle }}</span>
                                 <br>
-                                {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
+                                @if(!isset($post->excerpt))
+                                    {!! str_limit(strip_tags($post->body), $limit = 500, $end = '...') !!}
+                                @else
+                                    {{ $post->excerpt }}
+                                @endif
                             </div>
 
                         </div>
