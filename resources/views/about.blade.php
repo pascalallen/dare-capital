@@ -13,26 +13,12 @@
             45vw
         @endslot
     @endcomponent
-    <div class="row">
-        <div class="col-md-8 mx-auto" style="padding: 50px 40px;
-box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
-border-radius: 4px;
-background-color: #ffffff;">
-            <div style="
-            color: #3a888b;
-            font-size: 29px;
-            font-weight: 900;
-            line-height: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.87px;">WHO WE ARE
-            </div>
-            <div style="
-            margin-top: 25px;
-            color: #011f4b;
-            font-size: 21px;
-            font-weight: 300;">
-                <span style="
-            font-weight: 900;">We’re the financial partner you’ve always wanted on your team. </span>
+    <div class="row about-section-row">
+        <div class="col-md-8 mx-auto about-section-col">
+            <div class="about-section-header">WHO WE ARE</div>
+            <div class="about-section-body">
+                <span
+                    class="about-section-main-phrase">We’re the financial partner you’ve always wanted on your team. </span>
                 We have a combined 60 years of experience helping entrepreneurs build and grow; we’ve lent over 6
                 billion dollars to fund working capital needs. Obstacles? Complications? You name it, we’ve seen it
                 - and overcome it. We love forming long-term relationships with growing companies; we especially
@@ -41,51 +27,23 @@ background-color: #ffffff;">
             </div>
         </div>
     </div>
-    <div class="row" style="margin: 50px auto;">
-        <div class="col-md-8 mx-auto" style="padding: 50px 40px;
-box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
-border-radius: 4px;
-background-color: #ffffff;">
-            <div style="
-            color: #3a888b;
-            font-size: 29px;
-            font-weight: 900;
-            line-height: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.87px;">WHAT WE DO
-            </div>
-            <div style="
-            margin-top: 25px;
-            color: #011f4b;
-            font-size: 21px;
-            font-weight: 300;">
+    <div class="row about-section-row">
+        <div class="col-md-8 mx-auto about-section-col">
+            <div class="about-section-header">WHAT WE DO</div>
+            <div class="about-section-body">
                 Do you need working capital to grow? Have outstanding invoices you'd love to get paid off today, not
                 in 30 or 60 days? We factor accounts receivables and provide lines of credit for growing companies.
-                <span style="font-weight: 900;">We’ll be there to help you grow and scale; we’ll be there when you need advice or an introduction; and when there are problems, we strive to be your first call.</span>
+                <span class="about-section-main-phrase">We’ll be there to help you grow and scale; we’ll be there when you need advice or an introduction; and when there are problems, we strive to be your first call.</span>
                 We’ll always tell you the truth−good news and bad news−and share everything that informs our
                 decision making.
             </div>
         </div>
     </div>
-    <div class="row" style="margin: 50px auto;">
-        <div class="col-md-8 mx-auto" style="padding: 50px 40px;
-box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
-border-radius: 4px;
-background-color: #ffffff;">
-            <div style="
-            color: #3a888b;
-            font-size: 29px;
-            font-weight: 900;
-            line-height: 30px;
-            text-transform: uppercase;
-            letter-spacing: 0.87px;">WHY WE DO IT
-            </div>
-            <div style="
-            margin-top: 25px;
-            color: #011f4b;
-            font-size: 21px;
-            font-weight: 300;">
-                <span style="font-weight: 900;">We’re really good at it! We’ve grown thousands of companies, most of whom have worked with us for years. And we know what it takes.</span>
+    <div class="row about-section-row">
+        <div class="col-md-8 mx-auto about-section-col">
+            <div class="about-section-header">WHY WE DO IT</div>
+            <div class="about-section-body">
+                <span class="about-section-main-phrase">We’re really good at it! We’ve grown thousands of companies, most of whom have worked with us for years. And we know what it takes.</span>
                 We’ve seen that successful businesses are built from a giving mindset, by courageous entrepreneurs
                 who know their vulnerabilities, own their failures, and turn both into their biggest strengths.
                 We've seen that the best measure of long-term success is in how a business treats its smallest
@@ -132,14 +90,7 @@ background-color: #ffffff;">
         </div>
     </div>
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
-    <div style="
-        color: #6e748e;
-        font-size: 46px;
-        font-weight: 400;
-        line-height: 60px;
-        text-transform: uppercase;
-        letter-spacing: 3.45px;margin-top: 125px; text-align: center">MEET OUR MANAGEMENT
-    </div>
+    <h1 class="display-4 text-center">MEET OUR MANAGEMENT</h1>
     <div class="row justify-content-center mr-0 ml-0">
         <div class="col-md-4" style="padding: 50px 40px;
         margin: 50px 15px;
