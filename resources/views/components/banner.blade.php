@@ -6,7 +6,7 @@
     }
 </style>
 <div
-    style="background-image: url({{ $slot }}); background-repeat: no-repeat; background-size: cover; height: 55vw;">
+    style="background-image: url({{ $image }}); background-repeat: no-repeat; background-size: cover; height: {{ $height }};">
     <div style="padding-top: 4%; margin-left: 5%;">
         <img style="width: 15%;
           max-width: 400px;

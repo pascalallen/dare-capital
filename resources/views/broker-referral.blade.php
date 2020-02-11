@@ -6,7 +6,12 @@
 
 @section('content')
     @component('components.banner')
-        {{ asset('images/austin_skyline_4_lined_web.png') }}
+        @slot('image')
+            {{ asset('images/austin_skyline_4_lined_web.png') }}
+        @endslot
+        @slot('height')
+            55vw
+        @endslot
     @endcomponent
     <div class="row ml-0 mr-0">
         <div class="col-md-8 mx-auto" style="padding: 50px 40px;

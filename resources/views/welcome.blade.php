@@ -33,7 +33,12 @@
 
 @section('content')
     @component('components.banner')
-        {{ asset('images/homepage_header_pic_lined_web.png') }}
+        @slot('image')
+            {{ asset('images/homepage_header_pic_lined_web.png') }}
+        @endslot
+        @slot('height')
+            55vw
+        @endslot
     @endcomponent
     <div class="row text-center mx-md-5">
         <div class="col-md-4 dare-to-build-card" style="margin: 50px auto">

@@ -6,7 +6,12 @@
 
 @section('content')
     @component('components.banner')
-        {{ asset('images/dallas_skyline_2_lined_web.png') }}
+        @slot('image')
+            {{ asset('images/dallas_skyline_6_lined_lr.png') }}
+        @endslot
+        @slot('height')
+            45vw
+        @endslot
     @endcomponent
     <div class="row">
         <div class="col-md-8 mx-auto" style="padding: 50px 40px;
@@ -90,6 +95,43 @@ background-color: #ffffff;">
             </div>
         </div>
     </div>
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
+    <div class="row justify-content-center text-center core-values-row">
+        <div class="col-md-4 core-values-col">
+            <div class="core-values-header">"A Team" Effort</div>
+            <div class="core-values-body">
+                <span class="core-values-main-phrase d-block">We are more together than we are alone.</span>
+                Our team is committed to working in lockstep with each other and our clients toward consistent long-term
+                success.
+            </div>
+        </div>
+        <div class="col-md-4 core-values-col">
+            <div class="core-values-header">Dare to Give, First</div>
+            <div class="core-values-body">
+                <span class="core-values-main-phrase d-block">In Latin, "dare" means "to give."</span>
+                We believe in giving our best, putting our best foot forward, and working with clients who dare to give
+                trust, transparency, and match our best with their own.
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center text-center core-values-row">
+        <div class="col-md-4 core-values-col">
+            <div class="core-values-header">Further & Onwards</div>
+            <div class="core-values-body">
+                <span class="core-values-main-phrase d-block">There is always another improvement to make.</span>
+                We take a growth mindset approach to our business and our clients' success.
+            </div>
+        </div>
+        <div class="col-md-4 core-values-col">
+            <div class="core-values-header">Radical Transparency</div>
+            <div class="core-values-body">
+                <span class="core-values-main-phrase d-block">We strive to never surprise anyone with anything.</span>
+                We will always share information − good or bad − with each other and with our clients, explaining every
+                decision we make to the best of our ability.
+            </div>
+        </div>
+    </div>
+    <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
     <div style="
         color: #6e748e;
         font-size: 46px;
