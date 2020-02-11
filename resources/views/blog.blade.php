@@ -6,7 +6,12 @@
 
 @section('content')
     @component('components.banner')
-        {{ asset('images/austin_skyline_2_lined_web.png') }}
+        @slot('image')
+            {{ asset('images/austin_skyline_2_lined_web.png') }}
+        @endslot
+        @slot('height')
+            55vw
+        @endslot
     @endcomponent
     @foreach($posts as $post)
         @if ($loop->odd)

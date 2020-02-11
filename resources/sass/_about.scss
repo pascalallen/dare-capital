@@ -1,0 +1,24 @@
+.core-values-row {
+    font-size: 25px;
+    line-height: initial;
+
+    .core-values-col {
+        box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
+        border-radius: 4px;
+        padding: 4rem 2rem;
+        margin: 1.5rem;
+
+        .core-values-header {
+            color: #3a888b;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .core-values-body {
+            .core-values-main-phrase {
+                font-weight: 600;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
