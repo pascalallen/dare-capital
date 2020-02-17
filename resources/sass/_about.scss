@@ -1,50 +1,23 @@
-.about-section-row {
+.about-page-section {
     font-size: 25px;
     line-height: initial;
     margin: 0;
 
-    .about-section-col {
+    .about-page-section-col {
         border-radius: 4px;
         box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
         margin: 1.5rem;
         padding: 4rem 2rem;
 
-        .about-section-header {
+        .about-page-section-header {
             color: #3a888b;
+            display: inline-block;
             font-weight: 700;
             margin-bottom: 2rem;
         }
 
-        .about-section-body {
-            .about-section-main-phrase {
-                font-weight: 600;
-            }
-        }
-    }
-}
-
-.core-values-row {
-    font-size: 25px;
-    line-height: initial;
-    margin: 0;
-
-    .core-values-col {
-        border-radius: 4px;
-        box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
-        margin: 1.5rem;
-        padding: 4rem 2rem;
-
-        .core-values-header {
-            color: #3a888b;
-            font-weight: 700;
-            margin-bottom: 2rem;
-        }
-
-        .core-values-body {
-            .core-values-main-phrase {
-                font-weight: 600;
-                padding-bottom: 10px;
-            }
+        .about-page-bio-body {
+            font-size: 20px;
         }
     }
 }
