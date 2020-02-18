@@ -1,0 +1,62 @@
+.welcome-page-section {
+    font-size: 25px;
+    line-height: initial;
+    margin: 0;
+
+    .welcome-page-offset-col {
+        .welcome-page-section-header {
+            color: #3a888b;
+        }
+
+        .welcome-page-shadow-box {
+            padding: 30px;
+            text-align: left;
+            box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
+            border-radius: 4px;
+            min-height: 315px;
+
+            .welcome-page-shadow-box-body {
+                color: #6e748e;
+                font-size: 21px;
+            }
+
+            .welcome-page-shadow-box-link {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            &:nth-of-type(1) {
+                top: 100px;
+            }
+
+            &:nth-of-type(2) {
+                bottom: 100px;
+            }
+
+            &:nth-of-type(3) {
+                bottom: 200px;
+            }
+        }
+    }
+
+    .welcome-page-quotes-col {
+        .welcome-page-shadow-box {
+            padding: 30px;
+            text-align: left;
+            box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
+            border-radius: 4px;
+            min-height: 315px;
+        }
+
+        .welcome-page-quote-author {
+            color: #515b69;
+            font-size: 21px;
+        }
+
+        .welcome-page-quote {
+            color: #6e748e;
+            font-size: 21px;
+        }
+    }
+}

@@ -15,7 +15,7 @@
     @endcomponent
     <div class="row about-page-section">
         <div class="col-md-8 mx-auto about-page-section-col">
-            <div class="about-page-section-header">WHO WE ARE</div>
+            <div class="about-page-section-header"><strong>WHO WE ARE</strong></div>
             <div class="about-page-section-body">
                 <strong>We’re the financial partner you’ve always wanted on your team. </strong>
                 We have a combined 60 years of experience helping entrepreneurs build and grow; we’ve lent over 6
@@ -28,7 +28,7 @@
     </div>
     <div class="row about-page-section">
         <div class="col-md-8 mx-auto about-page-section-col">
-            <div class="about-page-section-header">WHAT WE DO</div>
+            <div class="about-page-section-header"><strong>WHAT WE DO</strong></div>
             <div class="about-page-section-body">
                 Do you need working capital to grow? Have outstanding invoices you'd love to get paid off today, not
                 in 30 or 60 days? We factor accounts receivables and provide lines of credit for growing companies.
@@ -41,7 +41,7 @@
     </div>
     <div class="row about-page-section">
         <div class="col-md-8 mx-auto about-page-section-col">
-            <div class="about-page-section-header">WHY WE DO IT</div>
+            <div class="about-page-section-header"><strong>WHY WE DO IT</strong></div>
             <div class="about-page-section-body">
                 <strong>We’re really good at it! We’ve grown thousands of companies, most of whom have worked with us
                     for years. And we know what it takes.</strong>
@@ -57,7 +57,7 @@
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
     <div class="row justify-content-center text-center about-page-section">
         <div class="col-md-4 about-page-section-col">
-            <div class="about-page-section-header">"A Team" Effort</div>
+            <div class="about-page-section-header"><strong>"A Team" Effort</strong></div>
             <div class="about-page-section-body">
                 <strong class="d-block">We are more together than we are alone.</strong>
                 Our team is committed to working in lockstep with each other and our clients toward consistent long-term
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="col-md-4 about-page-section-col">
-            <div class="about-page-section-header">Dare to Give, First</div>
+            <div class="about-page-section-header"><strong>Dare to Give, First</strong></div>
             <div class="about-page-section-body">
                 <strong class="d-block">In Latin, "dare" means "to give."</strong>
                 We believe in giving our best, putting our best foot forward, and working with clients who dare to give
@@ -75,14 +75,14 @@
     </div>
     <div class="row justify-content-center text-center about-page-section">
         <div class="col-md-4 about-page-section-col">
-            <div class="about-page-section-header">Further & Onwards</div>
+            <div class="about-page-section-header"><strong>Further & Onwards</strong></div>
             <div class="about-page-section-body">
                 <strong class="d-block">There is always another improvement to make.</strong>
                 We take a growth mindset approach to our business and our clients' success.
             </div>
         </div>
         <div class="col-md-4 about-page-section-col">
-            <div class="about-page-section-header">Radical Transparency</div>
+            <div class="about-page-section-header"><strong>Radical Transparency</strong></div>
             <div class="about-page-section-body">
                 <strong class="d-block">We strive to never surprise anyone with anything.</strong>
                 We will always share information − good or bad − with each other and with our clients, explaining every
@@ -96,7 +96,7 @@
         <div class="col-md-4 about-page-section-col">
             <img src="{{ asset('storage/avatars/cole-harmonson.png') }}" alt="Dare Capital">
             <div class="about-page-section-header">
-                COLE HARMONSON
+                <strong>COLE HARMONSON</strong>
                 <br>
                 <span>co-founder and CEO</span>
             </div>
@@ -115,7 +115,7 @@
         <div class="col-md-4 about-page-section-col">
             <img src="{{ asset('storage/avatars/debra-zukonik.png') }}" alt="Dare Capital">
             <div class="about-page-section-header">
-                DEBRA ZUKONIK
+                <strong>DEBRA ZUKONIK</strong>
                 <br>
                 <span>co-founder and CCO</span>
             </div>
