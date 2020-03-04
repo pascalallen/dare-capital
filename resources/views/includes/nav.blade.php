@@ -11,7 +11,7 @@
                 About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
-                <a class="dropdown-item" href="{{ route('about') }}">Meet our Team</a>
+                <a class="dropdown-item" href="{{ route('about') }}#our-team">Meet our Team</a>
                 <a class="dropdown-item" href="{{ route('about') }}">About Dare Capital</a>
             </div>
         </div>

@@ -91,7 +91,7 @@
         </div>
     </div>
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
-    <h1 class="display-4 text-center">MEET OUR MANAGEMENT</h1>
+    <h1 class="display-4 text-center" id="our-team">MEET OUR MANAGEMENT</h1>
     <div class="row justify-content-center about-page-section">
         <div class="col-md-4 about-page-section-col">
             <img src="{{ asset('storage/avatars/cole-harmonson.png') }}" alt="Dare Capital">
