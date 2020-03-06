@@ -27,9 +27,12 @@ background-color: #ffffff;z-index: 1">
             </div>
             <div style="
             color: #3a888b;
-            font-size: 42px;
-            font-weight: 800;
-            text-transform: uppercase;">{{ $post->title }}</div>
+            font-size: 29px;
+            font-weight: 900;
+            line-height: 30px;
+            text-transform: uppercase;
+            cursor: pointer;
+            letter-spacing: 0.87px;">{{ $post->title }}</div>
             <div style="font-size: 28px">
                 <span style="font-weight: 700;">{{ $post->subtitle }}</span>
                 <div style="margin-top: 15px">{!! $post->body !!}</div>
