@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Http\Requests\PostRequest;
 use App\Post;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
@@ -48,11 +48,12 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param Request $request
+     * @param PostRequest $request
      * @return Redirector|RedirectResponse
      */
-    public function store(Request $request) // TODO: fix issue with Request and replace
+    public function store(PostRequest $request)
     {
+        /** @var Post $post */
         $post = auth()->user()
             ->posts()
             ->create($request->all());
@@ -109,11 +110,11 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param PostRequest $request
      * @param int $id
      * @return Redirector|RedirectResponse
      */
-    public function update(Request $request, int $id)
+    public function update(PostRequest $request, int $id)
     {
         /** @var Post $post */
         $post = Post::find($id);
