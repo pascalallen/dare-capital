@@ -19,7 +19,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        return view('profile', [
+        return view('auth.profile', [
             'user' => auth()->user(),
         ]);
     }
