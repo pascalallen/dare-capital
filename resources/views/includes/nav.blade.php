@@ -13,6 +13,10 @@
             <div class="dropdown-menu" aria-labelledby="aboutDropdownLink">
                 <a class="dropdown-item" href="{{ route('about') }}#our-team">Meet our Team</a>
                 <a class="dropdown-item" href="{{ route('about') }}">About Dare Capital</a>
+                @auth
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ route('profile.index') }}">Edit Profile</a>
+                @endauth
             </div>
         </div>
         <div class="nav-item dropdown">
@@ -34,6 +38,11 @@
             <div class="dropdown-menu" aria-labelledby="storiesDropdownLink">
                 <a class="dropdown-item" href="{{ route('blog', ['category' => 'case-studies']) }}">Case Studies</a>
                 <a class="dropdown-item" href="{{ route('blog', ['category' => 'education']) }}">Advice for Leaders</a>
+                @auth
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ route('posts.index') }}">Manage</a>
+                    <a class="dropdown-item" href="{{ route('posts.create') }}">Add New</a>
+                @endauth
             </div>
         </div>
         <a class="text-white nav-item nav-link nav-social" href="https://www.twitter.com/coledoescapital"
