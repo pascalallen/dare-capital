@@ -8,6 +8,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        @foreach ($errors->all() as $error)
+                            {{ $error }}
+                        @endforeach
+                    </div>
+                @endif
+
                 <div class="card">
                     <div class="card-header">Edit Post</div>
 

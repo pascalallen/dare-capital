@@ -7,15 +7,15 @@
 @section('content')
     <div class="container">
         <div class="row">
-            @if ($errors->any())
-                <div class="alert alert-danger position-fixed m-2">
-                    @foreach ($errors->all() as $error)
-                        {{ $error }}
-                    @endforeach
-                </div>
-            @endif
-
             <div class="col-md-8 offset-md-2">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        @foreach ($errors->all() as $error)
+                            {{ $error }}
+                        @endforeach
+                    </div>
+                @endif
+
                 <div class="card">
                     <div class="card-header">Create Post</div>
 

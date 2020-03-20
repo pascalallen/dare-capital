@@ -46,6 +46,7 @@
                     <a class="dropdown-item" href="{{ route('blog', ['category' => 'education']) }}">Advice for
                         Leaders</a>
                     <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="{{ route('posts.index') }}">Manage</a>
                     <a class="dropdown-item" href="{{ route('posts.create') }}">Add New</a>
                 </div>
             </li>
