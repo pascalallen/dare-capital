@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Apply Now
+    {{$pageTitle}}
 @endsection
 
 @section('content')
@@ -13,14 +13,11 @@
             55vw
         @endslot
     @endcomponent
-    <div class="row mr-0 ml-0">
-        <div class="col-md-8 mx-auto" style="padding: 50px 40px;
-box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
-border-radius: 4px;
-background-color: #ffffff;">
+    <div class="row application-page-section">
+        <div class="col-md-8 mx-auto application-page-section-col">
             <div class="cognito">
                 <script src="https://services.cognitoforms.com/s/xVHxdnmaP0uDY40yI9wkMw"></script>
-                <script>Cognito.load("forms", {id: "1"});</script>
+                <script>Cognito.load("forms", {id: {{$cognitoFormId}}});</script>
             </div>
         </div>
     </div>

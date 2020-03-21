@@ -6,10 +6,13 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import 'nav';
-//@import 'footer';
-@import 'welcome';
+
+// Custom
 @import 'about';
+@import 'application';
+@import 'nav';
+@import 'welcome';
+//@import 'footer';
 //@import 'blog';
 
 // Extra small devices (portrait phones, less than 576px)
