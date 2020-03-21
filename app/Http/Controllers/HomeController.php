@@ -37,4 +37,28 @@ class HomeController extends Controller
             'posts' => $posts,
         ]);
     }
+
+    public function apply()
+    {
+        return view('application', [
+            'cognitoFormId' => 1,
+            'pageTitle' => 'Apply Now'
+        ]);
+    }
+
+    public function getFinancing()
+    {
+        return view('application', [
+            'cognitoFormId' => 2,
+            'pageTitle' => 'Get Financing Now'
+        ]);
+    }
+
+    public function brokerReferral()
+    {
+        return view('application', [
+            'cognitoFormId' => 3,
+            'pageTitle' => 'Broker Referral'
+        ]);
+    }
 }
