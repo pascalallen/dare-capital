@@ -1,3 +1,4 @@
+@auth
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="{{ route('welcome') }}">
         <img src="{{ asset('images/small_grey_logo.png') }}" width="30" height="30" alt="">
@@ -39,12 +40,10 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="storiesDropdownLink" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Stories
+                    Blog
                 </a>
                 <div class="dropdown-menu" aria-labelledby="storiesDropdownLink">
-                    <a class="dropdown-item" href="{{ route('blog', ['category' => 'case-studies']) }}">Case Studies</a>
-                    <a class="dropdown-item" href="{{ route('blog', ['category' => 'education']) }}">Advice for
-                        Leaders</a>
+                    <a class="dropdown-item" href="{{ route('blog') }}">Blog</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{ route('posts.index') }}">Manage</a>
                     <a class="dropdown-item" href="{{ route('posts.create') }}">Add New</a>
@@ -66,3 +65,4 @@
         </ul>
     </div>
 </nav>
+@endauth

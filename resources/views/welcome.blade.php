@@ -147,5 +147,6 @@
     </div>
     <img src="{{ asset('images/Vector_Smart_Object_Diagonal_Line_1.png') }}" class="w-100" alt="Dare Capital">
     @include('includes.get-started', ['marginTop' => 0])
+    @include('includes.contact-us')
     @include('includes.footer')
 @endsection

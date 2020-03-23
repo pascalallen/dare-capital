@@ -1,0 +1,15 @@
+.contact-us-container {
+    color: #6e748e;
+    font-size: 30px;
+
+    .contact-us-container-col {
+        box-shadow: 0 8px 40px rgba(18, 18, 76, 0.14);
+
+        .contact-us-button {
+            box-shadow: 0 10px 25px 1px rgba(1, 31, 75, 0.14);
+            background-color: #3a888b;
+            color: #ffffff;
+            border: #3a888b;
+        }
+    }
+}
