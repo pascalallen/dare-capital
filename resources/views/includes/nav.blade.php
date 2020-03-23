@@ -30,21 +30,21 @@
                 <a class="dropdown-item" href="{{ route('apply') }}">Application</a>
             </div>
         </div>
-        <div class="nav-item dropdown">
-            <a class="text-white nav-link dropdown-toggle" href="#" id="storiesDropdownLink" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
-                Stories
-            </a>
-            <div class="dropdown-menu" aria-labelledby="storiesDropdownLink">
-                <a class="dropdown-item" href="{{ route('blog', ['category' => 'case-studies']) }}">Case Studies</a>
-                <a class="dropdown-item" href="{{ route('blog', ['category' => 'education']) }}">Advice for Leaders</a>
-                @auth
-                    <div class="dropdown-divider"></div>
+        @auth
+            <div class="nav-item dropdown">
+                <a class="text-white nav-link dropdown-toggle" href="#" id="storiesDropdownLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Blog
+                </a>
+                <div class="dropdown-menu" aria-labelledby="storiesDropdownLink">
+                    <a class="dropdown-item" href="{{ route('blog') }}">Blog</a>
                     <a class="dropdown-item" href="{{ route('posts.index') }}">Manage</a>
                     <a class="dropdown-item" href="{{ route('posts.create') }}">Add New</a>
-                @endauth
+                </div>
             </div>
-        </div>
+        @else
+            <a class="text-white nav-item nav-link" href="{{ route('blog') }}">Blog</a>
+        @endauth
         <a class="text-white nav-item nav-link nav-social" href="https://www.twitter.com/coledoescapital"
            target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
         <a class="text-white nav-item nav-link nav-social" href="https://www.facebook.com/DareBizCapital"

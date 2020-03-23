@@ -10,7 +10,7 @@
             {{ asset('images/dallas_skyline_6_lined_lr.png') }}
         @endslot
         @slot('height')
-            45vw
+            55vw
         @endslot
     @endcomponent
     <div class="row about-page-section">

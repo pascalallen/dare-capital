@@ -13,7 +13,7 @@
                                             href="{{ route('about') }}">ABOUT</a>
             </div>
             <div class="col-md-4 m-auto"><a style="color: #505d68;font-weight:400;"
-                                            href="{{ route('blog') }}">STORIES</a>
+                                            href="{{ route('blog') }}">BLOG</a>
             </div>
             <div class="col-md-4 m-auto"><a style="color: #505d68;font-weight:400;"
                                             href="mailto: cole@darebizcapital.com">CONTACT</a></div>
