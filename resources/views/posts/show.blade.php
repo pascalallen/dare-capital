@@ -33,8 +33,8 @@ background-color: #ffffff;z-index: 1">
             text-transform: uppercase;
             cursor: pointer;
             letter-spacing: 0.87px;">{{ $post->title }}</div>
-            <div style="font-size: 28px">
-                <span style="font-weight: 700;">{{ $post->subtitle }}</span>
+            <div>
+                <span style="font-weight: 700; font-size: 28px">{{ $post->subtitle }}</span>
                 <div style="margin-top: 15px">{!! $post->body !!}</div>
             </div>
         </div>
