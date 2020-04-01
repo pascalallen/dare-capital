@@ -30,6 +30,7 @@
     @stack('scripts')
 </head>
 <body>
+@include('includes.banner') {{-- TODO: rm line when banner should be removed --}}
 @include('includes.nav')
 <div class="container-fluid px-0">
     @yield('content')
