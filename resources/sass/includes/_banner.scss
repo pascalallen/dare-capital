@@ -1,0 +1,11 @@
+// TODO: delete file when banner should be removed
+.event-banner {
+    &:hover {
+        text-decoration: none;
+    }
+
+    .jumbotron {
+        background-color: #388a8a;
+        border-radius: 0;
+    }
+}
