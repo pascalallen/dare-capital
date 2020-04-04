@@ -1,0 +1,10 @@
+.jumbo-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .jumbo-banner-logo {
+        max-width: 400px;
+        min-width: 90px;
+        cursor: pointer;
+    }
+}

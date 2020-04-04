@@ -1,20 +1,9 @@
-<style>
-    @media (max-width: 576px) {
-        .apply-for-funding-container {
-            display: none;
-        }
-    }
-</style>
-<div
-    style="background-image: url({{ $image }}); background-repeat: no-repeat; background-size: cover; height: {{ $height }};">
-    <div style="padding-top: 4%; margin-left: 5%;">
-        <img style="width: 15%;
-          max-width: 400px;
-          min-width: 90px;
-          cursor: pointer;
-          height: auto;" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
+<div class="jumbo-banner"
+     style="background-image: url({{ $image }}); height: {{ $height }};">
+    <div class="pt-5 ml-5">
+        <img class="jumbo-banner-logo w-15 h-auto" src="{{ asset('images/LOGO_Vector_Smart_Object.png') }}"
              alt="Dare Logo" xmlns="http://www.w3.org/1999/html" onclick="window.location.href = '/';">
-        <div class="apply-for-funding-container" style="margin-top: 80px;
+        <div class="apply-for-funding-container d-none d-sm-block" style="margin-top: 80px;
                         color: #ffffff;
                         font-size: 42px;
                         line-height: 59px;">
