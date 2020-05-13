@@ -27,7 +27,6 @@ class Application extends Mailable
      */
     public function build(): self
     {
-        return $this->from('noreply@darebizcapital.com')
-            ->view('emails.application');
+        return $this->view('emails.application');
     }
 }
