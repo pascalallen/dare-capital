@@ -4,6 +4,18 @@
     {{ $post->title }}
 @endsection
 
+@push('styles')
+    <style type="text/css">
+        .note-float-left {
+            padding: 25px 25px 25px 0;
+        }
+
+        .note-float-right {
+            padding: 25px 0 25px 25px;
+        }
+    </style>
+@endpush
+
 @section('content')
     @component('components.banner')
         @slot('image')
@@ -14,17 +26,8 @@
         @endslot
     @endcomponent
     <div class="row mr-0 ml-0">
-        <div class="col-md-8 mx-auto" style="padding: 50px 40px;
-box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);
-border-radius: 4px;
-background-color: #ffffff;z-index: 1">
-            <div class="row">
-                <div class="col-md-6 offset-md-3">
-                    <img class="img-fluid"
-                         src="{{ asset('storage/images/'.$post->image) }}"
-                         alt="{{ $post->image }}">
-                </div>
-            </div>
+        <div class="col-md-8 mx-auto p-5" style="box-shadow: 0 10px 25px 1px rgba(20, 20, 80, 0.14);border-radius: 4px;background-color: #ffffff;z-index: 1">
+            <img class="img-fluid mb-5 w-100" src="{{ asset('storage/images/'.$post->image) }}" alt="{{ $post->image }}">
             <div style="
             color: #3a888b;
             font-size: 29px;

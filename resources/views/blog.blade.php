@@ -29,8 +29,8 @@
             cursor: pointer;
             letter-spacing: 0.87px;"
                          onclick="window.location.href = '/blog/'+ '{{ $post->slug }}'">{{ $post->title }}</div>
-                    <div class="row">
-                        <div class="col">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
                             <div style="
             margin-top: 25px;
             color: #011f4b;
@@ -46,7 +46,7 @@
                             </div>
 
                         </div>
-                        <div class="col"><img class="img-thumbnail" style="min-width: 200px;"
+                        <div class="col-md-6"><img class="img-fluid"
                                               src="{{ asset('storage/images/'.$post->image) }}"
                                               alt="{{ $post->image }}"></div>
                     </div>
@@ -75,11 +75,11 @@
             cursor: pointer;
             letter-spacing: 0.87px;"
                          onclick="window.location.href = '/blog/'+ '{{ $post->slug }}'">{{ $post->title }}</div>
-                    <div class="row">
-                        <div class="col"><img class="img-thumbnail" style="min-width: 200px;"
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img class="img-fluid"
                                               src="{{ asset('storage/images/'.$post->image) }}"
                                               alt="{{ $post->image }}"></div>
-                        <div class="col">
+                        <div class="col-md-6">
                             <div style="
             margin-top: 25px;
             color: #011f4b;
